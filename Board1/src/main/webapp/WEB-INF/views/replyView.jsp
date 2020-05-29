@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>replyView.jsp</title>
 </head>
 <body>
 	<table width="500" cellpadding="0" cellspacing="0" border="1">

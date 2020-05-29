@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Join 페이지</title>
 </head>
 <body>
 <title>회원가입</title>

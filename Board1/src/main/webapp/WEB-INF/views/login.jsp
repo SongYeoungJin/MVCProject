@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>로그인페이지</title>
+<title></title>
 </head>
 <body>
 	

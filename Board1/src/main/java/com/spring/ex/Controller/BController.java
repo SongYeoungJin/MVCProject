@@ -135,4 +135,8 @@ public class BController {
 	public String loginCheck() {
 		return "login/loginCheck";
 	}
+	@RequestMapping("home")
+	public String home() {
+		return "home";
+	}
 }

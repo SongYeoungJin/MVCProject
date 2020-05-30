@@ -1,10 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>로그인 페이지</title>
+
+	<!-- BootStrap 적용 -->
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+    <link href="<c:url value="/css/bootstrap.min.css" />" rel="stylesheet">
+	<title>로그인 페이지</title>
+    <!-- JS -->
 </head>
 <body>
 	<form action="loginCheck.jsp" method="post">

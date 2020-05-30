@@ -24,7 +24,7 @@ public class BController {
 	
 	@RequestMapping("list")
 	public String list(Model model) {
-		System.out.println("=========list ÌéòÏù¥ÏßÄ Ï†ëÍ∑º==========");
+		System.out.println("=========list ∆‰¿Ã¡ˆ==========");
 		System.out.println("list()");
 		
 		cmd = new BListCommand();
@@ -35,7 +35,7 @@ public class BController {
 	
 	@RequestMapping("writeView")
 	public String writeView(Model model) {
-		System.out.println("====writeview Ï†ëÍ∑º====");
+		System.out.println("====writeview ∆‰¿Ã¡ˆ====");
 		System.out.println("writeView()");
 		
 		cmd = new BWriteViewCommand();
@@ -46,7 +46,7 @@ public class BController {
 	
 	@RequestMapping("write")
 	public String write(HttpServletRequest request,Model model) {
-		System.out.println("====write Ï†ëÍ∑º======");
+		System.out.println("====write ∆‰¿Ã¡ˆ======");
 		System.out.println("write()");
 		model.addAttribute("request", request);
 		
@@ -58,7 +58,7 @@ public class BController {
 	
 	@RequestMapping("contentView")
 	public String contentView(HttpServletRequest request, Model model) {
-		System.out.println("====contentview Ï†ëÍ∑º======");
+		System.out.println("====contentview ∆‰¿Ã¡ˆ======");
 		System.out.println("contentView()");
 	    model.addAttribute("request", request);
 	    
@@ -70,7 +70,7 @@ public class BController {
 	
 	@RequestMapping(method=RequestMethod.POST, value = "modify")
 	public String modify(HttpServletRequest request, Model model) {
-		System.out.println("====modify Ï†ëÍ∑º======");
+		System.out.println("====modify ∆‰¿Ã¡ˆ======");
 	    System.out.println("modify()");    
 	    model.addAttribute("request", request);
 	    
@@ -82,7 +82,7 @@ public class BController {
 	  
 	@RequestMapping("delete")
 	public String delete(HttpServletRequest request, Model model) {
-		System.out.println("====delete Ï†ëÍ∑º======");
+		System.out.println("====delete ∆‰¿Ã¡ˆ======");
 	    System.out.println("delete");	    
 	    model.addAttribute("request", request);
 	    
@@ -94,7 +94,7 @@ public class BController {
 	
 	@RequestMapping("replyView")
 	public String replyView(HttpServletRequest request, Model model) {
-		System.out.println("====replyview Ï†ëÍ∑º======");
+		System.out.println("====replyview ∆‰¿Ã¡ˆ======");
 	    System.out.println("replyview()");    
 	    model.addAttribute("request", request);
 	    
@@ -106,7 +106,7 @@ public class BController {
 	  
 	@RequestMapping("reply")
 	public String reply(HttpServletRequest request, Model model) {
-		System.out.println("====reply Ï†ëÍ∑º======");
+		System.out.println("====reply ∆‰¿Ã¡ˆ======");
 	    System.out.println("reply()");	    
 	    model.addAttribute("request", request);
 	    
@@ -115,4 +115,24 @@ public class BController {
 	    
 	    return "redirect:list";
 	  }
+	
+	@RequestMapping("LoginForm")
+	public String login() {
+		return "login/LoginForm";
+	}
+	
+	@RequestMapping("findInform")
+	public String findId() {
+		return "login/findInform";
+	}
+	
+	@RequestMapping("Join")
+	public String Join() {
+		return "Join";
+	}
+	
+	@RequestMapping("loginCheck")
+	public String loginCheck() {
+		return "login/loginCheck";
+	}
 }

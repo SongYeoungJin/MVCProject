@@ -5,7 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
+<title>Join 페이지</title>
+=======
 <title>JOIN</title>
+>>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
 </head>
 <body>
 <title>회원가입</title>

@@ -118,7 +118,7 @@ public class BController {
 	
 	@RequestMapping("LoginForm")
 	public String login() {
-		return "login/LoginForm";
+		return "LoginForm";
 	}
 	
 	@RequestMapping("findInform")

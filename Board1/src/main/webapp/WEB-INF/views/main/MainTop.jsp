@@ -25,7 +25,7 @@
             <a class="nav-link" href="reviewList.jsp">차박커뮤니티</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="productList.jsp">차박물품</a>
+            <a class="nav-link" href="productList.jsp">차박용품</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="myPage.jsp">My차박</a>

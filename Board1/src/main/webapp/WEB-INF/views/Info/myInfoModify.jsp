@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>myInfoModify</title>
 </head>
 <body>
 <form name="myInfoModify" action="myInfoModify.jsp" method="GET">

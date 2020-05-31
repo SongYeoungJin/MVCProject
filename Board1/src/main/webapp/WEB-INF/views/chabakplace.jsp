@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>차박카카오 지도 넣었다.</title>
 </head>
 <body>
 	<div id="map" style="width:500px;height:400px;"></div>

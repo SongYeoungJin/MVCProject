@@ -118,12 +118,12 @@ public class BController {
 	
 	@RequestMapping("LoginForm")
 	public String login() {
-		return "LoginForm";
+		return "login/LoginForm";
 	}
 	
 	@RequestMapping("findIdForm")
 	public String findId() {
-		return "findIdForm";
+		return "login/findIdForm";
 	}
 	
 	@RequestMapping("Join")
@@ -131,12 +131,31 @@ public class BController {
 		return "Join";
 	}
 	
-	@RequestMapping("loginCheck")
-	public String loginCheck() {
-		return "login/loginCheck";
+	@RequestMapping("myInfo")
+	public String myinfo() {
+		return "Info/myInfo";
+	}
+	
+	@RequestMapping("myInfoModify")
+	public String myinfoModify() {
+		return "Info/myInfoModify";
 	}
 	@RequestMapping("home")
 	public String home() {
 		return "home";
+	}
+	
+	
+	@RequestMapping("account")
+	public String account() {
+		return "account/account";
+	}
+	@RequestMapping("myAccount")
+	public String myAccount() {
+		return "account/myAccount";
+	}
+	@RequestMapping("myAccountCancel")
+	public String myAccountCancel() {
+		return "account/myAccountCancel";
 	}
 }

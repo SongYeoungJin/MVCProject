@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Insert title here</title>
+<title>회원가입</title>
 
 <!-- ///////////////////////////////------부트스트랩 링크------///////////////////////////////-->
 <link
@@ -130,7 +130,7 @@
 
                <tr>
                   <td id="title">이메일</td>
-                  <td><input type="email" name="email_1" maxlength="30"
+                  <td><input type="email" name="email_1" maxlength="20"
                      class="form-control">@ <select name="email_2">
                         <option>naver.com</option>
                         <option>daum.net</option>

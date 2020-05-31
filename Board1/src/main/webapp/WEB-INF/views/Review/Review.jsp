@@ -15,7 +15,7 @@
    <table width="413">
      <tr>
       <td width="0">&nbsp;</td>
-      <td align="center" width="76">글번호</td>
+      <td align="center" width="76">글번호 </td>
       <td width="319"></td>
       <td width="0">&nbsp;</td>
      </tr>

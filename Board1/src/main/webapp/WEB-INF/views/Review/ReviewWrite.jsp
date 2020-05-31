@@ -15,7 +15,7 @@
    <table>
      <tr>
       <td>&nbsp;</td>
-      <td align="center">제목</td>
+      <td align="center">제목 </td>
       <td><input name="title" size="50" maxlength="100"></td>
       <td>&nbsp;</td>
      </tr>

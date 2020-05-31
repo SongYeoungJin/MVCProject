@@ -13,7 +13,7 @@
    <td width="379">제목</td>
    <td width="73">작성자</td>
    <td width="164">작성일</td>
-   <td width="58">조회수</td>
+   <td width="58">조회수 </td>
   </tr>
 <tr height="25" align="center">
 </tr>

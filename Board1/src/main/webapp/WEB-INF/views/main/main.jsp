@@ -17,7 +17,6 @@
   <!-- Custom styles for this template -->
   <link href="css/full-width-pics.css" rel="stylesheet">
 
-</head>
 
 	<!-- ///////////////////////////////------부트스트랩 링크 END------///////////////////////////////-->
 

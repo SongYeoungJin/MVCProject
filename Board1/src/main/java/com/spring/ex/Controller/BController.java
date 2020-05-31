@@ -24,7 +24,7 @@ public class BController {
 	
 	@RequestMapping("list")
 	public String list(Model model) {
-		System.out.println("=========list ÆäÀÌÁö==========");
+		System.out.println("=========list ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½==========");
 		System.out.println("list()");
 		
 		cmd = new BListCommand();
@@ -35,7 +35,7 @@ public class BController {
 	
 	@RequestMapping("writeView")
 	public String writeView(Model model) {
-		System.out.println("====writeview ÆäÀÌÁö====");
+		System.out.println("====writeview ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½====");
 		System.out.println("writeView()");
 		
 		cmd = new BWriteViewCommand();
@@ -46,7 +46,7 @@ public class BController {
 	
 	@RequestMapping("write")
 	public String write(HttpServletRequest request,Model model) {
-		System.out.println("====write ÆäÀÌÁö======");
+		System.out.println("====write ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½======");
 		System.out.println("write()");
 		model.addAttribute("request", request);
 		
@@ -58,7 +58,7 @@ public class BController {
 	
 	@RequestMapping("contentView")
 	public String contentView(HttpServletRequest request, Model model) {
-		System.out.println("====contentview ÆäÀÌÁö======");
+		System.out.println("====contentview ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½======");
 		System.out.println("contentView()");
 	    model.addAttribute("request", request);
 	    
@@ -70,7 +70,7 @@ public class BController {
 	
 	@RequestMapping(method=RequestMethod.POST, value = "modify")
 	public String modify(HttpServletRequest request, Model model) {
-		System.out.println("====modify ÆäÀÌÁö======");
+		System.out.println("====modify ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½======");
 	    System.out.println("modify()");    
 	    model.addAttribute("request", request);
 	    
@@ -82,7 +82,7 @@ public class BController {
 	  
 	@RequestMapping("delete")
 	public String delete(HttpServletRequest request, Model model) {
-		System.out.println("====delete ÆäÀÌÁö======");
+		System.out.println("====delete ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½======");
 	    System.out.println("delete");	    
 	    model.addAttribute("request", request);
 	    
@@ -94,7 +94,7 @@ public class BController {
 	
 	@RequestMapping("replyView")
 	public String replyView(HttpServletRequest request, Model model) {
-		System.out.println("====replyview ÆäÀÌÁö======");
+		System.out.println("====replyview ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½======");
 	    System.out.println("replyview()");    
 	    model.addAttribute("request", request);
 	    
@@ -106,7 +106,7 @@ public class BController {
 	  
 	@RequestMapping("reply")
 	public String reply(HttpServletRequest request, Model model) {
-		System.out.println("====reply ÆäÀÌÁö======");
+		System.out.println("====reply ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½======");
 	    System.out.println("reply()");	    
 	    model.addAttribute("request", request);
 	    
@@ -121,9 +121,9 @@ public class BController {
 		return "LoginForm";
 	}
 	
-	@RequestMapping("findInform")
+	@RequestMapping("findIdForm")
 	public String findId() {
-		return "login/findInform";
+		return "findIdForm";
 	}
 	
 	@RequestMapping("Join")

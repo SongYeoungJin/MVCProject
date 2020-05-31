@@ -85,7 +85,7 @@
           </form>
           <div class="text-center">
             <a class="d-block small mt-3" href="location.href='findIdForm.jsp'">ID찾기</a>
-            <a class="d-block small" href="location.href='Join.jsp'">PW찾기</a>
+            <a class="d-block small" href="location.href='Join.jsp'">회원가입</a>
           </div>
         </div>
      </div>

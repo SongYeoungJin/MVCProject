@@ -7,6 +7,7 @@
 <title>buypoint</title>
 </head>
 <body>
+<p>포인트 구매</p>
 <form name="buypoint" action="buypoint.jsp" method="GET">
 현재 내 포인트 : p <br>
 구매할 포인트 : <select name="point">

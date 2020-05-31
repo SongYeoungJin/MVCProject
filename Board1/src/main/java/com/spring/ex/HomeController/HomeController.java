@@ -121,5 +121,40 @@ public class HomeController {
       response.setCharacterEncoding("UTF-8");
         
       return "Product/product";
+   
+   }
+   
+   @RequestMapping(value = "/Review", method = RequestMethod.GET)
+   public String Review(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+      
+      response.setContentType("text/html; charset=UTF-8");
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+        
+      return "Review/Review";
+   }
+   
+   @RequestMapping(value = "/ReviewList", method = RequestMethod.GET)
+   public String ReviewList(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+      
+      response.setContentType("text/html; charset=UTF-8");
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+        
+      return "Review/ReviewList";
+
+}
+   
+   @RequestMapping(value = "/ReviewWrite", method = RequestMethod.GET)
+   public String ReviewWrite(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+      
+      response.setContentType("text/html; charset=UTF-8");
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+        
+      return "Review/ReviewWrite";
+
    }
 }
+
+

@@ -8,9 +8,14 @@
 <table>
   <tr>
    <td>
-    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+     <table width="100%" cellpadding="0" cellspacing="0" border="0">
+     <tr align="center">
+      <td width="5" height="30" /></td>
       <td>내 용</td>
+      <td width="5" height="30" /></td>
+
      </tr>
+   
     </table>
    <table width="413">
      <tr>
@@ -56,11 +61,16 @@
      <tr height="1" bgcolor="#82B5DF"><td colspan="4" width="407"></td></tr>
      <tr align="center">
       <td width="0">&nbsp;</td>
-      <td colspan="2" width="399"><input type=button value="글쓰기">
-	<input type=button value="답글">
-	<input type=button value="목록">
-	<input type=button value="수정">
-	<input type=button value="삭제">
+      <td colspan="2" width="399">
+    <input type=button value="글쓰기"  OnClick="window.location='ReviewWrite.jsp'">
+
+<input type=button value="답글">
+
+<input type=button value="목록" OnClick="window.location='ReviewList.jsp'">
+
+<input type=button value="수정">
+
+<input type=button value="삭제">
       <td width="0">&nbsp;</td>
      </tr>
     </table>

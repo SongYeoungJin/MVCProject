@@ -203,8 +203,9 @@ public class BController {
 	public String mycart() {
 		return "cart/mycart";
 	}
-
-	>>>>>>>branch'master'
-
-	of https:// github.com/SongYeoungJin/MVCProject.git
 }
+/*
+ * >>>>>>>branch'master'
+ * 
+ * of https:// github.com/SongYeoungJin/MVCProject.git }
+ */

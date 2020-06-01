@@ -162,4 +162,12 @@ public class BController {
 	public String review() {
 		return "Review/Review";
 	}
+	
+
+	@RequestMapping("test")
+	public String test() {
+		return "main/test";
+	}
+	
+	
 }

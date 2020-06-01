@@ -158,4 +158,8 @@ public class BController {
 	public String myAccountCancel() {
 		return "account/myAccountCancel";
 	}
+	@RequestMapping("Review")
+	public String review() {
+		return "Review/Review";
+	}
 }

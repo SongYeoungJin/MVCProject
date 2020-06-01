@@ -18,153 +18,162 @@ import com.spring.ex.command.BReplyViewCommand;
 import com.spring.ex.command.BWriteViewCommand;
 import com.spring.ex.command.BWriteCommand;
 
-
 @Controller
 public class BController {
 	BCommand cmd;
-	
+
 	@RequestMapping("list")
 	public String list(Model model) {
 		System.out.println("=========list ������==========");
 		System.out.println("list()");
-		
+
 		cmd = new BListCommand();
 		cmd.execute(model);
-		
+
 		return "list";
 	}
-	
+
 	@RequestMapping("writeView")
 	public String writeView(Model model) {
 		System.out.println("====writeview ������====");
 		System.out.println("writeView()");
-		
+
 		cmd = new BWriteViewCommand();
 		cmd.execute(model);
-		
+
 		return "writeView";
 	}
-	
+
 	@RequestMapping("write")
-	public String write(HttpServletRequest request,Model model) {
+	public String write(HttpServletRequest request, Model model) {
 		System.out.println("====write ������======");
 		System.out.println("write()");
 		model.addAttribute("request", request);
-		
+
 		cmd = new BWriteCommand();
 		cmd.execute(model);
-		
+
 		return "redirect:list";
 	}
-	
+
 	@RequestMapping("contentView")
 	public String contentView(HttpServletRequest request, Model model) {
 		System.out.println("====contentview ������======");
 		System.out.println("contentView()");
-	    model.addAttribute("request", request);
-	    
-	    cmd = new BContentCommand();
-	    cmd.execute(model);
+		model.addAttribute("request", request);
 
-	    return "contentView";
-	  }
-	
-	@RequestMapping(method=RequestMethod.POST, value = "modify")
+		cmd = new BContentCommand();
+		cmd.execute(model);
+
+		return "contentView";
+	}
+
+	@RequestMapping(method = RequestMethod.POST, value = "modify")
 	public String modify(HttpServletRequest request, Model model) {
 		System.out.println("====modify ������======");
-	    System.out.println("modify()");    
-	    model.addAttribute("request", request);
-	    
-	    cmd = new BModifyCommand();
-	    cmd.execute(model);
-	    
-	    return "redirect:list";
-	  }
-	  
+		System.out.println("modify()");
+		model.addAttribute("request", request);
+
+		cmd = new BModifyCommand();
+		cmd.execute(model);
+
+		return "redirect:list";
+	}
+
 	@RequestMapping("delete")
 	public String delete(HttpServletRequest request, Model model) {
 		System.out.println("====delete ������======");
-	    System.out.println("delete");	    
-	    model.addAttribute("request", request);
-	    
-	    cmd = new BDeleteCommand();
-	    cmd.execute(model);
-	    
-	    return "redirect:list";
-	  }
-	
+		System.out.println("delete");
+		model.addAttribute("request", request);
+
+		cmd = new BDeleteCommand();
+		cmd.execute(model);
+
+		return "redirect:list";
+	}
+
 	@RequestMapping("replyView")
 	public String replyView(HttpServletRequest request, Model model) {
 		System.out.println("====replyview ������======");
-	    System.out.println("replyview()");    
-	    model.addAttribute("request", request);
-	    
-	    cmd = new BReplyViewCommand();
-	    cmd.execute(model);    
-	    
-	    return "replyView";
-	  }
-	  
+		System.out.println("replyview()");
+		model.addAttribute("request", request);
+
+		cmd = new BReplyViewCommand();
+		cmd.execute(model);
+
+		return "replyView";
+	}
+
 	@RequestMapping("reply")
 	public String reply(HttpServletRequest request, Model model) {
 		System.out.println("====reply ������======");
-	    System.out.println("reply()");	    
-	    model.addAttribute("request", request);
-	    
-	    cmd = new BReplyCommand();
-	    cmd.execute(model);    
-	    
-	    return "redirect:list";
-	  }
-	
+		System.out.println("reply()");
+		model.addAttribute("request", request);
+
+		cmd = new BReplyCommand();
+		cmd.execute(model);
+
+		return "redirect:list";
+	}
+
 	@RequestMapping("LoginForm")
 	public String login() {
 		return "login/LoginForm";
 	}
-	
+
 	@RequestMapping("findIdForm")
 	public String findId() {
 		return "login/findIdForm";
 	}
-	
+
 	@RequestMapping("Join")
 	public String Join() {
 		return "Join";
 	}
-	
+
 	@RequestMapping("myInfo")
 	public String myinfo() {
 		return "Info/myInfo";
 	}
-	
+
 	@RequestMapping("myInfoModify")
 	public String myinfoModify() {
 		return "Info/myInfoModify";
 	}
+
 	@RequestMapping("home")
 	public String home() {
 		return "home";
 	}
-	
-	
+
 	@RequestMapping("account")
 	public String account() {
 		return "account/account";
 	}
+
 	@RequestMapping("myAccount")
 	public String myAccount() {
 		return "account/myAccount";
 	}
+
 	@RequestMapping("myAccountCancel")
 	public String myAccountCancel() {
 		return "account/myAccountCancel";
 	}
+
 	@RequestMapping("Review")
 	public String review() {
 		return "Review/Review";
 	}
 
 	/*
+	 * <<<<<<< HEAD =======
+	 * 
+	 * 
+	 * >>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
+	 * 
+	 * <<<<<<< HEAD
+	 * 
 	 * <<<<<<< HEAD
 	 * 
 	 * 
@@ -177,5 +186,25 @@ public class BController {
 	 * 
 	 * @RequestMapping("mycart") public String mycart() { return "cart/mycart"; }
 	 * >>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
+	 * 
+	 * =======
 	 */
+	@RequestMapping("test")
+	public String test() {
+		return "main/test";
+	}
+
+	@RequestMapping("buypoint")
+	public String buypoint() {
+		return "Point/buypoint";
+	}
+
+	@RequestMapping("mycart")
+	public String mycart() {
+		return "cart/mycart";
+	}
+
+	>>>>>>>branch'master'
+
+	of https:// github.com/SongYeoungJin/MVCProject.git
 }

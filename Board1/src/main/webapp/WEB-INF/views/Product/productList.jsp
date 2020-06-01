@@ -39,7 +39,7 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="main.do">ChaBak</a>
       <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarResponsive" aria-label="Toggle navigation" type="button" data-target="#navbarResponsive" data-toggle="collapse">
@@ -47,16 +47,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="chaBakIntr.do">차박의묘미
-              <span class="sr-only">(current)</span>
-            </a>
+          <li class="nav-item">
+            <a class="nav-link" href="chaBakIntr.do">차박의묘미</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="reviewList.do">차박커뮤니티</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="productList.do">차박용품</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="productList.do">차박용품
+            	 <span class="sr-only">(current)</span>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="myPage.do">My차박</a>

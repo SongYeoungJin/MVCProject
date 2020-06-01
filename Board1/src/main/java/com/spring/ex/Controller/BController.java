@@ -167,5 +167,9 @@ public class BController {
 	public String buypoint() {
 		return "Point/buypoint";
 	}
+	@RequestMapping("mycart")
+	public String mycart() {
+		return "cart/mycart";
+	}
 	
 }

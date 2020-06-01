@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio no-localstorage no-sessionstorage webworkers applicationcache svg inlinesvg no-smil svgclippaths"><head>
-
+<html lang="en">
 <head>
-<title>ChaBak물품리스트(캠핑)</title>
+<meta charset="EUC-KR">
+<title>ChaBak물품리스트(조명)</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -17,61 +17,6 @@
   <!-- Custom styles for this template -->
   <link href="css/shop-homepage.css" rel="stylesheet">
 
-	
-	<!-- ------------------------------------------------------------------------- -->
-	
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Shop — Free Website Template, Free HTML5 Template by gettemplates.co</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by gettemplates.co">
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive">
-	<meta name="author" content="gettemplates.co">
-
-  	<!-- Facebook and Twitter integration -->
-	<meta content="" property="og:title">
-	<meta content="" property="og:image">
-	<meta content="" property="og:url">
-	<meta content="" property="og:site_name">
-	<meta content="" property="og:description">
-	<meta name="twitter:title" content="">
-	<meta name="twitter:image" content="">
-	<meta name="twitter:url" content="">
-	<meta name="twitter:card" content="">
-
-	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
-	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
-	
-	<!-- Animate.css -->
-	<link href="css/animate.css" rel="stylesheet">
-	<!-- Icomoon Icon Fonts-->
-	<link href="css/icomoon.css" rel="stylesheet">
-	<!-- Bootstrap  -->
-	<link href="css/bootstrap.css" rel="stylesheet">
-
-	<!-- Flexslider  -->
-	<link href="css/flexslider.css" rel="stylesheet">
-
-	<!-- Owl Carousel  -->
-	<link href="css/owl.carousel.min.css" rel="stylesheet">
-	<link href="css/owl.theme.default.min.css" rel="stylesheet">
-
-	<!-- Theme style  -->
-	<link href="css/style.css" rel="stylesheet">
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-
-	
-	<!-- --------------------------------------------------------------------- -->
-	
-	
-	
-	
 	<!-- ///////////////////////////////------부트스트랩 링크 END------///////////////////////////////-->
 
 	<!-- CSS only -->
@@ -122,222 +67,164 @@
     </div>
   </nav>
 
-  <header class="fh5co-cover fh5co-cover-sm" id="fh5co-header" role="banner" style="background-image:">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box fadeIn animated-fast" data-animate-effect="fadeIn">
-							<h1>Product</h1>
-							<h2>Free html5 templates by <a href="x" target="_blank">Themewagon</a></h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-	<div class="overlay"></div>
-  	<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box fadeIn animated-fast" data-animate-effect="fadeIn">
-							<h1>Product</h1>
-							<h2>Free html5 templates by <a href="https://themewagon.com/theme_tag/free/" target="_blank">Themewagon</a></h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		</header>
-		
-		<div id="fh5co-product">
-		<div class="container">
-			<div class="row animate-box fadeInUp animated-fast">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<span>Cool Stuff</span>
-					<h2>Products.</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 text-center animate-box fadeInUp animated-fast">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-1.jpg);">
-							<div class="inner">
-								<p>
-									<a class="icon" href="single.html"><i class="icon-shopping-cart"></i></a>
-									<a class="icon" href="single.html"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html">Hauteville Concrete Rocking Chair</a></h3>
-							<span class="price">$350</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box fadeInUp animated-fast">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-2.jpg);">
-							<div class="inner">
-								<p>
-									<a class="icon" href="single.html"><i class="icon-shopping-cart"></i></a>
-									<a class="icon" href="single.html"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html">Pavilion Speaker</a></h3>
-							<span class="price">$600</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box fadeInUp animated-fast">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-3.jpg);">
-							<div class="inner">
-								<p>
-									<a class="icon" href="single.html"><i class="icon-shopping-cart"></i></a>
-									<a class="icon" href="single.html"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html">Ligomancer</a></h3>
-							<span class="price">$780</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 text-center animate-box fadeInUp animated-fast">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-4.jpg);">
-							<div class="inner">
-								<p>
-									<a class="icon" href="single.html"><i class="icon-shopping-cart"></i></a>
-									<a class="icon" href="single.html"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html">Alato Cabinet</a></h3>
-							<span class="price">$800</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box fadeInUp animated-fast">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-5.jpg);">
-							<div class="inner">
-								<p>
-									<a class="icon" href="single.html"><i class="icon-shopping-cart"></i></a>
-									<a class="icon" href="single.html"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html">Earing Wireless</a></h3>
-							<span class="price">$100</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box fadeInUp animated-fast">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-6.jpg);">
-							<div class="inner">
-								<p>
-									<a class="icon" href="single.html"><i class="icon-shopping-cart"></i></a>
-									<a class="icon" href="single.html"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html">Sculptural Coffee Table</a></h3>
-							<span class="price">$960</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 text-center animate-box fadeInUp animated-fast">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-7.jpg);">
-							<div class="inner">
-								<p>
-									<a class="icon" href="single.html"><i class="icon-shopping-cart"></i></a>
-									<a class="icon" href="single.html"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html">The WW Chair</a></h3>
-							<span class="price">$540</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box fadeInUp animated-fast">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-8.jpg);">
-							<div class="inner">
-								<p>
-									<a class="icon" href="single.html"><i class="icon-shopping-cart"></i></a>
-									<a class="icon" href="single.html"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html">Himitsu Money Box</a></h3>
-							<span class="price">$55</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box fadeInUp animated-fast">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-9.jpg);">
-							<div class="inner">
-								<p>
-									<a class="icon" href="single.html"><i class="icon-shopping-cart"></i></a>
-									<a class="icon" href="single.html"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html">Ariane Prin</a></h3>
-							<span class="price">$99</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="fh5co-started">
-		<div class="container">
-			<div class="row animate-box fadeInUp animated-fast">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Newsletter</h2>
-					<p>Just stay tune for our latest Product. Now you can subscribe</p>
-				</div>
-			</div>
-			<div class="row animate-box fadeInUp animated-fast">
-				<div class="col-md-8 col-md-offset-2">
-					<form class="form-inline">
-						<div class="col-md-6 col-sm-6">
-							<div class="form-group">
-								<label class="sr-only" for="email">Email</label>
-								<input class="form-control" id="email" type="email" placeholder="Email">
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<button class="btn btn-default btn-block" type="submit">Subscribe</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <h2 class="my-4"></h2></br>
+        <div class="list-group">
+          <a class="list-group-item" href="ProductList1.jsp">캠핑</a>
+          <a class="list-group-item" href="ProductList2.jsp">조명</a>
+          <a class="list-group-item" href="ProductList3.jsp">기타</a>
+        </div>
+
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+
+        <div class="carousel slide my-4 pointer-event" id="carouselExampleIndicators" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+            <li class="active" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item">
+              <img class="d-block img-fluid" alt="First slide" src="C:\ProjectPicture\ChaBakPlace1.jpg">
+            </div>
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" alt="Second slide" src="C:\ProjectPicture\ChaBakPlace2.jpg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" alt="Third slide" src="C:\ProjectPicture\ChaBakPlace3.jpg">
+            </div>
+          </div>
+          <a class="carousel-control-prev" role="button" href="#carouselExampleIndicators" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" role="button" href="#carouselExampleIndicators" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="product.do">
+              	<img class="card-img-top" alt="" src="C:\ProjectPicture\Else1.jpg" /></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="product.do">A1 매트리스</a>
+                </h4>
+                <h5>17900won</h5>
+                <p class="card-text">A1 매트리스</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">★ ★ ★ ★ ★ </small>
+              </div>
+            </div>
+          </div>
+        
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Else2.jpg" ></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="product.do">B1 매트리스</a>
+                </h4>
+                <h5>29900won</h5>
+                <p class="card-text">B1 매트리스</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">★ ★ ★ ★ ★ </small>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Else3.jpg"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="product.do">버그크리너</a>
+                </h4>
+                <h5>22900won</h5>
+                <p class="card-text">벌레퇴치를 원한다면!</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">★ ★ ★ ★ ★ </small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Light3.jpg" /></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="product.do">G1 조명</a>
+                </h4>
+                <h5>7900won</h5>
+                <p class="card-text">G1 조명</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">★ ★ ★ ★ ★ </small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Light4.jpg" /></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="product.do">G2 조명</a>
+                </h4>
+                <h5>13900won</h5>
+                <p class="card-text">G2 조명</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">★ ★ ★ ★ ★ </small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Light5.jpg" /></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="product.do">R3 조명</a>
+                </h4>
+                <h5>18900won</h5>
+                <p class="card-text">R3 조명</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">★ ★ ★ ★ ★ </small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
@@ -345,22 +232,7 @@
     </div>
     <!-- /.container -->
   </footer>
-  
-  
-  
-  
-  <div class="gototop js-top">
-		<a class="js-gotop" href="#"><i class="icon-arrow-up"></i></a>
-	</div>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/jquery.flexslider-min.js"></script>
-	<script src="js/main.js"></script>
-	
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

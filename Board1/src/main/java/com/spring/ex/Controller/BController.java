@@ -1,6 +1,7 @@
 package com.spring.ex.Controller;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -162,4 +163,9 @@ public class BController {
 	public String review() {
 		return "Review/Review";
 	}
+	@RequestMapping("buypoint")
+	public String buypoint() {
+		return "Point/buypoint";
+	}
+	
 }

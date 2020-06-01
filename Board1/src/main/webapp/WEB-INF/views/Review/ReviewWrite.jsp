@@ -9,20 +9,39 @@
  <body>
 <table>
   <tr>
-   <td>
-    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <td>
+     <table width="100%" cellpadding="0" cellspacing="0" border="0">
+     <tr align="center">
+      <td width="5" height="30" /></td>
+      <td>글쓰기</td>
+      <td width="5" height="30" /></td>
+     </tr>
     </table>
-   <table>
+     <table>
      <tr>
       <td>&nbsp;</td>
-      <td align="center">제목 </td>
+      <td align="center">제목</td>
       <td><input name="title" size="50" maxlength="100"></td>
       <td>&nbsp;</td>
      </tr>
      <tr height="1" bgcolor="#dddddd"><td colspan="4"></td></tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td align="center">이름</td>
+      <td><input name="name" size="50" maxlength="50"></td>
+      <td>&nbsp;</td>
+     </tr>
+      <tr height="1" bgcolor="#dddddd"><td colspan="4"></td></tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td align="center">비밀번호</td>
+      <td><input name="password" size="50" maxlength="50"></td>
+      <td>&nbsp;</td>
+     </tr>
+     <tr height="1" bgcolor="#dddddd"><td colspan="4"></td></tr>
+     <tr>
       <td>&nbsp;</td>
       <td align="center">내용</td>
-      <td><img src="사진.jpg" alt="사진"/></td>
       <td><textarea name="memo" cols="50" rows="13"></textarea></td>
       <td>&nbsp;</td>
      </tr>

@@ -7,13 +7,20 @@
 <title>리뷰 리스트</title>
 </head>
 <body>
+<td>
+     <table width="100%" cellpadding="0" cellspacing="0" border="0">
+     <tr align="center">
+      <td width="5" height="30" /></td>
+      <td>글목록</td>
+     </tr>
+    </table>
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr height="5"><td width="5"></td></tr>
    <td width="73">번호</td>
    <td width="379">제목</td>
    <td width="73">작성자</td>
    <td width="164">작성일</td>
-   <td width="58">조회수 </td>
+   <td width="58">조회수</td>
   </tr>
 <tr height="25" align="center">
 </tr>

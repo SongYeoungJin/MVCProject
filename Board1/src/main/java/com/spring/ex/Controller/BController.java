@@ -163,7 +163,7 @@ public class BController {
 	public String review() {
 		return "Review/Review";
 	}
-<<<<<<< HEAD
+
 	
 
 	@RequestMapping("test")
@@ -171,7 +171,7 @@ public class BController {
 		return "main/test";
 	}
 	
-=======
+
 	@RequestMapping("buypoint")
 	public String buypoint() {
 		return "Point/buypoint";
@@ -180,6 +180,6 @@ public class BController {
 	public String mycart() {
 		return "cart/mycart";
 	}
->>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
+
 	
 }

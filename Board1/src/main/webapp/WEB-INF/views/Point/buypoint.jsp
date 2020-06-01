@@ -80,7 +80,7 @@
       <!-- /.col-lg-3 -->
 <form name="buypoint" action="buypoint.jsp" method="GET">
 <div class="container">
-	<table border='1' class="table table-striped table-bordered table-hover">
+	<table align="center" border='0' class="table table-striped table-bordered table-hover">
 		<tr>
 			<td align="center" colspan="2">포인트</td>
 		</tr>

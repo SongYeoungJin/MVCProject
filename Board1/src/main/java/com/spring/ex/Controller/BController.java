@@ -1,6 +1,7 @@
 package com.spring.ex.Controller;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -162,6 +163,7 @@ public class BController {
 	public String review() {
 		return "Review/Review";
 	}
+<<<<<<< HEAD
 	
 
 	@RequestMapping("test")
@@ -169,5 +171,15 @@ public class BController {
 		return "main/test";
 	}
 	
+=======
+	@RequestMapping("buypoint")
+	public String buypoint() {
+		return "Point/buypoint";
+	}
+	@RequestMapping("mycart")
+	public String mycart() {
+		return "cart/mycart";
+	}
+>>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
 	
 }

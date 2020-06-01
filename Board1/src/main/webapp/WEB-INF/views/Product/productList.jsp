@@ -39,27 +39,27 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#">ChaBak</a>
+      <a class="navbar-brand js-scroll-trigger" href="main.do">ChaBak</a>
       <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarResponsive" aria-label="Toggle navigation" type="button" data-target="#navbarResponsive" data-toggle="collapse">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="chaBakIntr.do">차박의묘미</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reviewList.do">차박커뮤니티</a>
+          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="ChaBakIntr.jsp">차박의묘미
-              <span class="sr-only">(current)</span>
+            <a class="nav-link" href="productList.do">차박용품
+            	 <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="reviewList.jsp">차박커뮤니티</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="productList.jsp">차박용품</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="myPage.jsp">My차박</a>
+            <a class="nav-link" href="myPage.do">My차박</a>
           </li>
         </ul>
       </div>
@@ -73,9 +73,9 @@
 
         <h2 class="my-5"></h2></br>
         <div class="list-group">
-          <a class="list-group-item" href="ProductList1.jsp">캠핑</a>
-          <a class="list-group-item" href="ProductList2.jsp">조명</a>
-          <a class="list-group-item" href="ProductList3.jsp">기타</a>
+          <a class="list-group-item" href="productList1.do">캠핑</a>
+          <a class="list-group-item" href="productList2.do">조명</a>
+          <a class="list-group-item" href="productList3.do">기타</a>
         </div>
 
       </div>

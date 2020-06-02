@@ -203,6 +203,11 @@ public class BController {
 	public String mycart() {
 		return "cart/mycart";
 	}
+	
+	@RequestMapping("myReview")
+	public String myReview() {
+		return "placeReview/myReview";
+	}
 }
 /*
  * >>>>>>>branch'master'

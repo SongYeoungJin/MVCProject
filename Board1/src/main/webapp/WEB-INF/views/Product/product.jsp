@@ -63,6 +63,9 @@
           <li class="nav-item">
             <a class="nav-link" href="myPage.do">My차박</a>
           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="login.jsp">Login</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -111,7 +114,7 @@
             <p>yeah!!!!!!!!!!!!!!!!</p>
             <small class="text-muted">2020/05/29</small>
             <hr>
-            <a class="btn btn-success" href="reviewWrite.jsp">리뷰남기기</a>
+            <a class="btn btn-secondary" href="reviewWrite.jsp">리뷰남기기</a>
           </div>
         </div>
         <!-- /.card -->

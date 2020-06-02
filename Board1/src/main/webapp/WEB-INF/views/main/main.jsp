@@ -31,7 +31,6 @@
 </head>
 
 <body>
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -65,8 +64,6 @@
     </div>
   </nav>
   
-  
-  
   <!-- Header -->
   <header class="py-5 bg-image-full" 
   style="background-image : 
@@ -74,7 +71,6 @@
     <img class="img-fluid d-block  mx-auto" alt="" 
    width = "700" height = "500"
     src="https://images.unsplash.com/photo-1562774964-1c2c80db3115?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80">
- 
   </header>
 
   <!-- Content Section -->
@@ -88,20 +84,15 @@
 
 
 
-
-
-
   <!-- Image Section -->
   <<section class="py-5 bg-image-full" >
   <a href="ChaBakPlace.jsp">
  <img class="img-fluid d-block  mx-auto" alt="" 
    width = "700" height = "500"
     src="https://images.unsplash.com/photo-1565126703573-3537bb43cd46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80">
- 
  <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
     <!-- <div style="height: 200px;">
     </div> -->
-    
     </a>
   </section>
 
@@ -128,14 +119,13 @@
     <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
     
    <section class="py-5 bg-image-full">
-   <a href="ChaBakPlace.jsp">
-    <img class="img-fluid d-block  mx-auto" alt="" 
-   width = "700" height = "500" 
+   	<a href="ChaBakPlace.jsp">
+    <img class="img-fluid d-block  mx-auto" alt="" width = "700" height = "500" 
    src = "https://images.unsplash.com/photo-1508045214681-31012927cc98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80">
     <!-- <div style="height: 200px;">
     </div> -->
      </a>
-  </section>
+  	</section>
  
 
 <!-- 
@@ -178,8 +168,6 @@
     </div>
     </section>
      <br><br><br><br><br>
-
-
 
  
 

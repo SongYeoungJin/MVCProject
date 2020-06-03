@@ -171,17 +171,61 @@ public class HomeController {
 
    }
    
-   @RequestMapping(value = "/ReviewWrite1", method = RequestMethod.GET)
-   public String ReviewWrite1(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+   @RequestMapping(value = "/writeView", method = RequestMethod.GET)
+   public String writeView(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
       
       response.setContentType("text/html; charset=UTF-8");
       request.setCharacterEncoding("UTF-8");
       response.setCharacterEncoding("UTF-8");
         
-      return "Review/ReviewWrite1";
+      return "Board/writeView";
 
    }
    
+   @RequestMapping(value = "/replyView", method = RequestMethod.GET)
+   public String replyView(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+      
+      response.setContentType("text/html; charset=UTF-8");
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+        
+      return "Board/replyView";
+
+   }
+   
+   @RequestMapping(value = "/list", method = RequestMethod.GET)
+   public String list(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+      
+      response.setContentType("text/html; charset=UTF-8");
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+        
+      return "Board/list";
+
+   }
+   
+   @RequestMapping(value = "/MainBottom", method = RequestMethod.GET)
+   public String MainBottom(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+      
+      response.setContentType("text/html; charset=UTF-8");
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+        
+      return "main/MainBottom";
+
+   }
+   
+   
+   @RequestMapping(value = "/contentView", method = RequestMethod.GET)
+   public String contentView(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+      
+      response.setContentType("text/html; charset=UTF-8");
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+        
+      return "Board/contentView";
+
+   }
 }
 
 

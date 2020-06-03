@@ -56,6 +56,9 @@
           <li class="nav-item">
             <a class="nav-link" href="myPage.jsp">My차박</a>
           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="login.jsp">Login</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -68,6 +71,7 @@
   <!-- 
   <div class="py-5 bg-image" style='background-color:#0000ff'>
   -->
+  <!-- 
     <div class="row">
       <div class="col-lg-3">
 
@@ -77,6 +81,8 @@
         </div>
 	  </div>
     </div>
+    -->
+    
       <!-- /.col-lg-3 -->
 <form name="buypoint" action="buypoint.jsp" method="GET">
 <div class="container">
@@ -104,19 +110,9 @@
 </div>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<input type="submit" value="충전">&nbsp;
-	<input type="submit" value="이전">
-	<!-- 
-	현재 내 포인트 : p <br>
-구매할 포인트 : <select name="point">
-    <option value="5000">5000</option>
-    <option value="10000">10000</option>
-    <option value="15000">15000</option>
-    <option value="20000">20000</option>
-    <option value="직접입력">직접입력</option>
-  </select><br>
-<input type="submit" value="충전">
--->
+	<input type="submit" value="충전" class="btn btn-secondary">&nbsp;
+	<input type="submit" value="이전" class="btn btn-secondary">
+
 </form>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>

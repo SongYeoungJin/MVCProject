@@ -61,6 +61,9 @@
           <li class="nav-item">
             <a class="nav-link" href="myPage.do">My차박</a>
           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="login.jsp">Login</a>
+          </li>
         </ul>
       </div>
     </div>

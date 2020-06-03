@@ -207,6 +207,26 @@ public class BController {
 	public String myReview() {
 		return "placeReview/myReview";
 	}
+	
+	@RequestMapping("productList")
+	public String productList() {
+		return "Product/productList";
+	}
+	
+	@RequestMapping("productList1")
+	public String productList1() {
+		return "Product/productList1";
+	}
+	
+	@RequestMapping("productList2")
+	public String productList2() {
+		return "Product/productList2";
+	}
+	
+	@RequestMapping("productList3")
+	public String productList3() {
+		return "Product/productList3";
+	}
 }
 /*
  * >>>>>>>branch'master'

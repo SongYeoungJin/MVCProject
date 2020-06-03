@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="EUC-KR">
-<title>ChaBak물품리스트(기타)</title>
+<title>ChaBak물품리스트(조명)</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -62,6 +62,9 @@
           <li class="nav-item">
             <a class="nav-link" href="myPage.jsp">My차박</a>
           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="login.jsp">Login</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -118,13 +121,14 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" alt="" src="C:\ProjectPicture\Light5.jpg" /></a>
+              <a href="product.do">
+              	<img class="card-img-top" alt="" src="C:\ProjectPicture\Else1.jpg" /></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">R4 조명</a>
+                  <a href="product.do">A1 매트리스</a>
                 </h4>
-                <h5>13900won</h5>
-                <p class="card-text">R4 조명</p>
+                <h5>17900won</h5>
+                <p class="card-text">A1 매트리스</p>
               </div>
               <div class="card-footer">
                 <small class="text-muted">★ ★ ★ ★ ★ </small>
@@ -135,13 +139,13 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" alt="" src="C:\ProjectPicture\Light1.jpg" ></a>
+              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Else2.jpg" ></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">D3 조명</a>
+                  <a href="product.do">B1 매트리스</a>
                 </h4>
-                <h5>9900won</h5>
-                <p class="card-text">D3 조명</p>
+                <h5>29900won</h5>
+                <p class="card-text">B1 매트리스</p>
               </div>
               <div class="card-footer">
                 <small class="text-muted">★ ★ ★ ★ ★ </small>
@@ -152,13 +156,13 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" alt="" src="C:\ProjectPicture\Light2.jpg"></a>
+              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Else3.jpg"></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">F4 조명</a>
+                  <a href="product.do">버그크리너</a>
                 </h4>
-                <h5>12900won</h5>
-                <p class="card-text">F4 조명</p>
+                <h5>22900won</h5>
+                <p class="card-text">벌레퇴치를 원한다면!</p>
               </div>
               <div class="card-footer">
                 <small class="text-muted">★ ★ ★ ★ ★ </small>
@@ -166,6 +170,51 @@
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Light3.jpg" /></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="product.do">G1 조명</a>
+                </h4>
+                <h5>7900won</h5>
+                <p class="card-text">G1 조명</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">★ ★ ★ ★ ★ </small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Light4.jpg" /></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="product.do">G2 조명</a>
+                </h4>
+                <h5>13900won</h5>
+                <p class="card-text">G2 조명</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">★ ★ ★ ★ ★ </small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Light5.jpg" /></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="product.do">R3 조명</a>
+                </h4>
+                <h5>18900won</h5>
+                <p class="card-text">R3 조명</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">★ ★ ★ ★ ★ </small>
+              </div>
+            </div>
+          </div>
 
         </div>
         <!-- /.row -->
@@ -191,4 +240,4 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>>
+</html>

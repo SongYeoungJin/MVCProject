@@ -59,15 +59,18 @@ public class HomeController {
         
       return "Join";
    }
-   @RequestMapping(value = "/LoginForm.do", method = RequestMethod.GET)
-   public String loginForm(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
-      
-      response.setContentType("text/html; charset=UTF-8");
-      request.setCharacterEncoding("UTF-8");
-      response.setCharacterEncoding("UTF-8");
-        
-      return "LoginForm";
-   }
+
+	
+	  @RequestMapping(value = "/LoginForm.do", method = RequestMethod.GET) public
+	  String loginForm(HttpServletRequest request, HttpServletResponse response,
+	  Model model) throws Exception {
+	  
+	  response.setContentType("text/html; charset=UTF-8");
+	  request.setCharacterEncoding("UTF-8");
+	  response.setCharacterEncoding("UTF-8");
+	  
+	  return "LoginForm"; }
+	 
    @RequestMapping(value = "/main.do", method = RequestMethod.GET)
    public String main(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
       
@@ -86,32 +89,32 @@ public class HomeController {
         
       return "Product/productList";
    }
-   @RequestMapping(value = "/ProductList1.do", method = RequestMethod.GET)
+   @RequestMapping(value = "/productList1.do", method = RequestMethod.GET)
    public String productList1(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
       
       response.setContentType("text/html; charset=UTF-8");
       request.setCharacterEncoding("UTF-8");
       response.setCharacterEncoding("UTF-8");
         
-      return "Product/ProductList1";
+      return "Product/productList1";
    }
-   @RequestMapping(value = "/ProductList2.do", method = RequestMethod.GET)
+   @RequestMapping(value = "/productList2.do", method = RequestMethod.GET)
    public String productList2(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
       
       response.setContentType("text/html; charset=UTF-8");
       request.setCharacterEncoding("UTF-8");
       response.setCharacterEncoding("UTF-8");
         
-      return "Product/ProductList2";
+      return "Product/productList2";
    }
-   @RequestMapping(value = "/ProductList3.do", method = RequestMethod.GET)
+   @RequestMapping(value = "/productList3.do", method = RequestMethod.GET)
    public String productList3(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
       
       response.setContentType("text/html; charset=UTF-8");
       request.setCharacterEncoding("UTF-8");
       response.setCharacterEncoding("UTF-8");
         
-      return "Product/ProductList3";
+      return "Product/productList3";
    }
    @RequestMapping(value = "/product.do", method = RequestMethod.GET)
    public String product(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
@@ -124,14 +127,14 @@ public class HomeController {
    
    }
 
-   @RequestMapping(value = "/ProductList4.do", method = RequestMethod.GET)
+   @RequestMapping(value = "/productList4.do", method = RequestMethod.GET)
    public String productList4(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
       
       response.setContentType("text/html; charset=UTF-8");
       request.setCharacterEncoding("UTF-8");
       response.setCharacterEncoding("UTF-8");
         
-      return "Product/ProductList4";
+      return "Product/productList4";
    }
 
 
@@ -165,6 +168,62 @@ public class HomeController {
       response.setCharacterEncoding("UTF-8");
         
       return "Review/ReviewWrite";
+
+   }
+   
+   @RequestMapping(value = "/writeView", method = RequestMethod.GET)
+   public String writeView(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+      
+      response.setContentType("text/html; charset=UTF-8");
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+        
+      return "Board/writeView";
+
+   }
+   
+   @RequestMapping(value = "/replyView", method = RequestMethod.GET)
+   public String replyView(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+      
+      response.setContentType("text/html; charset=UTF-8");
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+        
+      return "Board/replyView";
+
+   }
+   
+   @RequestMapping(value = "/list", method = RequestMethod.GET)
+   public String list(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+      
+      response.setContentType("text/html; charset=UTF-8");
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+        
+      return "Board/list";
+
+   }
+   
+   @RequestMapping(value = "/MainBottom", method = RequestMethod.GET)
+   public String MainBottom(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+      
+      response.setContentType("text/html; charset=UTF-8");
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+        
+      return "main/MainBottom";
+
+   }
+   
+   
+   @RequestMapping(value = "/contentView", method = RequestMethod.GET)
+   public String contentView(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+      
+      response.setContentType("text/html; charset=UTF-8");
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+        
+      return "Board/contentView";
 
    }
 }

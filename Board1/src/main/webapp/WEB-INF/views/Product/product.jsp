@@ -50,18 +50,21 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="ChaBakIntr.jsp">차박의묘미
+            <a class="nav-link" href="ChaBakIntr.do">차박의묘미
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="reviewList.jsp">차박커뮤니티</a>
+            <a class="nav-link" href="reviewList.do">차박커뮤니티</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="productList.jsp">차박용품</a>
+            <a class="nav-link" href="productList.do">차박용품</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="myPage.jsp">My차박</a>
+            <a class="nav-link" href="myPage.do">My차박</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="login.jsp">Login</a>
           </li>
         </ul>
       </div>
@@ -111,7 +114,7 @@
             <p>yeah!!!!!!!!!!!!!!!!</p>
             <small class="text-muted">2020/05/29</small>
             <hr>
-            <a class="btn btn-success" href="reviewWrite.jsp">리뷰남기기</a>
+            <a class="btn btn-secondary" href="reviewWrite.jsp">리뷰남기기</a>
           </div>
         </div>
         <!-- /.card -->

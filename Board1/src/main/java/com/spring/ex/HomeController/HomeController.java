@@ -136,7 +136,17 @@ public class HomeController {
         
       return "Product/productList4";
    }
-
+   
+   @RequestMapping(value = "/market_list.do", method = RequestMethod.GET)
+   public String market_list(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+      
+      response.setContentType("text/html; charset=UTF-8");
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+        
+      return "admin/market_list";
+   
+   }
 
    
    @RequestMapping(value = "/Review", method = RequestMethod.GET)

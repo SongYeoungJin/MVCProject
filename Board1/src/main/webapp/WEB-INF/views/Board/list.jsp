@@ -8,7 +8,7 @@
 <title>게시판 목록</title>
 </head>
 <body>
-	<table width="500" cellpadding="0" cellspacing="0" border="1">
+	<table class="table table-striped table-bordered table-hover" width="500" cellpadding="0" cellspacing="0" border="1">
 		<tr>
 			<td>번호</td>
 			<td>이름</td>

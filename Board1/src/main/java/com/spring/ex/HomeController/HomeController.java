@@ -59,15 +59,18 @@ public class HomeController {
         
       return "Join";
    }
-   @RequestMapping(value = "/LoginForm.do", method = RequestMethod.GET)
-   public String loginForm(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
-      
-      response.setContentType("text/html; charset=UTF-8");
-      request.setCharacterEncoding("UTF-8");
-      response.setCharacterEncoding("UTF-8");
-        
-      return "LoginForm";
-   }
+
+	
+	  @RequestMapping(value = "/LoginForm.do", method = RequestMethod.GET) public
+	  String loginForm(HttpServletRequest request, HttpServletResponse response,
+	  Model model) throws Exception {
+	  
+	  response.setContentType("text/html; charset=UTF-8");
+	  request.setCharacterEncoding("UTF-8");
+	  response.setCharacterEncoding("UTF-8");
+	  
+	  return "LoginForm"; }
+	 
    @RequestMapping(value = "/main.do", method = RequestMethod.GET)
    public String main(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
       

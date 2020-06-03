@@ -116,11 +116,10 @@ public class BController {
 		return "redirect:list";
 	}
 
-	@RequestMapping("LoginForm")
-	public String login() {
-		return "login/LoginForm";
-	}
-
+	/*
+	 * @RequestMapping("LoginForm") public String login() { return
+	 * "login/LoginForm"; }
+	 */
 	@RequestMapping("findIdForm")
 	public String findId() {
 		return "login/findIdForm";

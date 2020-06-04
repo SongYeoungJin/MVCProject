@@ -192,7 +192,10 @@ public class BController {
 	public String test() {
 		return "main/test";
 	}
-
+	@RequestMapping("place")
+	public String place() {
+		return "chabakplace/place";
+	}
 	@RequestMapping("buypoint")
 	public String buypoint() {
 		return "Point/buypoint";

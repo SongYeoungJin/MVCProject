@@ -227,6 +227,16 @@ public class BController {
 	public String productList3() {
 		return "Product/productList3";
 	}
+	
+	@RequestMapping("maintest")
+	public String maintest() {
+		return "main/maintest";
+	}
+	
+	@RequestMapping("place")
+	public String place() {
+		return "chabakplace/place";
+	}
 }
 /*
  * >>>>>>>branch'master'

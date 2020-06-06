@@ -16,58 +16,17 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>차박장소</title>
-  <!-- CSS only -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet"
-  href="<c:url value='resources/startbootstrap/vendor/bootstrap/css/bootstrap.min.css'/>">
-
+<%@ include file="../../include/header.jsp" %>
   <!-- Custom styles for this template -->
   <link rel="stylesheet"
   href="<c:url value='resources/startbootstrap/css/full-width-pics.css'/>">
-
+  
+  
+  <title>차박장소</title>
 </head>
 
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-    <img src = "">
-      <a class="navbar-brand" href="main.do">CHABAK</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">차박의 묘미 
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Review.jsp">차박커뮤니티</a>
-          </li>
-      <li class="nav-item">
-            <a class="nav-link" href="#">차박용품</a>
-      
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">My차박</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="login.jsp">Login</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+ <%@ include file="../../include/navigator.jsp" %>
 
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=01f7615ee8d025a981b28bb6241ff9f0"></script>
 
@@ -167,17 +126,11 @@
 		      infowindow.open(map, marker);  
 		});
 		</script>
-<!-- 
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-    </div>
-    /.container
-  </footer> --!>
+		
+		
+	<!-- footer -->
+  		
   
-	  <!-- Bootstrap core JavaScript -->
-  <script src="<c:url value='resources/startbootstrap/vendor/jquery/jquery.min.js'/>"></script>
-  <script src="<c:url value='resources/startbootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js'/>"></script>
-</body>
+	 </body>
 
 </html>

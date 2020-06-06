@@ -116,11 +116,10 @@ public class BController {
 		return "redirect:list";
 	}
 
-	@RequestMapping("LoginForm")
-	public String login() {
-		return "login/LoginForm";
-	}
-
+	/*
+	 * @RequestMapping("LoginForm") public String login() { return
+	 * "login/LoginForm"; }
+	 */
 	@RequestMapping("findIdForm")
 	public String findId() {
 		return "login/findIdForm";
@@ -193,7 +192,10 @@ public class BController {
 	public String test() {
 		return "main/test";
 	}
-
+	@RequestMapping("place")
+	public String place() {
+		return "chabakplace/place";
+	}
 	@RequestMapping("buypoint")
 	public String buypoint() {
 		return "Point/buypoint";
@@ -207,6 +209,26 @@ public class BController {
 	@RequestMapping("myReview")
 	public String myReview() {
 		return "placeReview/myReview";
+	}
+	
+	@RequestMapping("productList")
+	public String productList() {
+		return "Product/productList";
+	}
+	
+	@RequestMapping("productList1")
+	public String productList1() {
+		return "Product/productList1";
+	}
+	
+	@RequestMapping("productList2")
+	public String productList2() {
+		return "Product/productList2";
+	}
+	
+	@RequestMapping("productList3")
+	public String productList3() {
+		return "Product/productList3";
 	}
 }
 /*

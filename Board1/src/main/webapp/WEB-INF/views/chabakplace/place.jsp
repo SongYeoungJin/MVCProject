@@ -85,7 +85,7 @@
 		var positions = [
 			   {
 			        content : '<div class="customoverlay_main">' +
-			        '  <a  href="Review/Review.jsp">' +
+			        '  <a  href="Review">' +
 			        '    <span style="color:red">제부도</span>' +
 			        '  </a>' +
 			        '</div>',   
@@ -94,7 +94,7 @@
 			    },
 			    {
 			    	   content : '<div class="customoverlay_main">' +
-				        '  <a  href="Review/Review.jsp">' +
+				        '  <a  href="Review">' +
 				        '    <span  style="color:black">송정해수욕장</span>' +
 				        '  </a>' +
 				        '</div>',   
@@ -103,7 +103,7 @@
 			    },
 			    {
 			    	   content : '<div class="customoverlay_main">' +
-				        '  <a  href="Review/Review.jsp">' + 
+				        '  <a  href="Review">' + 
 				        '    <span  style="color:pink">백사장해수욕장</span>' +
 				        '  </a>' +
 				        '</div>',   
@@ -112,7 +112,7 @@
 			    },
 			    {
 			    	   content : '<div class="customoverlay_main">' +
-				        '  <a  href="Review/Review">' +
+				        '  <a  href="Review">' +
 				        '    <span style="color:yellow">모사금해변</span>' +
 				        '  </a>' +
 				        '</div>',   
@@ -121,7 +121,7 @@
 			    },
 			    {
 			    	   content : '<div class="customoverlay_main">' +
-				        '  <a  href="Review/Review">' +
+				        '  <a  href="Review">' +
 				        '    <span  style="color:green">강원도 양양</span>' +
 				        '  </a>' +
 				        '</div>',   
@@ -130,7 +130,7 @@
 			    },
 			    {
 			    	   content : '<div class="customoverlay_main">' +
-				        '  <a  href="Review/Review.jsp">' +
+				        '  <a  href="Review">' +
 				        '    <span style="color:blue">울기해변</span>' +
 				        '  </a>' +
 				        '</div>',   

@@ -1,11 +1,10 @@
-package com.spring.ex.AO;
+package com.spring.ex.Service;
 
 import java.util.List;
 
 import com.spring.ex.VO.PBDto;
-import com.spring.ex.dto.BDto;
 
-public interface PBDao {
+public interface PMemberService {
 	public List<PBDto> mList();
 	public void write(PBDto dto);
 	public void modify(PBDto dto);

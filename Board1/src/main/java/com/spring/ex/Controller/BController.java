@@ -154,6 +154,11 @@ public class BController {
 	public String accountDetail() {
 		return "account/accountDetail";
 	}
+	
+	@RequestMapping("accountList")
+	public String accountList() {
+		return "account/accountList";
+	}
 
 	@RequestMapping("myAccount")
 	public String myAccount() {
@@ -196,6 +201,10 @@ public class BController {
 	@RequestMapping("test")
 	public String test() {
 		return "main/test";
+	}
+	@RequestMapping("registerPlace")
+	public String registerPlace() {
+		return "chabakplace/registerPlace";
 	}
 	@RequestMapping("place")
 	public String place() {

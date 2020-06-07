@@ -1,12 +1,28 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>林巩(搬力)郴开</title>
+<title>欤茧(瓴办牅)雮挫棴</title>
+<%@ include file="../../include/header.jsp" %>
+
 </head>
 <body>
+<%@ include file="../../include/navigator.jsp" %>
 
+<table border='1' class="table table-striped table-bordered table-hover">
+	<tr>
+		<td>欤茧雮挫棴</td>
+		<td>欤茧氩堩樃</td>
+		<td>欤茧鞚检嫓</td>
+		<td>靷牅</td>
+	</tr>
+	<tr>
+		<td><a href="product.do" name="product">A-韰愴姼</a>
+		<td><a href="product.do" name="productNum">1</a></td>
+		<td><a href="product.do" name="productDate">2020-06-09</td>
+		<td><button class="btn btn-secondary" name="deleteProduct">靷牅</button></td>
+	</tr>
+</table>
 </body>
 </html>

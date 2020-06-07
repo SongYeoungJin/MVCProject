@@ -1,11 +1,7 @@
 <%@ page language="java" 
     pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -21,14 +17,25 @@
  
   <%@ include file="../../include/navigator.jsp" %>
   
+  <style>
+  img {
+  display: block;
+  max-width:900px;
+  max-height:500px;
+  width: auto;
+  height: auto;
+}
+
+  </style>
   <!-- Header -->
   <header class="py-5 bg-image-full" 
   style="background-image : 
   url('https://images.unsplash.com/photo-1517495306984-f84210f9daa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')";>
-    <img class="img-fluid d-block  mx-auto" alt="" 
-   width = "700" height = "500"
-    src="https://images.unsplash.com/photo-1562774964-1c2c80db3115?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80">
+   <img class="img-fluid d-block  mx-auto" alt="" 
+   width = "900" height="400" src="startbootstrap/img/main.png"/>
+  
   </header>
+
 
   <!-- Content Section -->
   <section class="py-5">

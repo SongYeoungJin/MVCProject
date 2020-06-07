@@ -6,13 +6,15 @@ import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import com.spring.ex.VO.PBDto;
 
 @Repository
 public class PBDaoImp implements PBDao{
-	@Inject
+	@Autowired
+	@Qualifier("sqlSessionFactory")
 	SqlSession sqlSession;		// sql 실행시키는 객체
 	@Override
 	public List<PBDto> mList(){

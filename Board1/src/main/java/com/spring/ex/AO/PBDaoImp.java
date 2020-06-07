@@ -13,8 +13,12 @@ import com.spring.ex.VO.PBDto;
 
 @Repository
 public class PBDaoImp implements PBDao{
-	@Autowired
-	@Qualifier("sqlSessionFactory")
+	
+	
+	//@Autowired
+	//@Qualifier("sqlSessionFactory")
+	
+	//@Inject
 	SqlSession sqlSession;		// sql 실행시키는 객체
 	@Override
 	public List<PBDto> mList(){

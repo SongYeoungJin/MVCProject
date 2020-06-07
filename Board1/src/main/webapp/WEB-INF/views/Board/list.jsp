@@ -39,7 +39,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> --> <!--여기 엑박있길래 일단 주석씌웠어여 푸쉬할겸-->
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">

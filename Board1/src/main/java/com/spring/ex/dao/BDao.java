@@ -16,7 +16,7 @@ import com.spring.ex.dto.BDto;
 public class BDao {
 	ArrayList<BDto> dtos = new ArrayList<BDto>();
 	private String driver = "org.mariadb.jdbc.Driver";
-	private String url = "jdbc:mariadb://localhost:3307/lecture";
+	private String url = "jdbc:mariadb://localhost:3307/chapack";
 	private String uid = "root";
 	private String upw = "1234";
 	

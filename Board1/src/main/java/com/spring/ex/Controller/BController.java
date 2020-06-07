@@ -231,11 +231,17 @@ public class BController {
 		return "Product/productList3";
 	}
 	
-	@RequestMapping("maintest")
-	public String maintest() {
-		return "main/maintest";
+	@RequestMapping("adminTest")
+	public String adminTest() {
+		return "admin/adminTest";
 	}
 	
+	@RequestMapping("project_content_view")
+	public String project_content_view() {
+		return "admin/project_content_view";
+	}
+	
+
 
 
 

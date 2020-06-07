@@ -193,8 +193,8 @@
 						</div>
 					</div>
 				</form>
-			</section>
 			<hr />
 		</div>
+		
 	</body>
 </html>

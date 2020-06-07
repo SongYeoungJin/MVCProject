@@ -28,7 +28,15 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
 <link rel="stylesheet" href="./resources/assets/css/cs-skin-elastic.css">
 <link rel="stylesheet" href="./resources/assets/css/style.css">
-<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+
+<!-- 추가 -->
+
+	   <link rel="stylesheet" href="./resources/assets/css/lib/datatable/dataTables.bootstrap.min.css">
+	      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	   
+
+
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
 <link
 	href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css"
 	rel="stylesheet">
@@ -42,6 +50,9 @@
 <link
 	href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css"
 	rel="stylesheet" />
+	 -->
+	
+	
 
 <style>
 #weatherWidget .currentDesc {
@@ -157,30 +168,24 @@
 	
 	
 	
+
+	
 	
 	
 	
 	<!-- Right Panel -->
-	<div id="right-panel" class="right-panel">
-		<!-- Header-->
+<!-- 	<div id="right-panel" class="right-panel">
+		Header
 		<header id="header" class="header">
-
-
-
-
-<!--   width = "700" height = "500" -->
-
+ -->
    
+		
 			<!-- 차박 로고 -->
-			<div class="top-left">
-	
-				<a class="navbar-brand" href="adminMain.jsp">
+			<%-- <div class="top-left">
+				<a class="navbar-brand" href="#">
 				<img class="img-fluid d-block  mx-auto" alt="" 
                  style="width: 80px; height: 50px";
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
-		
-				<!-- <img src="startbootstrap/img/aa.png" alt="Logo"
-					style="width: 80px; height: 50px;"> --></a>
 			</div>
 
 
@@ -194,166 +199,139 @@
 					</c:if>
 				</div>
 			</div>
-		</header>
+		</header> --%>
 		<!-- /#header -->
 		
 		
 		
 		
 		
-		 <!-- 위에 매출,재고 등등 보는 칸4개  -->
-		  <!-- content -->
+		
+		
+		 
+		  <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+        
+            <div class="top-left">
+            
+                <div class="navbar-header">
+                <img class="img-fluid d-block  mx-auto" alt="" 
+                 style="width: 80px; height: 50px";
+                 src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
+                </div>
+            </div>
+      
+        </header><!-- /header -->
+        <!-- Header-->
+        
+        
+       
+
+      
+
         <div class="content">
-            <!-- Animated -->
             <div class="animated fadeIn">
-                <!-- Widgets  -->
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+
+                    <div class="col-md-12">
                         <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">회원조회</strong>
+                            </div>
                             <div class="card-body">
-                                <div class="stat-widget-five">
-                                    <div class="stat-icon dib flat-color-1">
-                                        <i class="pe-7s-cash"></i>
-                                    </div>
-                                    <div class="stat-content">
-                                        <div class="text-left dib">
-                                            <div class="stat-text">$<span class="count">23569</span></div>
-                                            <div class="stat-heading">총 매출</div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>이름</th>
+                                            <th>주소</th>
+                                            <th>아이디</th>
+                                            <th>주문 횟수</th>
+                                            <th>수정</th>
+                                             <th>삭제</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>정다윤</td>
+                                            <td>서울시 행복구 행복동</td>
+                                            <td>JeongDaYoon</td>
+                                            <td>10</td>
+                                            <td>
+                                            <button type="button" class="btn btn-secondary">수정</button>
+                                            </td>
+                                            <td>
+                                            <button type="button" class="btn btn-secondary">삭제</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>구나현</td>
+                                            <td>서울시 행복구 행복동</td>
+                                            <td>Nahyun123</td>
+                                            <td>7</td>
+                                             <td>
+                                            <button type="button" class="btn btn-secondary">수정</button>
+                                            </td>
+                                            <td>
+                                            <button type="button" class="btn btn-secondary">삭제</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>송영진</td>
+                                            <td>서울시 행복구 행복동</td>
+                                            <td>Song</td>
+                                            <td>3</td>
+                                             <td>
+                                            <button type="button" class="btn btn-secondary">수정</button>
+                                            </td>
+                                            <td>
+                                            <button type="button" class="btn btn-secondary">삭제</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>김영우</td>
+                                            <td>서울시 행복구 행복동</td>
+                                            <td>Kim123</td>
+                                            <td>39</td>
+                                             <td>
+                                            <button type="button" class="btn btn-secondary">수정</button>
+                                            </td>
+                                            <td>
+                                            <button type="button" class="btn btn-secondary">삭제</button>
+                                            </td>
+                                        </tr>
+                                   </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="stat-widget-five">
-                                    <div class="stat-icon dib flat-color-2">
-                                        <i class="pe-7s-cart"></i>
-                                    </div>
-                                    <div class="stat-content">
-                                        <div class="text-left dib">
-                                            <div class="stat-text"><span class="count">3435</span></div>
-                                            <div class="stat-heading">판매개수</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="stat-widget-five">
-                                    <div class="stat-icon dib flat-color-3">
-                                        <i class="pe-7s-browser"></i>
-                                    </div>
-                                    <div class="stat-content">
-                                        <div class="text-left dib">
-                                            <div class="stat-text"><span class="count">349</span></div>
-                                            <div class="stat-heading">.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="stat-widget-five">
-                                    <div class="stat-icon dib flat-color-4">
-                                        <i class="pe-7s-users"></i>
-                                    </div>
-                                    <div class="stat-content">
-                                        <div class="text-left dib">
-                                            <div class="stat-text"><span class="count">2986</span></div>
-                                            <div class="stat-heading">총 회원수</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <!-- /Widgets -->
-                <!-- /위에 매출,재고 등등 보는 칸4개  -->
-		  <!-- /content -->
-		
-		
-		
-		
-		
-		
-		
-		   <!--  Traffic  -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="box-title">매출현황 </h4>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-8">
-                                    <div class="card-body">
-                                        <!-- <canvas id="TrafficChart"></canvas>   -->
-                                        <div id="traffic-chart" class="traffic-chart"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="card-body">
-                                        <div class="progress-box progress-1">
-                                            <h4 class="por-title">방문자</h4>
-                                            <div class="por-txt">96,930 Users (40%)</div>
-                                            <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-1" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-box progress-2">
-                                            <h4 class="por-title">Bounce Rate</h4>
-                                            <div class="por-txt">3,220 Users (24%)</div>
-                                            <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-2" role="progressbar" style="width: 24%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-box progress-2">
-                                            <h4 class="por-title">Unique Visitors</h4>
-                                            <div class="por-txt">29,658 Users (60%)</div>
-                                            <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-3" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-box progress-2">
-                                            <h4 class="por-title">Targeted  Visitors</h4>
-                                            <div class="por-txt">99,658 Users (90%)</div>
-                                            <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-4" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div> <!-- /.card-body -->
-                                </div>
-                            </div> <!-- /.row -->
-                            <div class="card-body"></div>
-                        </div>
-                    </div><!-- /# column -->
-                </div>
-                <!--  /Traffic -->
-		
-		
-		
-		
-	
-		
-		
-		
-		
+            </div><!-- .animated -->
+        </div><!-- .content -->
 
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				
 		<div class="clearfix"></div>
 		<!-- Footer -->
 		<footer class="site-footer">
@@ -383,11 +361,11 @@
 	<script src="./resources/assets/js/main.js"></script>
 
 	<!--  Chart js -->
-	<script
+	<!-- <script
 		src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.bundle.min.js"></script>
-
+ -->
 	<!--Chartist Chart-->
-	<script
+<!-- 	<script
 		src="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.js"></script>
 	<script
 		src="https://cdn.jsdelivr.net/npm/chartist-plugin-legend@0.6.2/chartist-plugin-legend.min.js"></script>
@@ -407,10 +385,29 @@
 	<script
 		src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
 	<script src="./resources/assets/js/init/fullcalendar-init.js"></script>
-	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script> -->
+	
+	
+	
+	   <script src="./resources/assets/js/lib/data-table/datatables.min.js"></script>
+    <script src="./resources/assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
+    <script src="./resources/assets/js/lib/data-table/dataTables.buttons.min.js"></script>
+    <script src="./resources/assets/js/lib/data-table/buttons.bootstrap.min.js"></script>
+    <script src="./resources/assets/js/lib/data-table/jszip.min.js"></script>
+    <script src="./resources/assets/js/lib/data-table/vfs_fonts.js"></script>
+    <script src="./resources/assets/js/lib/data-table/buttons.html5.min.js"></script>
+    <script src="./resources/assets/js/lib/data-table/buttons.print.min.js"></script>
+    <script src="./resources/assets/js/lib/data-table/buttons.colVis.min.js"></script>
+    <script src="./resources/assets/js/init/datatables-init.js"></script>
+	
 
 
 
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $('#bootstrap-data-table-export').DataTable();
+      } );
+  </script>
 	
 </body>
 </html>

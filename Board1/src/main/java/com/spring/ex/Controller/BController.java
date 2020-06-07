@@ -149,6 +149,16 @@ public class BController {
 	public String account() {
 		return "account/account";
 	}
+	
+	@RequestMapping("accountDetail")
+	public String accountDetail() {
+		return "account/accountDetail";
+	}
+	
+	@RequestMapping("accountList")
+	public String accountList() {
+		return "account/accountList";
+	}
 
 	@RequestMapping("myAccount")
 	public String myAccount() {
@@ -191,6 +201,10 @@ public class BController {
 	@RequestMapping("test")
 	public String test() {
 		return "main/test";
+	}
+	@RequestMapping("registerPlace")
+	public String registerPlace() {
+		return "chabakplace/registerPlace";
 	}
 	@RequestMapping("place")
 	public String place() {
@@ -241,13 +255,19 @@ public class BController {
 		return "admin/admin_member_list";
 	}
 	
-	
-
-
-
-
-
-
+	/*
+	 * <<<<<<< HEAD
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * =======
+	 * 
+	 * @RequestMapping("myPage") public String myPage() { return "MyPage/myPage"; }
+	 * >>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
+	 * 
+	 */
 
 }
 /*

@@ -42,7 +42,7 @@
             					 좋은날, 좋은분위기로 대화를 이끌어가세요.</p>
             <span class="text-warning">★ ★ ★ ★ ★ </span> 5.0 
             &nbsp;&nbsp;&nbsp;<a class="btn btn-success" href="account.jsp">구매확정</a>
-            				  <a class="btn btn-success" href="myBasket.jsp">장바구니</a>
+            				  <a class="btn btn-success" href="myCart.jsp">장바구니</a>
           </div>
         </div>
         <!-- /.card -->

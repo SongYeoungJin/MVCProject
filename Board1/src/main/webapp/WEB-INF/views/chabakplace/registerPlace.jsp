@@ -4,9 +4,14 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<%@ include file="../../include/header.jsp" %>
+
+
+<title>차박장소등록</title>
 </head>
 <body>
+<%@ include file="../../include/navigator.jsp" %>
+
 
 </body>
 </html>

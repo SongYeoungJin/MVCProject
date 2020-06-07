@@ -1,5 +1,6 @@
 package com.spring.ex.HomeController;
 
+import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -214,6 +215,19 @@ public class HomeController {
       return "Board/contentView";
 
    }
+   
+   @RequestMapping(value = "/adminMain", method = RequestMethod.GET)
+   public String adminMain(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
+      
+      response.setContentType("text/html; charset=UTF-8");
+      request.setCharacterEncoding("UTF-8");
+      response.setCharacterEncoding("UTF-8");
+        
+      return "admin/adminMain";
+
+   }
+   
+   
 }
 
 

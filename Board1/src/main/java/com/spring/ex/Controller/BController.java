@@ -149,6 +149,11 @@ public class BController {
 	public String account() {
 		return "account/account";
 	}
+	
+	@RequestMapping("accountDetail")
+	public String accountDetail() {
+		return "account/accountDetail";
+	}
 
 	@RequestMapping("myAccount")
 	public String myAccount() {
@@ -241,7 +246,10 @@ public class BController {
 		return "admin/project_content_view";
 	}
 	
-
+	@RequestMapping("myPage")
+	public String myPage() {
+		return "MyPage/myPage";
+	}
 
 
 

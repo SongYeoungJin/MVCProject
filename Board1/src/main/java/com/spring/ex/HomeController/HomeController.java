@@ -1,5 +1,6 @@
 package com.spring.ex.HomeController;
 
+import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -215,6 +216,8 @@ public class HomeController {
       return "admin/adminMain";
 
    }
+   
+   
 }
 
 

@@ -1,18 +1,17 @@
 package com.spring.ex.VO;
 
 public class PBDto {
+	private int pb_num;
 	private int pbd_num;
-	private int pbd_m_num;
-	private String pbd_n_memo;
-	private String pbd_m_picture;
-	private String pbd_regdate;
-	public PBDto(int pbd_num, int pbd_m_num, String pbd_n_memo, String pbd_m_picture, String pbd_regdate) {
-		super();
-		this.pbd_num = pbd_num;
-		this.pbd_m_num = pbd_m_num;
-		this.pbd_n_memo = pbd_n_memo;
-		this.pbd_m_picture = pbd_m_picture;
-		this.pbd_regdate = pbd_regdate;
+	private String pb_title;
+	private String pb_memo;
+	private String pb_regdate;
+	
+	public int getPb_num() {
+		return pb_num;
+	}
+	public void setPb_num(int pb_num) {
+		this.pb_num = pb_num;
 	}
 	public int getPbd_num() {
 		return pbd_num;
@@ -20,28 +19,29 @@ public class PBDto {
 	public void setPbd_num(int pbd_num) {
 		this.pbd_num = pbd_num;
 	}
-	public int getPbd_m_num() {
-		return pbd_m_num;
+	public String getPb_title() {
+		return pb_title;
 	}
-	public void setPbd_m_num(int pbd_m_num) {
-		this.pbd_m_num = pbd_m_num;
+	public void setPb_title(String pb_title) {
+		this.pb_title = pb_title;
 	}
-	public String getPbd_n_memo() {
-		return pbd_n_memo;
+	public String getPb_memo() {
+		return pb_memo;
 	}
-	public void setPbd_n_memo(String pbd_n_memo) {
-		this.pbd_n_memo = pbd_n_memo;
+	public void setPb_memo(String pb_memo) {
+		this.pb_memo = pb_memo;
 	}
-	public String getPbd_m_picture() {
-		return pbd_m_picture;
+	public String getPb_regdate() {
+		return pb_regdate;
 	}
-	public void setPbd_m_picture(String pbd_m_picture) {
-		this.pbd_m_picture = pbd_m_picture;
+	public void setPb_regdate(String pb_regdate) {
+		this.pb_regdate = pb_regdate;
 	}
-	public String getPbd_regdate() {
-		return pbd_regdate;
+	public PBDto() {
+		
 	}
-	public void setPbd_regdate(String pbd_regdate) {
-		this.pbd_regdate = pbd_regdate;
+	@Override
+	public String toString() {
+		return "PBDto [pb_num=" + pb_num + ", pbd_num=" + pbd_num + ", pb_title=" + pb_title + ", pb_memo=" + pb_memo + ", pb_regdate=" + pb_regdate + "]";
 	}
 }

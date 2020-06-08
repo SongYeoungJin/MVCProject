@@ -32,7 +32,7 @@
   style="background-image : 
   url('https://images.unsplash.com/photo-1517495306984-f84210f9daa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')";>
    <img class="img-fluid d-block  mx-auto" alt="" 
-   width = "900" height="400" src="startbootstrap/img/main.png"/>
+   width = "900" height="400" src="resources/startbootstrap/img/papap.png"/>
   
   </header>
 

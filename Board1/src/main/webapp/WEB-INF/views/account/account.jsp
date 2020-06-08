@@ -33,7 +33,7 @@
 <hr>
 <span style="color:red">총합:(가격)입니다.</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 <input type="button" id="button2" value="결제하기"  onClick="location.href='accountDetail'"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-<input type="button" id="button3" value="뒤로가기"  onClick="history.go(-1)"/>
+<input type="button" id="button3" value="뒤로가기"  onClick="history.go(-1)" />
 <!-- Bootstrap core JavaScript -->
   	<script src="vendor/jquery/jquery.min.js"></script>
   	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

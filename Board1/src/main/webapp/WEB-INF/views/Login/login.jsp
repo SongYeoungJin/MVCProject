@@ -84,7 +84,7 @@
             <a class="btn btn-primary btn-block" href="main.do">Login</a>
           </form>
           <div class="text-center">
-            <a class="d-block small mt-3" href="findIdForm">ID/PW찾기</a>
+            <a class="d-block small mt-3" href="findIdForm">ID/PW찾기 </a>
             <a class="d-block small" href="Join">회원가입</a>
           </div>
         </div>

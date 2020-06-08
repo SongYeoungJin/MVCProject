@@ -55,7 +55,7 @@
 							<input type="email" class="form-control" id="inputEmail_2"	name="inputEmail_2" placeholder="ex) E-mail@gmail.com">
 						</div>
 					</div>
-					<div class="form-group">
+					<div class="form-group" >
 						<button id="searchBtn2" type="button" class="btn btn-primary btn-block">확인</button>
 						<input type="button" id="back" value="취소" onclick="location.href='login.do'"/>
 				

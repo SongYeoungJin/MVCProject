@@ -38,7 +38,7 @@
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
  
-<input type="button" id="change" value="신청" onclick="change()" />  &emsp;&emsp;&emsp;
+<input type="button" id="change" value="신청" onclick="change()"/>  &emsp;&emsp;&emsp;
 <input type="button" id="back" value="이전페이지" onClick="history.go(-1)"/>
 
 

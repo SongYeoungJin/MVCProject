@@ -209,6 +209,10 @@ public class BController {
 	public String place() {
 		return "chabakplace/place";
 	}
+	@RequestMapping("ChaBak") 
+	public String ChaBak() {
+		return "chabakplace/ChaBak";
+	}
 	@RequestMapping("buypoint")
 	public String buypoint() {
 		return "Point/buypoint";

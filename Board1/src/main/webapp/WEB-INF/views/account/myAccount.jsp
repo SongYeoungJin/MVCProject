@@ -21,7 +21,7 @@
 	</tr>
 </table>
 	<input type="button" id="cansle" value="주문최소" onClick="location.href='myAccountCancel'"/>&nbsp;
-	<input type="button" id="change" value="교환신청" onclick="location.href='myAccountCancel'"/>
+	<input type="button" id="change" value="교환신청" onclick= "location.href='myAccountCancel'"/>
 
 
 </body>

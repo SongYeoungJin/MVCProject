@@ -245,22 +245,29 @@ public class BController {
 		return "Product/productList3";
 	}
 	
-	@RequestMapping("adminTest")
-	public String adminTest() {
-		return "admin/adminTest";
+	@RequestMapping("adminMain")
+	public String adminMain() {
+		return "admin/adminMain";
 	}
 	
-	@RequestMapping("project_content_view")
-	public String project_content_view() {
-		return "admin/project_content_view";
+	@RequestMapping("admin_member_list")
+	public String admin_member_list() {
+		return "admin/admin_member_list";
 	}
 	
-	@RequestMapping("myPage")
-	public String myPage() {
-		return "MyPage/myPage";
-	}
-
-
+	/*
+	 * <<<<<<< HEAD
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * =======
+	 * 
+	 * @RequestMapping("myPage") public String myPage() { return "MyPage/myPage"; }
+	 * >>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
+	 * 
+	 */
 
 }
 /*

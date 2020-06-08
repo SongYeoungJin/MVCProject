@@ -30,29 +30,8 @@
 <link rel="stylesheet" href="./resources/assets/css/style.css">
 
 <!-- 추가 -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
-	   <link rel="stylesheet" href="./resources/assets/css/lib/datatable/dataTables.bootstrap.min.css">
-	      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-	   
-
-
-<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
-<link
-	href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css"
-	rel="stylesheet">
-<link
-	href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css"
-	rel="stylesheet">
-
-<link
-	href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css"
-	rel="stylesheet" />
-<link
-	href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css"
-	rel="stylesheet" />
-	 -->
-	
-	
 
 <style>
 #weatherWidget .currentDesc {
@@ -64,7 +43,7 @@
 }
 
 #flotPie1 {
-	height: 151px;
+	height: 150px;
 }
 
 #flotPie1 td {
@@ -136,7 +115,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="admin_member_list">회원조회</a></li>
+                            <li><i class="ti-face-smile"></i><a href="admin_member_list.jsp">회원조회</a></li>
                             <li><i class="ti-face-sad"></i><a href="tables-data.html">회원삭제</a></li>
                         </ul>
                     </li>
@@ -145,7 +124,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>장소관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-check"></i><a href="registerPlace">장소예약</a></li>
+                            <li><i class="ti-check"></i><a href="tables-basic.html">장소예약</a></li>
                         </ul>
                     </li>
                     
@@ -154,7 +133,7 @@
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
+                            <li><i class="ti-image"></i> <a href='../list.jsp'> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
 
@@ -167,13 +146,6 @@
 	<!-- /#left-panel -->
 	
 	
-	
-
-	
-		
-		
-		
-		
 		 
 		  <!-- Right Panel -->
 
@@ -181,7 +153,7 @@
 
         <!-- Header-->
         <header id="header" class="header">
-        <a href="adminMain">
+        
             <div class="top-left">
             
                 <div class="navbar-header">
@@ -190,7 +162,6 @@
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
                 </div>
             </div>
-<<<<<<< HEAD
       	<div class="header-menu">
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
@@ -199,124 +170,95 @@
 					</c:if>
 				</div>
 			</div>
-=======
-      </a>
->>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
         </header><!-- /header -->
-        <!-- Header-->
+   <!------------------------------- Header-------------------------------------------->
         
-        
-       	<div class="header-menu">
-				<div class="user-area dropdown float-right">
-					<c:if test="${sessionScope.login_result == null}">
-						<button type="button" class="btn btn-secondary"
-						onClick="location.href='login'">login</button>
-					</c:if>
-				</div>
-			</div>
-		</header>
-		<!-- /#header -->
-
-      
-
-        <div class="content">
-            <div class="animated fadeIn">
-                <div class="row">
-
-                    <div class="col-md-12">
+       
+       
+       
+       
+       
+           <div class="col-lg-6">
                         <div class="card">
-                            <div class="card-header">
-                                <strong class="card-title">회원조회</strong>
-                            </div>
-                            <div class="card-body">
-                                <table id="bootstrap-data-table" class="table table-striped table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>이름</th>
-                                            <th>주소</th>
-                                            <th>아이디</th>
-                                            <th>주문 횟수</th>
-                                            <th>수정</th>
-                                             <th>삭제</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>정다윤</td>
-                                            <td>서울시 행복구 행복동</td>
-                                            <td>JeongDaYoon</td>
-                                            <td>10</td>
-                                            <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
-                                            </td>
-                                            <td>
-                                            <button type="button" class="btn btn-secondary">삭제</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>구나현</td>
-                                            <td>서울시 행복구 행복동</td>
-                                            <td>Nahyun123</td>
-                                            <td>7</td>
-                                             <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
-                                            </td>
-                                            <td>
-                                            <button type="button" class="btn btn-secondary">삭제</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>송영진</td>
-                                            <td>서울시 행복구 행복동</td>
-                                            <td>Song</td>
-                                            <td>3</td>
-                                             <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
-                                            </td>
-                                            <td>
-                                            <button type="button" class="btn btn-secondary">삭제</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>김영우</td>
-                                            <td>서울시 행복구 행복동</td>
-                                            <td>Kim123</td>
-                                            <td>39</td>
-                                             <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
-                                            </td>
-                                            <td>
-                                            <button type="button" class="btn btn-secondary">삭제</button>
-                                            </td>
-                                        </tr>
-                                   </tbody>
-                                </table>
-                            </div>
+                            <div class="card-header"><strong>주문정보</strong><small> Form</small></div>
+                            <div class="card-body card-block">
+                                
+                                <div class="row">
+                                 <div class="col-6">
+                                <div class="form-group"><label for="company" class=" form-control-label">이름</label>
+                                <input type="text" id="name" placeholder="차박" class="form-control"></div>
+                                </div>
+                               
+                                <div class="col-6">
+                                <div class="form-group"><label for="vat" class=" form-control-label">아이디</label>
+                                <input type="text" id="id" placeholder="ChaBak" class="form-control"></div>
+                                </div>
+                                </div>
+                                
+                                 <div class="row">
+                                 <div class="col-12">
+                                <div class="form-group"><label for="company" class=" form-control-label">주소</label>
+                                <input type="text" id="address" placeholder="서울시 행복구 행복동 어쩌구 저쩌구" class="form-control"></div>
+                                </div>
+                                </div>
+                                
+                                 <div class="row">
+                                 <div class="col-6">
+                                <div class="form-group"><label for="company" class=" form-control-label">H.P</label>
+                                <input type="text" id="phone" placeholder="010-1234-1234" class="form-control"></div>
+                                </div>
+                               
+                                <div class="col-6">
+                                <div class="form-group"><label for="vat" class=" form-control-label">주문번호</label>
+                                <input type="text" id="number" placeholder="20200608" class="form-control"></div>
+                                </div>
+                                </div>
+                                
+                                <div class="row">
+                                 <div class="col-4">
+                                <div class="form-group"><label for="company" class=" form-control-label">상품</label>
+                                <input type="text" id="product" placeholder="알전구" class="form-control"></div>
+                                </div>
+                               
+                                <div class="col-4">
+                                <div class="form-group"><label for="vat" class=" form-control-label">수량</label>
+                                <input type="text" id="count" placeholder="3" class="form-control"></div>
+                                </div>
+                                
+                                <div class="col-4">
+                                <div class="form-group"><label for="vat" class=" form-control-label">가격</label>
+                                <input type="text" id="price" placeholder="17,000" class="form-control"></div>
+                                </div>
+                                </div>
+                                
+                                <div class="row">
+                                 <div class="col-4">
+                                <div class="form-group"><label for="company" class=" form-control-label">주문상태</label>
+                                <input type="text" id="payment" placeholder="결제완료" class="form-control"></div>
+                                </div>
+                                </div>
+                            
+                               <button type="button" class="btn btn-secondary">확인</button>
+                               
                         </div>
                     </div>
-
-
-                </div>
-            </div><!-- .animated -->
-        </div><!-- .content -->
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+       
+       </div>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+<!-- ---------------------------------Footer---------------------------- -->
 				
 		<div class="clearfix"></div>
 		<!-- Footer -->
@@ -335,6 +277,8 @@
 	<!-- /#right-panel -->
 
 
+
+
 	<!-- Scripts -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
@@ -347,28 +291,6 @@
 	<script src="./resources/assets/js/main.js"></script>
 
 
-	
-	
-	
-	   <script src="./resources/assets/js/lib/data-table/datatables.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/dataTables.buttons.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.bootstrap.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/jszip.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/vfs_fonts.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.html5.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.print.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.colVis.min.js"></script>
-    <script src="./resources/assets/js/init/datatables-init.js"></script>
-	
 
-
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-          $('#bootstrap-data-table-export').DataTable();
-      } );
-  </script>
-	
 </body>
 </html>

@@ -32,7 +32,11 @@ x	3. 관리자페이지 관련 View
 	3. chabakplace/register.jsp 구현f
 	
 	1(1명), 2(2명), 3(1명) 하면될거같은데~~ 
+<<<<<<< HEAD
+	SsS
+=======
 	s
+>>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
 	ps.
 		[너무졸리니까 자러갈게 3시쯤기상할예정^^]
 		

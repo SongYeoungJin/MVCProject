@@ -262,6 +262,27 @@ public class BController {
 		return "admin/admin_member_list";
 	}
 	
+	@RequestMapping("admin_sales")
+	public String admin_sales() {
+		return "admin/admin_sales";
+	}
+	
+	@RequestMapping("admin_merch_control")
+	public String admin_merch_control() {
+		return "admin/admin_merch_control";
+	}
+	
+	@RequestMapping("admin_order")
+	public String admin_order() {
+		return "admin/admin_order";
+	}
+	
+	@RequestMapping("admin_order_chk")
+	public String admin_order_chk() {
+		return "admin/admin_order_chk";
+	}
+	
+	
 	/*
 	 * <<<<<<< HEAD
 	 * 

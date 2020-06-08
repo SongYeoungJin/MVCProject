@@ -20,8 +20,8 @@
 		<td>2020-06-01</td><td>이미지</td><td>쿠션</td><td>1</td><td>100원</td><td>입금전</td><td>-</td>
 	</tr>
 </table>
-	<input type="button" id="cansle" value="주문최소" onclick="cansle"/>&nbsp;
-	<input type="button" id="change" value="교환신청" onclick="change"/>
+	<input type="button" id="cansle" value="주문최소" onClick="location.href='myAccountCancel'"/>&nbsp;
+	<input type="button" id="change" value="교환신청" onclick="location.href='myAccountCancel'"/>
 
 
 </body>

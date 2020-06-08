@@ -34,14 +34,18 @@
 	<hr>
 <h3>교환/취소 사유</h3>
 사유  &emsp;&emsp;<input type="text" name="reason"><br><br>
-환불계좌  <input type="text" name="Refund"><br><br>
+
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
  
-<input type="button" id="change" value="교환신청" onclick="change"/>  &emsp;&emsp;&emsp;
-<input type="button" id="change" value="이전페이지" onclick="back"/>
+<input type="button" id="change" value="신청" onclick="change()" />  &emsp;&emsp;&emsp;
+<input type="button" id="back" value="이전페이지" onClick="history.go(-1)"/>
 
 
-  
+  	<script>
+function change() {
+	alert("신청완료!");
+}
+</script>
 </body>
 </html>

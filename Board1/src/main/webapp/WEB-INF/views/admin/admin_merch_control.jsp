@@ -29,30 +29,8 @@
 <link rel="stylesheet" href="./resources/assets/css/cs-skin-elastic.css">
 <link rel="stylesheet" href="./resources/assets/css/style.css">
 
-<!-- 추가 -->
-
-	   <link rel="stylesheet" href="./resources/assets/css/lib/datatable/dataTables.bootstrap.min.css">
-	      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-	   
 
 
-<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
-<link
-	href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css"
-	rel="stylesheet">
-<link
-	href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css"
-	rel="stylesheet">
-
-<link
-	href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css"
-	rel="stylesheet" />
-<link
-	href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css"
-	rel="stylesheet" />
-	 -->
-	
-	
 
 <style>
 #weatherWidget .currentDesc {
@@ -167,13 +145,6 @@
 	<!-- /#left-panel -->
 	
 	
-	
-
-	
-		
-		
-		
-		
 		 
 		  <!-- Right Panel -->
 
@@ -199,111 +170,47 @@
 				</div>
 			</div>
         </header><!-- /header -->
-        <!-- Header-->
-        
+   <!------------------------------- Header-------------------------------------------->
         
        
 
-      
-
-        <div class="content">
-            <div class="animated fadeIn">
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <strong class="card-title">회원조회</strong>
-                            </div>
-                            <div class="card-body">
-                                <table id="bootstrap-data-table" class="table table-striped table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>이름</th>
-                                            <th>주소</th>
-                                            <th>아이디</th>
-                                            <th>주문 횟수</th>
-                                            <th>수정</th>
-                                             <th>삭제</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>정다윤</td>
-                                            <td>서울시 행복구 행복동</td>
-                                            <td>JeongDaYoon</td>
-                                            <td>10</td>
-                                            <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
-                                            </td>
-                                            <td>
-                                            <button type="button" class="btn btn-secondary">삭제</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>구나현</td>
-                                            <td>서울시 행복구 행복동</td>
-                                            <td>Nahyun123</td>
-                                            <td>7</td>
-                                             <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
-                                            </td>
-                                            <td>
-                                            <button type="button" class="btn btn-secondary">삭제</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>송영진</td>
-                                            <td>서울시 행복구 행복동</td>
-                                            <td>Song</td>
-                                            <td>3</td>
-                                             <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
-                                            </td>
-                                            <td>
-                                            <button type="button" class="btn btn-secondary">삭제</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>김영우</td>
-                                            <td>서울시 행복구 행복동</td>
-                                            <td>Kim123</td>
-                                            <td>39</td>
-                                             <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
-                                            </td>
-                                            <td>
-                                            <button type="button" class="btn btn-secondary">삭제</button>
-                                            </td>
-                                        </tr>
-                                   </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
 
 
-                </div>
-            </div><!-- .animated -->
-        </div><!-- .content -->
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+	
+	
+	
+	
+<!-- <body>
+<h3>차박용품</h3>
+<button>등록</button>
+<button>수정</button>
+<button>삭제</button>
+<hr>
+<table border="1">
+<tr><td><input type="checkbox"></td><td><img src="상품사진.jpg">상품사진</td><td>상품내역</td><td>가격<br>별점<br>리뷰후기N개</td>
+</table>
+
+ -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+<!-- ---------------------------------Footer---------------------------- -->
 				
 		<div class="clearfix"></div>
 		<!-- Footer -->
@@ -322,6 +229,8 @@
 	<!-- /#right-panel -->
 
 
+
+
 	<!-- Scripts -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
@@ -334,28 +243,11 @@
 	<script src="./resources/assets/js/main.js"></script>
 
 
-	
-	
-	
-	   <script src="./resources/assets/js/lib/data-table/datatables.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/dataTables.buttons.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.bootstrap.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/jszip.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/vfs_fonts.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.html5.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.print.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.colVis.min.js"></script>
-    <script src="./resources/assets/js/init/datatables-init.js"></script>
-	
 
 
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-          $('#bootstrap-data-table-export').DataTable();
-      } );
-  </script>
-	
+
+
+
 </body>
 </html>

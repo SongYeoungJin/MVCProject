@@ -69,7 +69,7 @@
          <br> <br> <b><font size="6" color="gray">회원가입</font></b> <br>
          <br> <br>
 
-         <form>
+         <form method="post" action="login">
             <table class="table table-hover">
                <tr>
                   <td id="title">아이디</td>
@@ -150,12 +150,13 @@
                </tr>
             </table>
             <br> <input type="submit" value="가입" class="btn btn-primary" />
-            <input type="button" value="취소" class="btn btn-primary">
+              <input type="button" value="취소" class="btn btn-primary"  onClick="location.href='login'">
          </form>
+        
       </div>
 
 
-
+ 
 
    </div>
 

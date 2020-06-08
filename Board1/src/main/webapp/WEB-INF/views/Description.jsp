@@ -17,7 +17,7 @@ x	3. 관리자페이지 관련 View
 		
 		
 	( 크게 디자인은 신경많이 쓰지말고 위에 1,2,3번만 하자 내일까지 참고하삼!! )
-	
+	da
 	
 2020-06-07 05:55
 	나없을 때 열심히 해준 부분에 다가 header, navigator 부분 파일 정리 전부 했음!
@@ -29,12 +29,20 @@ x	3. 관리자페이지 관련 View
 		: 기존 게시판 프로젝트에 추가 or 수정 or 삭제		
 	2. 관리자페이지 관련 View 
 		: View구현 + BootStrap
-	3. chabakplace/register.jsp 구현
+	3. chabakplace/register.jsp 구현f
 	
 	1(1명), 2(2명), 3(1명) 하면될거같은데~~ 
+<<<<<<< HEAD
 	SsS
+=======
+	s
+>>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
 	ps.
 		[너무졸리니까 자러갈게 3시쯤기상할예정^^]
+		
+2020-06-08 11:30
+	1. 관리자 페이지
+		: admin/adminTest.jsp ()
 </body>
 
 </html>

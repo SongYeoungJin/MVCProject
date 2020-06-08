@@ -40,9 +40,10 @@
   <!-- Content Section -->
   <section class="py-5">
     <div class="container">
-      <h1>Section Heading</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+      <h1>Welcome everyone to VanLife</h1>
+      <p class="lead">저희 홈페이지에 오신걸 환영합니다.</p>
+      <p>저희 홈페이지에서는 다양한 차박장소 와 차박용품을 소개하고 있습니다.</p>
+      <p>저희만의 특별한 캠핑용품도 판매하고 있으니 구경하고 가세요.</p>
     </div>
   </section>
 
@@ -50,7 +51,7 @@
 
   <!-- Image Section -->
   <<section class="py-5 bg-image-full" >
-  <a href="ChaBakPlace.jsp">
+  <a href="ReviewList">
  <img class="img-fluid d-block  mx-auto" alt="" 
    width = "700" height = "500"
     src="https://images.unsplash.com/photo-1565126703573-3537bb43cd46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80">
@@ -63,9 +64,10 @@
   <!-- Content Section-->
   <section class="py-5">
     <div class="container">
-      <h1>예</h1>
-      <p class="lead">잼따</p>
-      <p>차바가</p>
+      <h1>오늘 떠나요</h1>
+      <p class="lead">차박하러</p>
+      <p>코로나19 탓에 사람들과 접촉할 수 잇는 장소에 돌아다니기 힘든 요즘 차 뒷좌석을 나만의 스타일로 개조해서 차박캠핑을 떠나보는 건 어떨까요?
+      </p>
       <br>
       <br>
     </div>
@@ -83,7 +85,7 @@
     <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
     
    <section class="py-5 bg-image-full">
-   	<a href="ChaBakPlace.jsp">
+   	<a href="ReviewList">
     <img class="img-fluid d-block  mx-auto" alt="" width = "700" height = "500" 
    src = "https://images.unsplash.com/photo-1508045214681-31012927cc98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80">
     <!-- <div style="height: 200px;">
@@ -115,7 +117,7 @@
     
      <div class=" align-left">
                     <h2 class="mbr-title pt-2 mbr-fonts-style display-2">
-                        List 
+                     
                     </h2>
                      <a href="https://mobirise.com/">전체보기</a>
                     
@@ -123,9 +125,9 @@
         <div class="media-container-row">
             <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
                 <ul>
-                   <a href="https://mobirise.com/">  <li><strong>제목을 기이이이이이이잉ㄹ게 </strong></a></li>
-                    <li><strong>글2</strong> 저쩌구 <a href="https://mobirise.com/">전체보기</a></li>
-                    <li><strong>글3</strong> 그렇구 <a href="https://mobirise.com/">전체보기</a></li>
+                   <a href="list">  <li><strong>후기게시판 </strong></a></li>
+                    <li><strong>삼척에서</strong> 삼척에서의 하룻밤 <a href="list">전체보기</a></li>
+                    <li><strong>강릉에서</strong> 강릉에서의 하룻밤 <a href="list">전체보기</a></li>
                 </ul>
             </div>
         </div>
@@ -146,3 +148,4 @@
 </body>
 
 </html>
+

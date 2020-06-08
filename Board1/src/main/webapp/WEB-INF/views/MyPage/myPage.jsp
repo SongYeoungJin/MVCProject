@@ -7,9 +7,6 @@
 <%@ include file="../../include/header.jsp" %>
 
 
-
-
-
 </head>
 <body>
 <%@ include file="../../include/navigator.jsp" %>
@@ -59,7 +56,7 @@
             <span class="caption">
               <span class="caption-content">
                 <h2>Order</h2>
-                <p class="mb-0">주문내역</p>
+                <p class="mb-0">주문내역 </p>
               </span>
             </span>
             <img class="img-fluid" alt="" src="C:\ProjectPicture\portfolio4.jpg">

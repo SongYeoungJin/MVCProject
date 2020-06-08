@@ -4,8 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 <%@ include file="../../include/header.jsp" %>
-
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet"
+  href="<c:url value='resources/startbootstrap/css/full-width-pics.css'/>">
+  
 <title>장바구니 페이지</title>
   
 </head>
@@ -37,7 +44,7 @@
 <h3>총 구매액</h3>
 <hr>
 <p>현재 나의 포인트 : p</p>
-<button class="button"><a href="account.jsp">주문하기</a></button>
+<button class="button"><a href="account">주문하기</a></button>
 <input class="button" type="button" value="쇼핑 계속하기" onClick="history.go(-1)">
 <button class="button"><a href="main.do">메인 페이지로 가기</a></button><br>
 

@@ -135,7 +135,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="tables-basic.html">회원조회</a></li>
+                            <li><i class="ti-face-smile"></i><a href="admin_member_list">회원조회</a></li>
                             <li><i class="ti-face-sad"></i><a href="tables-data.html">회원삭제</a></li>
                         </ul>
                     </li>
@@ -144,7 +144,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>장소관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-check"></i><a href="tables-basic.html">장소예약</a></li>
+                            <li><i class="ti-check"></i><a href="registerPlace">장소예약</a></li>
                         </ul>
                     </li>
                     
@@ -153,7 +153,7 @@
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href='../list.jsp'> 커뮤니티 조회</a></li>
+                            <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
 
@@ -171,25 +171,30 @@
 	
 	
 	<!-- Right Panel -->
-	<div id="right-panel" class="right-panel">
-		<!-- Header-->
-		<header id="header" class="header">
+	
+    <div id="right-panel" class="right-panel">
 
-
-   
-			<!-- 차박 로고 -->
-			<div class="top-left">
-				<a class="navbar-brand" href="./"><img
-					src="startbootstrap/img/logo.png" alt="Logo"
-					style="width: 80px; height: 50px;"></a>
-			</div>
+        <!-- Header-->
+        <header id="header" class="header">
+        <a href="adminMain">
+            <div class="top-left">
+            
+                <div class="navbar-header">
+                <img class="img-fluid d-block  mx-auto" alt="" 
+                 style="width: 80px; height: 50px";
+                 src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
+                </div>
+            </div>
+      </a>
+        </header><!-- /header -->
+        <!-- Header-->
 
 			<!-- login 버튼 -->
 			<div class="header-menu">
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
 						<button type="button" class="btn btn-secondary"
-							onclick="location.href='${pageContext.request.contextPath}/login.jsp'">login</button>
+						onClick="location.href='login'">login</button>
 					</c:if>
 				</div>
 			</div>
@@ -214,7 +219,7 @@
 <script>
 var container = document.getElementById('map');
 var options = {
-		center: new kakao.maps.LatLng(36.333276, 127.402208),
+		center: new kakao.maps.LatLng(36.333276, 127.402207),
 	level: 13
 };
 var map = new kakao.maps.Map(container, options);

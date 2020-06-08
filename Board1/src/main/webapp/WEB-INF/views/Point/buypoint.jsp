@@ -5,10 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>buypoint</title>
+<title>포인트구매</title>
 <%@ include file="../../include/header.jsp" %>
 
-  
+
 </head>
 <body>
 	<%@ include file="../../include/navigator.jsp" %>
@@ -29,6 +29,7 @@
 	  </div>
     </div>
     -->
+    
     
       <!-- /.col-lg-3 -->
 <form name="buypoint" action="buypoint.jsp" method="GET">
@@ -55,12 +56,17 @@
 		</tr>
 	</table>
 </div>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<input type="submit" value="충전" class="btn btn-secondary">&nbsp;
-	<input type="submit" value="이전" class="btn btn-secondary">
-
 </form>
-
+&nbsp;&nbsp;&nbsp;
+	<input type="submit" value="충전" class="btn btn-secondary" onclick="point()" >
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="submit" value="이전" class="btn btn-secondary" onClick="history.go(-1)">
+	
+	
+	<script>
+function point() {
+	alert("충전완료!");
+}
+</script>
 </body>
 </html>

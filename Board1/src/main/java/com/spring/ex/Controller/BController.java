@@ -215,9 +215,9 @@ public class BController {
 		return "Point/buypoint";
 	}
 
-	@RequestMapping("mycart")
-	public String mycart() {
-		return "cart/mycart";
+	@RequestMapping("myCart")
+	public String myCart() {
+		return "cart/myCart";
 	}
 	
 	@RequestMapping("myReview")

@@ -7,9 +7,6 @@
 <%@ include file="../../include/header.jsp" %>
 
 
-
-
-
 </head>
 <body>
 <%@ include file="../../include/navigator.jsp" %>

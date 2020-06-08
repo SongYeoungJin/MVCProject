@@ -29,7 +29,7 @@ x	3. 관리자페이지 관련 View
 		: 기존 게시판 프로젝트에 추가 or 수정 or 삭제		
 	2. 관리자페이지 관련 View 
 		: View구현 + BootStrap
-	3. chabakplace/register.jsp 구현
+	3. chabakplace/register.jsp 구현f
 	
 	1(1명), 2(2명), 3(1명) 하면될거같은데~~ 
 	

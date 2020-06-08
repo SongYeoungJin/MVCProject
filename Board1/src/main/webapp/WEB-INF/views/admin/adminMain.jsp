@@ -78,7 +78,7 @@
 }
 
 #flotBarChart {
-	height: 150px;
+	height: 151px;
 }
 
 #cellPaiChart {
@@ -125,7 +125,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="admin_member_list.jsp">회원조회</a></li>
+                            <li><i class="ti-face-smile"></i><a href="admin_member_list">회원조회</a></li>
                             <li><i class="ti-face-sad"></i><a href="tables-data.html">회원삭제</a></li>
                         </ul>
                     </li>
@@ -134,7 +134,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>장소관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-check"></i><a href="tables-basic.html">장소예약</a></li>
+                            <li><i class="ti-check"></i><a href="registerPlace">장소예약</a></li>
                         </ul>
                     </li>
                     
@@ -161,28 +161,22 @@
 	
 	
 	<!-- Right Panel -->
-	<div id="right-panel" class="right-panel">
-		<!-- Header-->
-		<header id="header" class="header">
+    <div id="right-panel" class="right-panel">
 
-
-
-
-<!--   width = "700" height = "500" -->
-
-   
-			<!-- 차박 로고 -->
-			<div class="top-left">
-	
-				<a class="navbar-brand" href="adminMain.jsp">
-				<img class="img-fluid d-block  mx-auto" alt="" 
+        <!-- Header-->
+        <header id="header" class="header">
+        <a href="adminMain">
+            <div class="top-left">
+            
+                <div class="navbar-header">
+                <img class="img-fluid d-block  mx-auto" alt="" 
                  style="width: 80px; height: 50px";
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
-		
-				<!-- <img src="startbootstrap/img/aa.png" alt="Logo"
-					style="width: 80px; height: 50px;"> --></a>
-			</div>
-
+                </div>
+            </div>
+      </a>
+        </header><!-- /header -->
+        <!-- Header-->
 
 
 			<!-- login 버튼 -->
@@ -190,7 +184,7 @@
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
 						<button type="button" class="btn btn-secondary"
-							onclick="location.href='${pageContext.request.contextPath}/login.jsp'">login</button>
+							onClick="location.href='login'">login</button>
 					</c:if>
 				</div>
 			</div>
@@ -304,34 +298,34 @@
                                         <div id="traffic-chart" class="traffic-chart"></div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                      <div class="col-lg-4">
                                     <div class="card-body">
                                         <div class="progress-box progress-1">
-                                            <h4 class="por-title">방문자</h4>
-                                            <div class="por-txt">96,930 Users (40%)</div>
+                                            <h4 class="por-title">커플 에어매트</h4>
+                                            <div class="por-txt">10건(50%)</div>
                                             <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-1" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-flat-color-1" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                         <div class="progress-box progress-2">
-                                            <h4 class="por-title">Bounce Rate</h4>
-                                            <div class="por-txt">3,220 Users (24%)</div>
+                                            <h4 class="por-title">반짝반짝 알전구</h4>
+                                            <div class="por-txt">5건(25%)</div>
                                             <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-2" role="progressbar" style="width: 24%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-flat-color-2" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                         <div class="progress-box progress-2">
-                                            <h4 class="por-title">Unique Visitors</h4>
-                                            <div class="por-txt">29,658 Users (60%)</div>
+                                            <h4 class="por-title">떨어져도 몰라요 해먹</h4>
+                                            <div class="por-txt">3건(13%)</div>
                                             <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-3" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-flat-color-3" role="progressbar" style="width: 13%;" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                         <div class="progress-box progress-2">
-                                            <h4 class="por-title">Targeted  Visitors</h4>
-                                            <div class="por-txt">99,658 Users (90%)</div>
+                                            <h4 class="por-title">아기자기 캠핑 간이의자</h4>
+                                            <div class="por-txt">2건(12%)</div>
                                             <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-4" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-flat-color-4" role="progressbar" style="width: 12%;" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                     </div> <!-- /.card-body -->

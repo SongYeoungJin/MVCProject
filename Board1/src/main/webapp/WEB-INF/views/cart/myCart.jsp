@@ -37,7 +37,7 @@
 <h3>총 구매액</h3>
 <hr>
 <p>현재 나의 포인트 : p</p>
-<button class="button"><a href="account.jsp">주문하기</a></button>
+<button class="button"><a href="account">주문하기</a></button>
 <input class="button" type="button" value="쇼핑 계속하기" onClick="history.go(-1)">
 <button class="button"><a href="main.do">메인 페이지로 가기</a></button><br>
 

@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="EUC-KR">
-<title>ChaBak물품리스트(조명)</title>
+<title>ChaBak물품리스트(캠핑)</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -23,11 +23,11 @@
 
       <div class="col-lg-3">
 
-        <h2 class="my-4"></h2></br>
+        <h3 class="my-4"></h3></br>
         <div class="list-group">
-          <a class="list-group-item" href="ProductList1.jsp">캠핑</a>
-          <a class="list-group-item" href="ProductList2.jsp">조명</a>
-          <a class="list-group-item" href="ProductList3.jsp">기타</a>
+          <a class="list-group-item" href="productList1">캠핑</a>
+          <a class="list-group-item" href="productList2">조명</a>
+          <a class="list-group-item" href="productList3">기타</a>
         </div>
 
       </div>

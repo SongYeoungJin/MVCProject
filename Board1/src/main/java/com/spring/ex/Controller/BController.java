@@ -106,7 +106,7 @@ public class BController {
 
 	@RequestMapping("reply")
 	public String reply(HttpServletRequest request, Model model) {
-		System.out.println("====reply ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½======");
+		System.out.println("====reply ÆäÀÌÁö======");
 		System.out.println("reply()");
 		model.addAttribute("request", request);
 
@@ -116,18 +116,24 @@ public class BController {
 		return "redirect:list";
 	}
 
-	/*
-	 * @RequestMapping("LoginForm") public String login() { return
-	 * "login/LoginForm"; }
-	 */
+	
+	@RequestMapping("loginForm")
+	public String loginForm() {
+		return "Login/LoginForm";
+	}
+
 	@RequestMapping("findIdForm")
 	public String findId() {
-		return "login/findIdForm";
+		return "Login/findIdForm";
+	}
+	@RequestMapping("login")
+	public String login() {
+		return "Login/login";
 	}
 
 	@RequestMapping("Join")
 	public String Join() {
-		return "Join";
+		return "Login/Join";
 	}
 
 	@RequestMapping("myInfo")
@@ -170,10 +176,6 @@ public class BController {
 		return "account/myAccountCancel";
 	}
 
-	@RequestMapping("Review")
-	public String review() {
-		return "Review/Review";
-	}
 
 	/*
 	 * <<<<<<< HEAD =======
@@ -218,6 +220,10 @@ public class BController {
 	@RequestMapping("myCart")
 	public String myCart() {
 		return "cart/myCart";
+	}
+	@RequestMapping("myPage")
+	public String myPage() {
+		return "MyPage/myPage";
 	}
 	
 	@RequestMapping("myReview")

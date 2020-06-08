@@ -42,21 +42,21 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="ChaBakIntr.jsp">차박의묘미
+            <a class="nav-link" href="ChaBakIntr">차박의묘미
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="reviewList.jsp">차박커뮤니티</a>
+            <a class="nav-link" href="ReviewList">차박커뮤니티</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="productList.jsp">차박용품</a>
+            <a class="nav-link" href="productList">차박용품</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="myPage.jsp">My차박</a>
+            <a class="nav-link" href="myPage">My차박</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="login.jsp">Login</a>
+            <a class="nav-link" href="login">Login</a>
           </li>
         </ul>
       </div>
@@ -95,7 +95,7 @@ body {
 	<article>
 		<div class="container" role="main">
 			<h2>Review</h2>
-			<form name="form" id="form" role="form" method="post" action="${pageContext.request.contextPath}/contentView">
+			<form name="form" id="form" role="form" method="post" action="contentView">
 				<div class="mb-3">
 					<label for="title">제목</label>
 					<input type="text" class="form-control" name="title" id="title" placeholder="제목을 입력해 주세요">
@@ -122,10 +122,15 @@ body {
 			</form>
 
 			<div >
-				<button type="button" class="btn btn-secondary" id="btnSave">저장</button>
-				<button type="button" class="btn btn-secondary" id="btnList">목록</button>
-				<button type="button" class="btn btn-secondary" id="btnPrev">이전</button>
+				<button type="button" class="btn btn-secondary" id="btnSave"  onclick="save1()">저장</button>
+				<button type="button" class="btn btn-secondary" id="btnList"  onClick="location.href='ReviewList'">목록</button>
+				<button type="button" class="btn btn-secondary" id="btnPrev" onClick="history.go(-1)">이전</button>
 			</div>
+	<script>
+function save1() {
+	alert("저장완료!");
+}
+</script>
 		</div>
 	</article>
 </body>

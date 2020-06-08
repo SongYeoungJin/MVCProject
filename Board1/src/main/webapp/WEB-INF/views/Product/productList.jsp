@@ -20,11 +20,11 @@
     <div class="row">
       <div class="col-lg-3">
 
-        <h2 class="my-5"></h2></br>
+        <h3 class="my-5"></h3></br>
         <div class="list-group">
-          <a class="list-group-item" href="productList1.do">캠핑</a>
-          <a class="list-group-item" href="productList2.do">조명</a>
-          <a class="list-group-item" href="productList3.do">기타</a>
+          <a class="list-group-item" href="productList1">캠핑</a>
+          <a class="list-group-item" href="productList2">조명</a>
+          <a class="list-group-item" href="productList3">기타</a>
         </div>
 
       </div>

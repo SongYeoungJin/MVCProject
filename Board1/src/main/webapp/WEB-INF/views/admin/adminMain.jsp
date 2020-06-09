@@ -100,34 +100,29 @@
 					
 		
                     
+                 
                      <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>상품관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                           
-                            <li><i class="ti-shopping-cart"></i><a href="admin_product">상품조회</a></li>
-                        </ul>
-                    </li>
-                    
-                    
-             
-                    
-                    
-                    <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="admin_member_list">회원조회</a></li>
-                         
+                    
+                            <li><i class="ti-shopping-cart"></i><a href="admin_member_list">회원조회</a></li>
+                          
                         </ul>
                     </li>
-                    
-   
-                    
-                      
+
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
+                              <li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
+                          
+                        </ul>
+                    </li>
                     
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href='../list.jsp'> 커뮤니티 조회</a></li>
+                            <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
 

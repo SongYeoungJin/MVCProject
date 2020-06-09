@@ -244,7 +244,8 @@
 											<option value="기타">기타</option>
 											</select>
 										</td>
-			<td><input type="text" name="pro_code"/></td><td>이미지</td><td><input type="text"  name="pro_name"/></td><td><input type="text"  name="pro_price"/></td><td><input type="text"  ="pro_count"/></td><td><input type="button"  value="추가" onclick="add()" /></td>
+			<td><input type="text" name="pro_code"/></td><td>이미지</td><td><input type="text"  name="pro_name"/></td><td><input type="text"  name="pro_price"/></td><td><input type="text"  name="pro_count"/>
+					</td><td><input type="button"  value="추가" onclick="add()" /></td>
 									</tr>
                                    
                              
@@ -271,10 +272,12 @@
                                     </thead>
                                     <tbody>
                                     <tr align="center">
-										<td >1111111</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td>상품명</td><td>10,000P</td><td>90</td><td><input type="button"  value="수정" onclick="change()" /><input type="button"  value="삭제" onclick="delete1()" /></td>
+										<td >1111111</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td><input type="text"  name="pro_name"/></td><td><input type="text"  name="pro_name"/></td><td><input type="text"  name="pro_name"/></td>
+										<td><input type="button"  value="수정" onclick="change()" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="button"  value="삭제" onclick="delete1()" /></td>
 									</tr>
                                     <tr align="center">
-										<td>1111110</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td>상품명</td><td>10,000P</td><td>9</td><td><input type="button"  value="수정" onclick="change()" /><input type="button"  value="삭제" onclick="delete1()" /></td>
+										<td>1111110</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td><input type="text"  name="pro_name"/></td><td><input type="text"  name="pro_name"/></td><td><input type="text"  name="pro_name"/></td>
+										<td><input type="button"  value="수정" onclick="change()" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="button"  value="삭제" onclick="delete1()" /></td>
 									</tr>
                                      
                                

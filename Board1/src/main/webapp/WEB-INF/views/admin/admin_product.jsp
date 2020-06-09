@@ -165,7 +165,13 @@
        
 		<!-- /#header -->
 	
-		<label>상품종류</label> 
+	
+
+		<div class="content">
+            <div class="animated fadeIn">
+                <div class="row">
+                    <div class="col-md-12">
+                    	<label>상품종류</label> 
 			<select name="Big">
 				<option value="">종류</option>
 				<option value="캠핑">캠핑</option>
@@ -185,18 +191,54 @@
 		<input type="text" name="search">
 		<input type="button" name="aa" value="검색">
 		<tr>
-		<table border=1>
-		<tr align="center">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">상품조회</strong>
+                            </div>
+                            <div class="card-body">
+                                <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                                    <thead>
+                                  	<tr align="center">
 		<td>상품코드</td><td></td><td>상품명</td><td>판매가</td><td>재고</td><td>기능</td>
 		</tr>
-		<tr align="center">
+                                    </thead>
+                                    <tbody>
+                                      <tr align="center">
 		<td>1111111</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td>상품명</td><td>10,000P</td><td>90</td><td><input type="button" name="button1" value="수정"/><input type="button" name="button2" value="옵션"/></td>
 		</tr>
-		<tr align="center">
+                                        <tr align="center">
 		<td>1111110</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td>상품명</td><td>10,000P</td><td>9</td><td><input type="button" name="button3" value="수정"/><input type="button" name="button4" value="옵션"/></td>
 		</tr>
+                               
+                                   </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div><!-- .animated -->
+        </div><!-- .content -->
 		
-		</table>
+		<!-- ---------------------------------Footer---------------------------- -->
+				
+		<div class="clearfix"></div>
+		<!-- Footer -->
+		<footer class="site-footer">
+			<div class="footer-inner bg-white">
+				<div class="row">
+					<div class="col-sm-6">Copyright &copy;Design by</div>
+					<div class="col-sm-6 text-right">
+						차박</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- /.site-footer -->
+	</div>
+	<!-- /#right-panel -->
+
 		
 		<!-- Scripts -->
 	<script
@@ -237,5 +279,11 @@
 	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 		
 		
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $('#bootstrap-data-table-export').DataTable();
+      } );
+  </script>
+	
 </body>
 </html>

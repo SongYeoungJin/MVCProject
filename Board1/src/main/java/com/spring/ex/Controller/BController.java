@@ -128,7 +128,7 @@ public class BController {
 	
 	@RequestMapping("Join")
 	public String Join() {
-		return "Join";
+		return "Login/Join";
 	}
 	
 	@RequestMapping("myInfo")
@@ -157,5 +157,9 @@ public class BController {
 	@RequestMapping("myAccountCancel")
 	public String myAccountCancel() {
 		return "account/myAccountCancel";
+	}
+	@RequestMapping("Review")
+	public String Review() {
+		return "Review/Review";
 	}
 }

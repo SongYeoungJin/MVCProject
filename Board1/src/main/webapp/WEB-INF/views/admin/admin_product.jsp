@@ -8,7 +8,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>장소등록</title>
+<title>재고관리</title>
 <meta name="description" content="Ela Admin - HTML5 Admin Template">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -86,19 +86,10 @@
 	height: 160px;
 }
 </style>
-  <meta charset="UTF-8">
-  <div id="map" style=" position: absolute;
-  top: 28%;
-  left: 30%;
-  width: 700px;
-  height: 610px;
-  margin: -50px 0 0 -50px;"></div>
-  
-<title>차박장소등록</title>
-</head>
 
+</head>
 <body>
-	<!-- Left Panel -->
+<!-- Left Panel -->
 	<aside id="left-panel" class="left-panel">
 		<nav class="navbar navbar-expand-sm navbar-default">
 			<div id="main-menu" class="main-menu collapse navbar-collapse">
@@ -107,7 +98,6 @@
 					<li class="menu-title">Admin</li></a>
 					<!-- /.menu-title -->
 					
-				
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
                         <ul class="sub-menu children dropdown-menu">
@@ -132,6 +122,7 @@
                             <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
+
 
 				</ul>
 			</div>
@@ -160,7 +151,7 @@
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
                 </div>
             </div>
-                  <div class="header-menu">
+            <div class="header-menu">
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
 						<button type="button" class="btn btn-secondary"
@@ -171,78 +162,43 @@
             
       </a>
         </header><!-- /header -->
-        <!-- Header-->
-
+       
+		<!-- /#header -->
 	
+		<label>상품종류</label> 
+			<select name="Big">
+				<option value="">종류</option>
+				<option value="캠핑">캠핑</option>
+				<option value="조명">조명</option>
+				<option value="기타">기타</option>
+			</select>
+			<br>
+		<label>재고상태</label>
+			<input type="radio" name="chk_info" value="전체">전체
+			<input type="radio" name="chk_info" value="품절">품절
+			<input type="radio" name="chk_info" value="부족">부족
+			<input type="radio" name="chk_info" value="여유">여유
+			<input type="radio" name="chk_info" value="진열안함">진열안함
+			<br>
+			
+		<label>검색조건</label>
+		<input type="text" name="search">
+		<input type="button" name="aa" value="검색">
+		<tr>
+		<table border=1>
+		<tr align="center">
+		<td>상품코드</td><td></td><td>상품명</td><td>판매가</td><td>재고</td><td>기능</td>
+		</tr>
+		<tr align="center">
+		<td>1111111</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td>상품명</td><td>10,000P</td><td>90</td><td><input type="button" name="button1" value="수정"/><input type="button" name="button2" value="옵션"/></td>
+		</tr>
+		<tr align="center">
+		<td>1111110</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td>상품명</td><td>10,000P</td><td>9</td><td><input type="button" name="button3" value="수정"/><input type="button" name="button4" value="옵션"/></td>
+		</tr>
 		
+		</table>
 		
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=01f7615ee8d025a981b28bb6241ff9f0"></script>
-<div id="clickLatlng"></div>
-<form action="test.jsp" method="post">
-
-<label>이름 :</label>
-<input type = "text" name = name /><br>
-<label>위도 :</label>
-<input type = "text" name = lat />
-<label>경도 :</label> 
-<input type = "text" name = lng />
-<input type="submit" value="등록하기" />
-
-</form>
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=01f7615ee8d025a981b28bb6241ff9f0"></script>
-<script>
-var container = document.getElementById('map');
-var options = {
-		center: new kakao.maps.LatLng(36.333276, 127.402207),
-	level: 13
-};
-var map = new kakao.maps.Map(container, options);
-
-//지도를 클릭한 위치에 표출할 마커입니다
-var marker = new kakao.maps.Marker({ 
- // 지도 중심좌표에 마커를 생성합니다 
- position: map.getCenter() 
-}); 
-//지도에 마커를 표시합니다
-marker.setMap(map);
-
-//지도에 클릭 이벤트를 등록합니다
-//지도를 클릭하면 마지막 파라미터로 넘어온 함수를 호출합니다
-kakao.maps.event.addListener(map, 'click', function(mouseEvent) {        
- 
- // 클릭한 위도, 경도 정보를 가져옵니다 
- var latlng = mouseEvent.latLng; 
- 
- // 마커 위치를 클릭한 위치로 옮깁니다
- marker.setPosition(latlng);
- 
- var message = '클릭한 장소의 위도는 ' + latlng.getLat() + ' 이고, ';
- message += '경도는 ' + latlng.getLng() + ' 입니다';
- 
- var resultDiv = document.getElementById('clickLatlng'); 
- resultDiv.innerHTML = message;
-});
-
-</script>
-
-<!--  <div class="clearfix"></div>
-		Footer
-		<footer class="site-footer">
-			<div class="footer-inner bg-white">
-				<div class="row">
-					<div class="col-sm-6">Copyright &copy;Design by</div>
-					<div class="col-sm-6 text-right">
-						차박</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-		/.site-footer -->
-	</div>
-	<!-- /#right-panel -->
-
-
-	<!-- Scripts -->
+		<!-- Scripts -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
 	<script
@@ -279,7 +235,7 @@ kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
 		src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
 	<script src="./resources/assets/js/init/fullcalendar-init.js"></script>
 	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-
- 
+		
+		
 </body>
 </html>

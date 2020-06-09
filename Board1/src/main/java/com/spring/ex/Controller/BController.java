@@ -257,7 +257,10 @@ public class BController {
 	public String admin_order_chk() {
 		return "admin/admin_order_chk";
 	}
-	
+	@RequestMapping("admin_product")
+	public String admin_product() {
+		return "admin/admin_product";
+	}
 	
 
 }

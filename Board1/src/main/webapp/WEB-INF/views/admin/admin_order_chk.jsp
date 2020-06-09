@@ -80,8 +80,6 @@
 <body>
 
        
-       
-       
            <div class="col-lg-6">
                         <div class="card">
                             <div class="card-header"><strong>주문정보</strong><small> Form</small></div>
@@ -160,30 +158,7 @@
        
        
        
-       
-<!--        
----------------------------------Footer----------------------------
-				
-		<div class="clearfix"></div>
-		Footer
-		<footer class="site-footer">
-			<div class="footer-inner bg-white">
-				<div class="row">
-					<div class="col-sm-6">Copyright &copy;Design by</div>
-					<div class="col-sm-6 text-right">
-						차박</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-		/.site-footer
-	</div>
-	/#right-panel
 
-
-
- -->
-	<!-- Scripts -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
 	<script

@@ -78,7 +78,7 @@
 </head>
 
 <body>
-	<!-- Left Panel -->
+<%-- 	<!-- Left Panel -->
 	<aside id="left-panel" class="left-panel">
 		<nav class="navbar navbar-expand-sm navbar-default">
 			<div id="main-menu" class="main-menu collapse navbar-collapse">
@@ -173,7 +173,7 @@
         </header><!-- /header -->
    <!------------------------------- Header-------------------------------------------->
         
-       
+        --%>
        
        
        
@@ -257,11 +257,11 @@
        
        
        
-       
-<!-- ---------------------------------Footer---------------------------- -->
+<!--        
+---------------------------------Footer----------------------------
 				
 		<div class="clearfix"></div>
-		<!-- Footer -->
+		Footer
 		<footer class="site-footer">
 			<div class="footer-inner bg-white">
 				<div class="row">
@@ -272,13 +272,13 @@
 				</div>
 			</div>
 		</footer>
-		<!-- /.site-footer -->
+		/.site-footer
 	</div>
-	<!-- /#right-panel -->
+	/#right-panel
 
 
 
-
+ -->
 	<!-- Scripts -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>

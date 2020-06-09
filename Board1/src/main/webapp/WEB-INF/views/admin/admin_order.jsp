@@ -228,7 +228,10 @@
                                                 <span class="badge badge-complete">Complete</span>
                                             </td>
                                             <td>
-                                             <button type="button" class="btn btn-secondary">정보</button>
+                                            <button onclick="window.open('admin_order_chk','주문확인','width=400px,height=600px,location=no,status=no,scrollbars=no');"
+                                             type="button" class="btn btn-secondary">정보  </button>
+
+                                             <!-- <button onclick="location.href='admin_order_chk'", width=400, height=400, type="button" class="btn btn-secondary">정보</button> -->
                                             </td>
                                         </tr>
                                         
@@ -247,7 +250,8 @@
                                                 <span class="badge badge-complete">Complete</span>
                                             </td>
                                              <td>
-                                             <button type="button" class="btn btn-secondary">정보</button>
+                                            <button onclick="window.open('admin_order_chk','주문확인','width=400px,height=600px,location=no,status=no,scrollbars=no');"
+                                             type="button" class="btn btn-secondary">정보</button>
                                             </td>
                                         </tr>
                                         
@@ -266,7 +270,8 @@
                                                 <span class="badge badge-pending">Waiting</span>
                                             </td>
                                              <td>
-                                             <button type="button" class="btn btn-secondary">정보</button>
+                                            <button onclick="window.open('admin_order_chk','주문확인','width=400px,height=600px,location=no,status=no,scrollbars=no');"
+                                             type="button" class="btn btn-secondary">정보</button>
                                             </td>
                                         </tr>                                     
                                     </tbody>

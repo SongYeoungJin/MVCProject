@@ -181,6 +181,64 @@
         
         
         
+        
+        
+        
+        
+        
+               <!-- Content -->
+        <div class="content">
+            <div class="animated fadeIn">
+
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="mb-3">Real Chart</h4>
+        
+           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Dialogue', 'Send', 'Resoponse'],
+          ['Dialogue 1', 0.5, 0.5],
+          ['Dialogue 2', 0.7, 0.3],
+          ['Dialogue 3', 0.4, 0.8],
+          ['Dialogue 4', 0.2, 1]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Analysis of Dialogue System',
+            subtitle: '',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+
+    <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+      </div>
+                        </div>
+                    </div><!-- /# column -->
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+        
+        
             <!-- Content -->
         <div class="content">
             <div class="animated fadeIn">

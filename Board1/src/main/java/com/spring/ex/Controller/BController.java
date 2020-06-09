@@ -106,7 +106,7 @@ public class BController {
 
 	@RequestMapping("reply")
 	public String reply(HttpServletRequest request, Model model) {
-		System.out.println("====reply ÆäÀÌÁö======");
+		System.out.println("====reply ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½======");
 		System.out.println("reply()");
 		model.addAttribute("request", request);
 
@@ -172,31 +172,7 @@ public class BController {
 	public String myAccountCancel() {
 		return "account/myAccountCancel";
 	}
-
-
-	/*
-	 * <<<<<<< HEAD =======
-	 * 
-	 * 
-	 * >>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
-	 * 
-	 * <<<<<<< HEAD
-	 * 
-	 * <<<<<<< HEAD
-	 * 
-	 * 
-	 * @RequestMapping("test") public String test() { return "main/test"; }
-	 * 
-	 * =======
-	 * 
-	 * @RequestMapping("buypoint") public String buypoint() { return
-	 * "Point/buypoint"; }
-	 * 
-	 * @RequestMapping("mycart") public String mycart() { return "cart/mycart"; }
-	 * >>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
-	 * 
-	 * =======
-	 */
+	
 	@RequestMapping("test")
 	public String test() {
 		return "main/test";
@@ -283,23 +259,5 @@ public class BController {
 	}
 	
 	
-	/*
-	 * <<<<<<< HEAD
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * =======
-	 * 
-	 * @RequestMapping("myPage") public String myPage() { return "MyPage/myPage"; }
-	 * >>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
-	 * 
-	 */
 
 }
-/*
- * >>>>>>>branch'master'
- * 
- * of https:// github.com/SongYeoungJin/MVCProject.git }
- */

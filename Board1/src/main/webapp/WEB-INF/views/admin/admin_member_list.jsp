@@ -122,7 +122,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
+                            <li><i class="ti-face-smile"></i><a href="admin_product">상품관리</a></li>
                               <li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
                           
                         </ul>
@@ -135,18 +135,7 @@
                         </ul>
                     </li>
                     
-                    
-
-                    
-                      
-                    
-                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
-                        </ul>
-                    </li>
-
+  
 
 				</ul>
 			</div>
@@ -229,7 +218,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>정다윤</td>
+                                            <td onClick = " location.href='admin_member_detail'">정다윤</td>
                                             <td>서울시 행복구 행복동</td>
                                             <td>JeongDaYoon</td>
                                             <td>10</td>
@@ -241,7 +230,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>구나현</td>
+                                            <td onClick = " location.href='admin_member_detail'">구나현</td>
                                             <td>서울시 행복구 행복동</td>
                                             <td>Nahyun123</td>
                                             <td>7</td>
@@ -253,7 +242,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>송영진</td>
+                                            <td onClick = " location.href='admin_member_detail'">송영진</td>
                                             <td>서울시 행복구 행복동</td>
                                             <td>Song</td>
                                             <td>3</td>
@@ -265,7 +254,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>김영우</td>
+                                        <td onClick = " location.href='admin_member_detail'">김영우</td>
                                             <td>서울시 행복구 행복동</td>
                                             <td>Kim123</td>
                                             <td>39</td>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -6,47 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>게시판 목록 </title>
-</head>
-<body>
-	<table class="table table-striped table-bordered table-hover" width="500" cellpadding="0" cellspacing="0" border="1">
-		<tr>
-			<td>번호</td>
-			<td>이름</td>
-			<td>제목</td>
-			<td>날짜</td>
-			<td>조회수</td>
-		</tr>
-		<c:forEach items="${dtos}" var="dto">
-			<tr>
-				<td>${dto.bId}</td>
-				<td>${dto.bName}</td>
-				<td>
-					<c:forEach begin="1" end="${dto.bIndent}">-</c:forEach>
-					<a href="contentView?bId=${dto.bId}"> ${dto.bTitle} </a>
-				</td>
-				<td>${dto.bDate}</td>
-				<td>${dto.bHit}</td>
-			</tr>
-		</c:forEach>
-		<tr>
-			<td colspan="5"><a href="writeView">글작성 </a></td>
-		</tr>
-	</table>
-</body>
-</html>
-
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    
-<!-- <!DOCTYPE html> --> <!--여기 엑박있길래 일단 주석씌웠어여 푸쉬할겸-->
-<head>
-    <meta charset="utf-8">
-    <meta name="robots" content="noindex, nofollow">
-    
-    
-    
-    
+<meta name="robots" content="noindex, nofollow">
     
       <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -63,8 +22,14 @@
   <!-- Custom styles for this template -->
   <link rel="stylesheet"
   href="<c:url value='resources/startbootstrap/css/full-width-pics.css'/>">
-
 </head>
+
+
+
+
+
+
+
 
 <body>
   <!-- Navigation -->
@@ -164,7 +129,8 @@ stylize any heading tags withing white-panel below
         });
     </script>
 </head>
-<body>
+
+
     <div class="container">
   <div class="row">
     <h2>목록</h2>
@@ -372,7 +338,3 @@ http://www.jqueryscript.net/layout/Simple-jQuery-Plugin-To-Create-Pinterest-Styl
 </body>
 </html>
 
-
-</body>
-</html>
->>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git

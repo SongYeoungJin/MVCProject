@@ -227,7 +227,10 @@ public class BController {
 	public String productList3() {
 		return "Product/productList3";
 	}
-	
+	@RequestMapping("admin_member_detail")
+	public String admin_member_detail() {
+		return "admin/admin_member_detail";
+	}
 	@RequestMapping("adminMain")
 	public String adminMain() {
 		return "admin/adminMain";
@@ -261,6 +264,9 @@ public class BController {
 	public String admin_product() {
 		return "admin/admin_product";
 	}
-	
+	@RequestMapping("admin_board")
+	public String admin_board() {
+		return "admin/admin_board";
+	}
 
 }

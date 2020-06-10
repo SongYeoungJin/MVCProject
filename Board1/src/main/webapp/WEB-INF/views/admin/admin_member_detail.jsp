@@ -30,29 +30,8 @@
 <link rel="stylesheet" href="./resources/assets/css/style.css">
 
 <!-- 추가 -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
-	   <link rel="stylesheet" href="./resources/assets/css/lib/datatable/dataTables.bootstrap.min.css">
-	      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-	   
-
-
-<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
-<link
-	href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css"
-	rel="stylesheet">
-<link
-	href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css"
-	rel="stylesheet">
-
-<link
-	href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css"
-	rel="stylesheet" />
-<link
-	href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css"
-	rel="stylesheet" />
-	 -->
-	
-	
 
 <style>
 #weatherWidget .currentDesc {
@@ -64,7 +43,7 @@
 }
 
 #flotPie1 {
-	height: 151px;
+	height: 150px;
 }
 
 #flotPie1 td {
@@ -107,9 +86,9 @@
 					<a herf="#">
 					<li class="menu-title">Admin</li></a>
 					<!-- /.menu-title -->
+					
 			
-                     <li class="menu-item-has-children dropdown">
-                 
+                
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
                         <ul class="sub-menu children dropdown-menu">
@@ -134,8 +113,7 @@
                             <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
-                    
-  
+
 
 				</ul>
 			</div>
@@ -145,13 +123,6 @@
 	<!-- /#left-panel -->
 	
 	
-	
-
-	
-		
-		
-		
-		
 		 
 		  <!-- Right Panel -->
 
@@ -159,7 +130,7 @@
 
         <!-- Header-->
         <header id="header" class="header">
-        <a href="adminMain">
+        
             <div class="top-left">
             
                 <div class="navbar-header">
@@ -168,46 +139,46 @@
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
                 </div>
             </div>
-
       	<div class="header-menu">
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
 						<button type="button" class="btn btn-secondary"
-							onclick="location.href='login'">Logout</button>
+							onclick="location.href='${pageContext.request.contextPath}/login.jsp'">Logout</button>
 					</c:if>
 				</div>
 			</div>
-
-      </a>
-
         </header><!-- /header -->
-        <!-- Header-->
-    
-		
-		
-        
-        <ul class="nav nav-tabs">
+   <!------------------------------- Header-------------------------------------------->
+   
+   
+         <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#one">상품관리</a>
+    <a class="nav-link active" data-toggle="tab" href="#one">구매내역</a>
   </li>
-
-   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#three">상품수정/삭제</a>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#two">리뷰</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#three">장소</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#four">이용내역</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#five">특징</a>
   </li>
 </ul>
-
 <div class="tab-content">
-
-  
   <div class="tab-pane fade show active" id="one">
-    			<div class="card">
+    
+    	    <div class="card">
                             <div class="card-header">
-                                <strong class="card-title">상품조회</strong>
+                                <strong class="card-title">구매내역</strong>
                             </div>
                             <div class="card-body">
                                 <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                     <thead>
-                                 	<tr align="center">
+                                  	<tr align="center">
 										<td>상품코드</td><td></td><td>상품명</td><td>판매가</td><td>수량</td>
 									</tr>
                                     </thead>
@@ -223,61 +194,25 @@
                                 </table>
                             </div>
                         </div>
-    
-    	    <div class="card">
+
+ 	
+  </div>
+  <div class="tab-pane fade" id="two">
+   
+    	 <div class="card">
                             <div class="card-header">
-                                <strong class="card-title">상품등록</strong>
+                                <strong class="card-title">리뷰</strong>
                             </div>
                             <div class="card-body">
                                 <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                     <thead>
-                                   	<tr align="center">
-										<td>종류</td><td>상품코드</td><td></td><td>상품명</td><td>판매가</td><td>수량</td><td></td>
+                                  	<tr align="center">
+										<td>게시글일자</td><td>제목</td><td>조회수</td><td>별점</td>
 									</tr>
                                     </thead>
                                     <tbody>
                                       <tr align="center">
-										<td> <select name="Big">
-											<option value="">종류</option>
-											<option value="캠핑">캠핑</option>
-											<option value="조명">조명</option>
-											<option value="기타">기타</option>
-											</select>
-										</td>
-			<td><input type="text" name="pro_code"/></td><td>이미지</td><td><input type="text"  name="pro_name"/></td><td><input type="text"  name="pro_price"/></td><td><input type="text"  name="pro_count"/>
-					</td><td><input type="button"  value="추가" onclick="add()" /></td>
-									</tr>
-                                   
-                             
-                                   </tbody>
-                                </table>
-                            </div>
-                        </div>
-
- 	
-  </div>
-  
-  <div class="tab-pane fade" id="three">
-   
- 						<div class="card">
-                            <div class="card-header">
-                                <strong class="card-title">상품수정/삭제</strong>
-                            </div>
-                            <div class="card-body">
-                                <table id="bootstrap-data-table" class="table table-striped table-bordered">
-                                    <thead>
-                           <tr align="center">
-										<td>상품코드</td><td></td><td>상품명</td><td>판매가</td><td>수량</td><td>기능</td>
-									</tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr align="center">
-										<td >1111111</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td><input type="text"  name="pro_name"/></td><td><input type="text"  name="pro_name"/></td><td><input type="text"  name="pro_name"/></td>
-										<td><input type="button"  value="수정" onclick="change()" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="button"  value="삭제" onclick="delete1()" /></td>
-									</tr>
-                                    <tr align="center">
-										<td>1111110</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td><input type="text"  name="pro_name"/></td><td><input type="text"  name="pro_name"/></td><td><input type="text"  name="pro_name"/></td>
-										<td><input type="button"  value="수정" onclick="change()" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="button"  value="삭제" onclick="delete1()" /></td>
+										<td>2019-12-12</td><td>푹신푹신한 담요</td><td>123</td><td>4.6</td>
 									</tr>
                                      
                                
@@ -285,9 +220,69 @@
                                 </table>
                             </div>
                         </div>
+    
+  </div>
+  <div class="tab-pane fade" id="three">
+    
+    	 <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">장소</strong>
+                            </div>
+                            <div class="card-body">
+                                <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                                    <thead>
+                                  	<tr align="center">
+										<td>게시글일자</td><td>제목</td><td>장소명</td><td>별점</td>
+									</tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr align="center">
+										<td>2020-1-12</td><td>삼척에서..</td><td>강원도 삼척</td><td>5.0</td>
+									</tr>
+                                     
+                               
+                                   </tbody>
+                                </table>
+                            </div>
+                        </div>
+    
+  </div>
+    <div class="tab-pane fade" id="four">
+   
+    	 <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">이용내역</strong>
+                            </div>
+                            <div class="card-body">
+                                <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                                    <thead>
+                                  	<tr align="center">
+										<td>가입일자</td><td>최종방문일</td><td>방문횟수</td><td>포인트충전금액</td><td>상품구매수량</td>
+									</tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr align="center">
+										<td>2019-12-12</td><td>2020-06-10</td><td>123</td><td>10,000P</td><td>90</td>
+									</tr>
+                                     
+                               
+                                   </tbody>
+                                </table>
+                            </div>
+                        </div>
+    
+  </div>
+    <div class="tab-pane fade" id="five">
+   
+    <p>우리 사이트를 자주 사용하고 주로 기타용품을 많이 구매한다.</p>
+ 
+  </div>
+</div>
 
-</div>
-</div>
+        
+<!-- ---------------------------------Footer---------------------------- -->
+				
+		<div class="clearfix"></div>
 		<!-- Footer -->
 		<footer class="site-footer">
 			<div class="footer-inner bg-white">
@@ -304,6 +299,8 @@
 	<!-- /#right-panel -->
 
 
+
+
 	<!-- Scripts -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
@@ -316,40 +313,6 @@
 	<script src="./resources/assets/js/main.js"></script>
 
 
-	<script>
-	function add() {
-		alert("등록완료!");
-	}
-	</script>
-		<script>
-	function change() {
-		alert("수정완료!");
-	}
-	</script>
-		<script>
-	function delete1() {
-		alert("삭제완료!");
-	}
-	</script>
-	   <script src="./resources/assets/js/lib/data-table/datatables.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/dataTables.buttons.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.bootstrap.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/jszip.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/vfs_fonts.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.html5.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.print.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.colVis.min.js"></script>
-    <script src="./resources/assets/js/init/datatables-init.js"></script>
-	
 
-
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-          $('#bootstrap-data-table-export').DataTable();
-      } );
-  </script>
-	
 </body>
 </html>

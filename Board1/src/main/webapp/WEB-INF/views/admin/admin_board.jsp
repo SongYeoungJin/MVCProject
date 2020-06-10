@@ -78,7 +78,25 @@
 </head>
 
 <body>
-
+	<!-- Left Panel -->
+	<aside id="left-panel" class="left-panel">
+		<nav class="navbar navbar-expand-sm navbar-default">
+			<div id="main-menu" class="main-menu collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<a herf="#">
+					<li class="menu-title">Admin</li></a>
+					<!-- /.menu-title -->
+					
+			
+                
+                     <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
+                        <ul class="sub-menu children dropdown-menu">
+                    
+                            <li><i class="ti-shopping-cart"></i><a href="admin_member_list">회원조회</a></li>
+                          
+                        </ul>
+                    </li>
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
@@ -95,9 +113,13 @@
                             <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
+
+
+				</ul>
+			</div>
 			<!-- /.navbar-collapse -->
-
-
+		</nav>
+	</aside>
 	<!-- /#left-panel -->
 	
 	
@@ -126,94 +148,110 @@
 				</div>
 			</div>
         </header><!-- /header -->
-        </div>
    <!------------------------------- Header-------------------------------------------->
-        
-       
-       
-       
-       
+   
+   
+   
+   
+  
+		<!-- Page Content -->
+  <div class="container">
+  <!-- 
+  <div class="py-5 bg-image" style='background-color:#0000ff'>
+  -->
+    <div class="row">
+      <div class="col-lg-3">
 
-       
-           <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-header"><strong>주문정보</strong><small> Form</small></div>
-                            <div class="card-body card-block">
-                                
-                                <div class="row">
-                                 <div class="col-6">
-                                <div class="form-group"><label for="company" class=" form-control-label">이름</label>
-                                <input type="text" id="name" placeholder="차박" class="form-control"></div>
-                                </div>
-                               
-                                <div class="col-6">
-                                <div class="form-group"><label for="vat" class=" form-control-label">아이디</label>
-                                <input type="text" id="id" placeholder="ChaBak" class="form-control"></div>
-                                </div>
-                                </div>
-                                
-                                 <div class="row">
-                                 <div class="col-12">
-                                <div class="form-group"><label for="company" class=" form-control-label">주소</label>
-                                <input type="text" id="address" placeholder="서울시 행복구 행복동 어쩌구 저쩌구" class="form-control"></div>
-                                </div>
-                                </div>
-                                
-                                 <div class="row">
-                                 <div class="col-6">
-                                <div class="form-group"><label for="company" class=" form-control-label">H.P</label>
-                                <input type="text" id="phone" placeholder="010-1234-1234" class="form-control"></div>
-                                </div>
-                               
-                                <div class="col-6">
-                                <div class="form-group"><label for="vat" class=" form-control-label">주문번호</label>
-                                <input type="text" id="number" placeholder="20200608" class="form-control"></div>
-                                </div>
-                                </div>
-                                
-                                <div class="row">
-                                 <div class="col-4">
-                                <div class="form-group"><label for="company" class=" form-control-label">상품</label>
-                                <input type="text" id="product" placeholder="알전구" class="form-control"></div>
-                                </div>
-                               
-                                <div class="col-4">
-                                <div class="form-group"><label for="vat" class=" form-control-label">수량</label>
-                                <input type="text" id="count" placeholder="3" class="form-control"></div>
-                                </div>
-                                
-                                <div class="col-4">
-                                <div class="form-group"><label for="vat" class=" form-control-label">가격</label>
-                                <input type="text" id="price" placeholder="17,000" class="form-control"></div>
-                                </div>
-                                </div>
-                                
-                                <div class="row">
-                                 <div class="col-4">
-                                <div class="form-group"><label for="company" class=" form-control-label">주문상태</label>
-                                <input type="text" id="payment" placeholder="결제완료" class="form-control"></div>
-                                </div>
-                                </div>
-                            
-                               <button type="button" class="btn btn-secondary">확인</button>
-                               
-                        </div>
-                    </div>
-       
-       </div>
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
+        <h2 class="my-5"></h2>
+        <div class="list-group">
+          <a class="list-group-item" href="ReviewList.do">커뮤니티 관리</a>
+        </div>
+	  </div>
+    </div>
+    
+<table class="table table-striped table-bordered table-hover">
+	<tr>
+		<td>
+     		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="table">     
+   		
+     			<td width="73">선택</td>
+   				<td width="80">번호</td>
+   				<td width="340">제목</td>
+   				<td width="73">작성자</td>
+   				<td width="45">작성일</td>
+   				<td width="70">조회수</td>
+   				<td width="40">글보기</td>
+   				<td width="40">글삭제</td>
 
+
+  			<tr height="1" colspan="8">
+  				<td >
+  				<input type='checkbox' name='check' value='check'/>
+  				</td>
+  				<td>4321</td>
+  				<td>알전구샀어요</td>
+  				<td>차박구</td>
+  				<td>20.06.11</td>
+  				<td>118</td>
+  				<td><input type="button" class="btn btn-secondary" value="글보기"></td>
+  				<td><input type="button" class="btn btn-secondary" value="글삭제"></td>
+  				
+  			</tr>
+  			
+  			
+ 			<tr height="1">
+ 				<td colspan="8" width="752">			
+ 				</td>
+ 			</tr>	
+  		</table>
+  		
+  		
+  	</tr>
+<!-- 	<tr>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="table">
+  			<tr><td colspan="4" height="5"></td>
+  			</tr> -->
+  			
+  			
+  			
+  			<tr align="center">
+   				<td>
+   				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   					<input type=button class="btn btn-secondary" value="글쓰기" onClick="location.href='writeView'">
+   					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   					<input type="button" class="btn btn-secondary" value="이 전" onClick="history.go(-1)">
+   				</td>
+  			</tr>
+		</table>
+
+
+
+
+
+
+  
+<!-- ---------------------------------Footer---------------------------- -->
+				
+		<div class="clearfix"></div>
+		<!-- Footer -->
+		<footer class="site-footer">
+			<div class="footer-inner bg-white">
+				<div class="row">
+					<div class="col-sm-6">Copyright &copy;Design by</div>
+					<div class="col-sm-6 text-right">
+						차박</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- /.site-footer -->
+	</div>
+	<!-- /#right-panel -->
+
+
+
+
+	<!-- Scripts -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
 	<script

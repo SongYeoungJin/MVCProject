@@ -271,13 +271,69 @@
                             <div class="card-body">
                                 <h4 class="box-title">매출현황 </h4>
                             </div>
-                            <div class="row">
+
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="card-body">
+										<script type="text/javascript"
+											src="https://www.google.com/jsapi"></script>
+										<script type="text/javascript">
+											google.load("visualization", "1", {
+												packages : [ "corechart" ]
+											});
+											google.setOnLoadCallback(drawChart);
+											function drawChart() {
+												var data = google.visualization
+														.arrayToDataTable([
+																[
+																		'Year',
+																		'Sales',
+																		'Expenses' ],
+																[ '19.06',
+																		1000,
+																		400 ],
+																[ '19.12',
+																		1170,
+																		460 ],
+																[ '20.03', 660,
+																		1120 ],
+																[ '20.06',
+																		1030,
+																		540 ] ]);
+
+												var options = {
+													title : '매출현황'
+												};
+
+												var chart = new google.visualization.LineChart(
+														document
+																.getElementById('chart_div'));
+												chart.draw(data, options);
+											}
+										</script>
+										<div id="chart_div" style="width: 700px; height: 500px;"></div>
+
+									</div>
+								</div>
+							</div>
+
+
+
+							<!--  <div class="row">
                                 <div class="col-lg-8">
                                     <div class="card-body">
-                                        <!-- <canvas id="TrafficChart"></canvas>   -->
+                                        <canvas id="TrafficChart"></canvas>  
                                         <div id="traffic-chart" class="traffic-chart"></div>
                                     </div>
-                                </div>
+                                </div> -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                                 <div class="col-lg-4">
                                     <div class="card-body">
                                         <div class="progress-box progress-1">

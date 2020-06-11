@@ -69,7 +69,7 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-<title>후기작성</title>
+<title>boardWrite</title>
 
 <script>
 	$(document).on('click', '#btnSave', function(e){
@@ -79,7 +79,7 @@
 
 	$(document).on('click', '#btnList', function(e){
 		e.preventDefault();
-		location.href="${pageContext.request.contextPath}/list";
+		location.href="${pageContext.request.contextPath}/ReviewList";
 	});
 </script>
 
@@ -94,7 +94,7 @@ body {
 <body>
 	<article>
 		<div class="container" role="main">
-			<h2>Review</h2>
+			<h2>게시판 글쓰기</h2>
 			<form name="form" id="form" role="form" method="post" action="contentView">
 				<div class="mb-3">
 					<label for="title">제목</label>
@@ -112,7 +112,18 @@ body {
 					<textarea class="form-control" rows="5" name="content" id="content" placeholder="내용을 입력해 주세요" ></textarea>
 
 				</div>
-			<div class="mb-3">
+
+
+				<div class="row form-group">
+					<div class="col-12 col-md-9">
+						<input type="file" id="file-multiple-input"
+							name="file-multiple-input" multiple="" class="form-control-file">
+					</div>
+				</div>
+
+
+
+				<div class="mb-3">
 
 					<label for="tag">TAG</label>
 

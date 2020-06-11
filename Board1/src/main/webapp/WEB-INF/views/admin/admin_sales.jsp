@@ -94,13 +94,6 @@
 						<li class="menu-title">Admin</li>
 					</a>
 					<!-- /.menu-title -->
-<<<<<<< HEAD
-					
-					
-                  
-                 
-=======
-
 
 
 					<li class="menu-item-has-children dropdown"><a href="#"
@@ -134,16 +127,14 @@
 						<ul class="sub-menu children dropdown-menu">
 							<li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
 						</ul></li>
->>>>>>> branch 'FirstB' of https://github.com/SongYeoungJin/MVCProject.git
-
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
 		</nav>
 	</aside>
 	<!-- /#left-panel -->
-<<<<<<< HEAD
-	
+
+
 	<!-- 차박 로고 -->
 			<div class="top-left">
 	
@@ -155,9 +146,6 @@
 				<!-- <img src="startbootstrap/img/aa.png" alt="Logo"
 					style="width: 80px; height: 50px;"> --></a>
 			</div>
-=======
->>>>>>> branch 'FirstB' of https://github.com/SongYeoungJin/MVCProject.git
-
 
 
 
@@ -174,7 +162,6 @@
 				<div class="navbar-header">
 					<img class="img-fluid d-block  mx-auto" alt=""
 						style="width: 80px; height: 50px"
-						;
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
 				</div>
 			</div>
@@ -186,7 +173,7 @@
 					</c:if>
 				</div>
 			</div>
-<<<<<<< HEAD
+
         </header><!-- /header -->
         <!-- Header-->
         
@@ -245,14 +232,6 @@
 </div>
 </div>
 </div>
-=======
-		</header>
-		<!-- /header -->
-		<!-- Header-->
->>>>>>> branch 'FirstB' of https://github.com/SongYeoungJin/MVCProject.git
-
-
-
 
 
 
@@ -317,8 +296,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
 
 
 
@@ -359,7 +336,7 @@
 				<!-- /# column -->
 			</div>
 			<!-- /# row -->
-
+</div>
 
 
 

@@ -29,9 +29,14 @@
 <link rel="stylesheet" href="./resources/assets/css/cs-skin-elastic.css">
 <link rel="stylesheet" href="./resources/assets/css/style.css">
 
-<!-- 추가 -->
- <link href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css" rel="stylesheet">
+<!------- 추가 -------->
+<link
+	href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css"
+	rel="stylesheet">
+<link
+	href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css"
+	rel="stylesheet">
+
 
 
 
@@ -86,35 +91,43 @@
 			<div id="main-menu" class="main-menu collapse navbar-collapse">
 				<ul class="nav navbar-nav">
 					<a herf="#">
-					<li class="menu-title">Admin</li></a>
+						<li class="menu-title">Admin</li>
+					</a>
 					<!-- /.menu-title -->
-					
-					
-                  
-                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                    
-                            <li><i class="ti-shopping-cart"></i><a href="admin_member_list">회원조회</a></li>
-                          
-                        </ul>
-                    </li>
 
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="admin_product">상품관리</a></li>
-                              <li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
-                          
-                        </ul>
-                    </li>
-                    
-                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
-                        </ul>
-                    </li>
+
+
+					<li class="menu-item-has-children dropdown"><a href="#"
+						class="dropdown-toggle" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false"> <i
+							class="ui-cards.html"></i>회원관리
+					</a>
+						<ul class="sub-menu children dropdown-menu">
+
+							<li><i class="ti-shopping-cart"></i><a
+								href="admin_member_list">회원조회</a></li>
+
+						</ul></li>
+
+					<li class="menu-item-has-children dropdown"><a href="#"
+						class="dropdown-toggle" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false"> <i
+							class="ui-cards.html"></i>기타관리
+					</a>
+						<ul class="sub-menu children dropdown-menu">
+							<li><i class="ti-face-smile"></i><a href="admin_product">상품관리</a></li>
+							<li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
+
+						</ul></li>
+
+					<li class="menu-item-has-children dropdown"><a href="#"
+						class="dropdown-toggle" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false"> <i
+							class="ui-cards.html"></i>커뮤니티관리
+					</a>
+						<ul class="sub-menu children dropdown-menu">
+							<li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
+						</ul></li>
 
 				</ul>
 			</div>
@@ -122,27 +135,28 @@
 		</nav>
 	</aside>
 	<!-- /#left-panel -->
-	
-	
 
-		
-		 
-		  <!-- Right Panel -->
 
-    <div id="right-panel" class="right-panel">
 
-        <!-- Header-->
-        <header id="header" class="header">
-        
-            <div class="top-left">
-            
-                <div class="navbar-header">
-                <img class="img-fluid d-block  mx-auto" alt="" 
-                 style="width: 80px; height: 50px";
+
+
+	<!-- Right Panel -->
+
+	<div id="right-panel" class="right-panel">
+
+		<!-- Header-->
+		<header id="header" class="header">
+
+			<div class="top-left">
+
+				<div class="navbar-header">
+					<img class="img-fluid d-block  mx-auto" alt=""
+						style="width: 80px; height: 50px"
+						;
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
-                </div>
-            </div>
-      	<div class="header-menu">
+				</div>
+			</div>
+			<div class="header-menu">
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
 						<button type="button" class="btn btn-secondary"
@@ -150,146 +164,160 @@
 					</c:if>
 				</div>
 			</div>
-        </header><!-- /header -->
-        <!-- Header-->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-               <!-- Content -->
-        <div class="content">
-            <div class="animated fadeIn">
-
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="mb-3">Real Chart</h4>
-        
-           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Dialogue', 'Send', 'Resoponse'],
-          ['Dialogue 1', 0.5, 0.5],
-          ['Dialogue 2', 0.7, 0.3],
-          ['Dialogue 3', 0.4, 0.8],
-          ['Dialogue 4', 0.2, 1]
-        ]);
-
-        var options = {
-          chart: {
-            title: 'Analysis of Dialogue System',
-            subtitle: '',
-          }
-        };
-
-        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
-
-        chart.draw(data, google.charts.Bar.convertOptions(options));
-      }
-    </script>
-
-    <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
-      </div>
-                        </div>
-                    </div><!-- /# column -->
-</div>
-</div>
-</div>
-</div>
+		</header>
+		<!-- /header -->
+		<!-- Header-->
 
 
 
 
 
-        
-        
-            <!-- Content -->
-        <div class="content">
-            <div class="animated fadeIn">
-
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="mb-3">Real Chart</h4>
-                                <div class="flot-container">
-                                    <div id="cpu-load" class="cpu-load"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /# column -->
-
-                  
-
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="mb-3">Bar Chart</h4>
-                                <div class="flot-container">
-                                    <div id="flotCurve" style="width:100%;height:275px;"></div>
-                                </div>
-                            </div>
-                        </div><!-- /# card -->
-                    </div><!-- /# column -->
-                </div><!-- /# row -->
 
 
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        		<div class="clearfix"></div>
-		<!-- Footer -->
-		<footer class="site-footer">
-			<div class="footer-inner bg-white">
+
+
+		<!-- Content -->
+		<div class="content">
+			<div class="animated fadeIn">
+
+
 				<div class="row">
-					<div class="col-sm-6">Copyright &copy;Design by</div>
-					<div class="col-sm-6 text-right">
-						차박</a>
+					<div class="col-lg-6">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="mb-3">Real Chart</h4>
+
+								<script type="text/javascript"
+									src="https://www.gstatic.com/charts/loader.js"></script>
+								<script type="text/javascript">
+									google.charts.load('current', {
+										'packages' : [ 'bar' ]
+									});
+									google.charts.setOnLoadCallback(drawChart);
+
+									function drawChart() {
+										var data = google.visualization
+												.arrayToDataTable([
+														[ 'Dialogue', 'Send',
+																'Resoponse' ],
+														[ 'Dialogue 1', 0.5,
+																0.5 ],
+														[ 'Dialogue 2', 0.7,
+																0.3 ],
+														[ 'Dialogue 3', 0.4,
+																0.8 ],
+														[ 'Dialogue 4', 0.2, 1 ] ]);
+
+										var options = {
+											chart : {
+												title : 'Analysis of Dialogue System',
+												subtitle : '',
+											}
+										};
+
+										var chart = new google.charts.Bar(
+												document
+														.getElementById('columnchart_material'));
+
+										chart.draw(data, google.charts.Bar
+												.convertOptions(options));
+									}
+								</script>
+
+								<div id="columnchart_material"
+									style="width: 800px; height: 500px;"></div>
+							</div>
+						</div>
 					</div>
+					<!-- /# column -->
 				</div>
 			</div>
-		</footer>
-		<!-- /.site-footer -->
+		</div>
 	</div>
-	<!-- /#right-panel -->
 
 
-	<!-- Scripts -->
-	<script
-		src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
-	<script src="./resources/assets/js/main.js"></script>
-<!-- 	
+
+
+
+
+
+	<!-- Content -->
+	<div class="content">
+		<div class="animated fadeIn">
+
+
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="card">
+						<div class="card-body">
+							<h4 class="mb-3">Real Chart</h4>
+							<div class="flot-container">
+								<div id="cpu-load" class="cpu-load"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /# column -->
+
+
+
+				<div class="col-lg-6">
+					<div class="card">
+						<div class="card-body">
+							<h4 class="mb-3">Bar Chart</h4>
+							<div class="flot-container">
+								<div id="flotCurve" style="width: 100%; height: 275px;"></div>
+							</div>
+						</div>
+					</div>
+					<!-- /# card -->
+				</div>
+				<!-- /# column -->
+			</div>
+			<!-- /# row -->
+
+
+
+
+
+
+
+
+
+			<!-- -----------------Footer------------------ -->
+
+			<div class="clearfix"></div>
+			<!-- Footer -->
+			<footer class="site-footer">
+				<div class="footer-inner bg-white">
+					<div class="row">
+						<div class="col-sm-6">Copyright &copy;Design by</div>
+						<div class="col-sm-6 text-right">
+							차박</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /.site-footer -->
+		</div>
+		<!-- /#right-panel -->
+
+
+
+
+
+		<!-- Scripts -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+		<script src="./resources/assets/js/main.js"></script>
+		<!-- 	
 	
 	  Chart js
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.bundle.min.js"></script>
@@ -298,19 +326,26 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flot-spline@0.0.1/js/jquery.flot.spline.min.js"></script>
      -->
-     
-     <script src="assets/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flot-charts@0.8.3/excanvas.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flot-charts@0.8.3/jquery.flot.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.pie.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.time.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.stack.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.resize.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.crosshair.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flot.curvedlines@1.1.1/curvedLines.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.flot.tooltip@0.9.0/js/jquery.flot.tooltip.min.js"></script>
-    <script src="assets/js/init/flot-chart-init.js"></script>
-        
-        
-        </body>
-        </html>
+
+		<script src="assets/js/main.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/flot-charts@0.8.3/excanvas.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/flot-charts@0.8.3/jquery.flot.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.pie.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.time.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.stack.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.resize.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.crosshair.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/flot.curvedlines@1.1.1/curvedLines.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery.flot.tooltip@0.9.0/js/jquery.flot.tooltip.min.js"></script>
+		<script src="assets/js/init/flot-chart-init.js"></script>
+</body>
+</html>

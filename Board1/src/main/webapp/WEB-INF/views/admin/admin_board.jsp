@@ -194,7 +194,7 @@
   				<td>20.06.11</td>
   				<td>118</td>
   				<td><input type="button" class="btn btn-secondary" value="글보기"></td>
-  				<td><input type="button" class="btn btn-secondary" value="글삭제"></td>
+  				<td><input type="button" class="btn btn-secondary" value="글삭제" onclick="delete2()"></td>
   				
   			</tr>
   			
@@ -223,8 +223,6 @@
    				</td>
   			</tr>
 		</table>
-
-
 
 
 
@@ -261,6 +259,14 @@
 	<script
 		src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
 	<script src="./resources/assets/js/main.js"></script>
+
+
+<script>
+	function delete2() {
+		alert("게시글을 삭제했습니다.");
+	}
+	</script>
+
 
 
 

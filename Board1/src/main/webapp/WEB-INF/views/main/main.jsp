@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>CHABAK MAIN</title>
+  <title>CHABAK MAIN페이지</title>
   
 <%@ include file="../../include/header.jsp" %>
 

@@ -172,18 +172,16 @@ public class BController {
 	public String myAccountCancel() {
 		return "account/myAccountCancel";
 	}
-<<<<<<< HEAD
+
 	
 	@RequestMapping("test")
 	public String test() {
 		return "main/test";
 	}
+
+
+
 	@RequestMapping("admin_registerPlace")
-=======
-
-
-	@RequestMapping("registerPlace")
->>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
 	public String registerPlace() {
 		return "admin/admin_registerPlace";
 	}

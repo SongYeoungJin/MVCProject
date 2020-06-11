@@ -108,22 +108,26 @@
 					<li class="menu-title">Admin</li></a>
 					<!-- /.menu-title -->
 			
-                     <li class="menu-item-has-children dropdown">
-                 
-                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
-                        <ul class="sub-menu children dropdown-menu">
                     
-                            <li><i class="ti-shopping-cart"></i><a href="admin_member_list">회원조회</a></li>
-                          
+  					<li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">회원관리</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_member_list">회원조회</a></li>
+                        </ul>
+                    </li>
+					  <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_sales">매출현황</a></li>
                         </ul>
                     </li>
 
+             
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="admin_product">상품관리</a></li>
-                              <li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
+                            <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
+                              <li><i class="ti-face-smile"></i><a href="admin_registerPlace">장소등록</a></li>
                           
                         </ul>
                     </li>
@@ -131,7 +135,7 @@
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
+                            <li><i class="ti-image"></i> <a href="admin_board"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
                     
@@ -147,7 +151,17 @@
 	
 	
 
+	<!-- 차박 로고 -->
+			<div class="top-left">
 	
+				<a class="navbar-brand" href="adminMain">
+				<img class="img-fluid d-block  mx-auto" alt="" 
+                 style="width: 80px; height: 50px";
+                 src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
+		
+				<!-- <img src="startbootstrap/img/aa.png" alt="Logo"
+					style="width: 80px; height: 50px;"> --></a>
+			</div>
 		
 		
 		
@@ -185,7 +199,10 @@
     
 		
 		
-        
+		<!-- -------------content----------------- -->
+		 
+		  
+            <!-- --------tab---------- -->
         <ul class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link active" data-toggle="tab" href="#one">상품관리</a>
@@ -197,7 +214,17 @@
 </ul>
 
 <div class="tab-content">
+         <!-- ---------------/tab------------- -->
 
+
+
+
+  
+  
+  
+  
+  <!-- ------------첫번째 탭부분 --------------- -->
+  
   
   <div class="tab-pane fade show active" id="one">
     			<div class="card">
@@ -257,6 +284,16 @@
  	
   </div>
   
+     <!-- ------------/첫번째 탭부분 --------------- -->
+  
+  
+  
+  
+  
+  
+  
+  
+   <!-- ----------------두번째 탭부분------------------- -->
   <div class="tab-pane fade" id="three">
    
  						<div class="card">
@@ -288,6 +325,14 @@
 
 </div>
 </div>
+  <!-- ----------------/두번째 탭부분------------------- -->
+
+
+
+
+
+
+
 		<!-- Footer -->
 		<footer class="site-footer">
 			<div class="footer-inner bg-white">

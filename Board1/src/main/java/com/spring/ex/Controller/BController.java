@@ -172,14 +172,18 @@ public class BController {
 	public String myAccountCancel() {
 		return "account/myAccountCancel";
 	}
+
 	
 	@RequestMapping("test")
 	public String test() {
 		return "main/test";
 	}
-	@RequestMapping("registerPlace")
+
+
+
+	@RequestMapping("admin_registerPlace")
 	public String registerPlace() {
-		return "chabakplace/registerPlace";
+		return "admin/admin_registerPlace";
 	}
 	@RequestMapping("place")
 	public String place() {
@@ -267,6 +271,15 @@ public class BController {
 	@RequestMapping("admin_board")
 	public String admin_board() {
 		return "admin/admin_board";
+	}
+	
+	@RequestMapping("find_ID")
+	public String find_ID() {
+		return "Login/find_ID";
+	}
+	@RequestMapping("find_PW")
+	public String find_PW() {
+		return "Login/find_PW";
 	}
 
 }

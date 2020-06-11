@@ -84,6 +84,8 @@
 #cellPaiChart {
 	height: 160px;
 }
+
+
 </style>
 </head>
 
@@ -97,7 +99,12 @@
 					<li class="menu-title">Admin</li></a>
 					<!-- /.menu-title -->
 					
-
+  					<li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">회원관리</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_member_list">회원조회</a></li>
+                        </ul>
+                    </li>
 					  <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
                         <ul class="sub-menu children dropdown-menu">                            
@@ -110,7 +117,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
-                              <li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
+                              <li><i class="ti-face-smile"></i><a href="admin_registerPlace">장소등록</a></li>
                           
                         </ul>
                     </li>
@@ -265,6 +272,7 @@
 		
 		
 		   <!--  Traffic  -->
+		   <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
@@ -316,7 +324,7 @@
 									</div>
 								</div>
 							</div>
-
+</div>
 
 
 							<!--  <div class="row">
@@ -332,8 +340,14 @@
                                 
                                 
                                 
-                                
-                                
+                         <div style="float:left;
+                         position:absolute;
+                         left:740px;
+                         top:150px;
+                         width: 950px;
+                         height: 800px;
+                         ">
+
                                 <div class="col-lg-4">
                                     <div class="card-body">
                                         <div class="progress-box progress-1">
@@ -372,8 +386,9 @@
                     </div><!-- /# column -->
                 </div>
                 <!--  /Traffic -->
-		
-		
+		</div>
+	
+</div>
 	
 		
 

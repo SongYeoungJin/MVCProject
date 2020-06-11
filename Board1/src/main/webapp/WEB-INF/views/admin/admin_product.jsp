@@ -131,8 +131,7 @@
                           
                         </ul>
                     </li>
-                    
-                     <li class="menu-item-has-children dropdown">
+                   <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-image"></i> <a href="admin_board"> 커뮤니티 조회</a></li>
@@ -250,7 +249,13 @@
                                 </table>
                             </div>
                         </div>
-    
+                        
+                        
+                        
+                        
+                        
+                        
+      <!-- ------------두번째 탭부분 --------------- -->
     	    <div class="card">
                             <div class="card-header">
                                 <strong class="card-title">상품등록</strong>
@@ -284,7 +289,7 @@
  	
   </div>
   
-     <!-- ------------/첫번째 탭부분 --------------- -->
+
   
   
   
@@ -292,8 +297,7 @@
   
   
   
-  
-   <!-- ----------------두번째 탭부분------------------- -->
+   <!-- ----------------세번째 탭부분------------------- -->
   <div class="tab-pane fade" id="three">
    
  						<div class="card">
@@ -325,7 +329,7 @@
 
 </div>
 </div>
-  <!-- ----------------/두번째 탭부분------------------- -->
+  <!-- ----------------/content----------------- -->
 
 
 

@@ -284,5 +284,21 @@ public class BController {
 	public String find_PW() {
 		return "Login/find_PW";
 	}
-
+	
+	@RequestMapping("list2")
+	public String list2() {
+		return "Board/list2";
+	}
+	
+	@RequestMapping("boardWrite")
+	public String boardWrite() {
+		return "Board/boardWrite";
+	}
+	
+	@RequestMapping("ReviewWrite")
+	public String ReviewWrite() {
+		return "Review/ReviewWrite";
+	}
+	
+	
 }

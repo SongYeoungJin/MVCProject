@@ -172,9 +172,8 @@
 	
 	<!-- ----------content------------ -->
 
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=01f7615ee8d025a981b28bb6241ff9f0"></script>
-<div id="clickLatlng">
-<form action="test.jsp" method="post">
+<div id="clickLatlng"></div>
+<form action="place" method="post">
 
 <label>이름 :</label>
 <input type = "text" name = name /><br>
@@ -187,6 +186,7 @@
 </form>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=01f7615ee8d025a981b28bb6241ff9f0"></script>
 <script>
+
 var container = document.getElementById('map');
 var options = {
 		center: new kakao.maps.LatLng(36.333276, 127.402207),
@@ -221,7 +221,7 @@ kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
 
 
 </script>
-</div>
+
 
 
 

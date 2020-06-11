@@ -89,56 +89,32 @@
 					<li class="menu-title">Admin</li></a>
 					<!-- /.menu-title -->
 					
-					  <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
-                        <ul class="sub-menu children dropdown-menu">                            
-                            <li><i class="ti-bar-chart"></i><a href="#">매출현황</a></li>
-                        </ul>
-                    </li>
-                    
-                    
+					
+                  
                      <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>상품관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-shopping-cart"></i><a href="tables-basic.html">재고관리</a></li>
-                            <li><i class="ti-shopping-cart"></i><a href="market_list.jsp">상품조회</a></li>
-                        </ul>
-                    </li>
-                    
-                    
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>주문관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-check"></i><a href="tables-basic.html">배송조회</a></li>
-                        </ul>
-                    </li>
-                    
-                    
-                    <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="admin_member_list.jsp">회원조회</a></li>
-                            <li><i class="ti-face-sad"></i><a href="tables-data.html">회원삭제</a></li>
+                    
+                            <li><i class="ti-shopping-cart"></i><a href="admin_member_list">회원조회</a></li>
+                          
                         </ul>
                     </li>
-                    
-                    
+
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>장소관리</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-check"></i><a href="tables-basic.html">장소예약</a></li>
+                            <li><i class="ti-face-smile"></i><a href="admin_product">상품관리</a></li>
+                              <li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
+                          
                         </ul>
                     </li>
-                    
-                      
                     
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href='../list.jsp'> 커뮤니티 조회</a></li>
+                            <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
-
 
 				</ul>
 			</div>
@@ -179,6 +155,64 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+               <!-- Content -->
+        <div class="content">
+            <div class="animated fadeIn">
+
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="mb-3">Real Chart</h4>
+        
+           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Dialogue', 'Send', 'Resoponse'],
+          ['Dialogue 1', 0.5, 0.5],
+          ['Dialogue 2', 0.7, 0.3],
+          ['Dialogue 3', 0.4, 0.8],
+          ['Dialogue 4', 0.2, 1]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Analysis of Dialogue System',
+            subtitle: '',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+
+    <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+      </div>
+                        </div>
+                    </div><!-- /# column -->
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
         
         
             <!-- Content -->

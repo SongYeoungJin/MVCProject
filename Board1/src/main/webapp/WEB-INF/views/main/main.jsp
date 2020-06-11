@@ -12,7 +12,6 @@
 <%@ include file="../../include/header.jsp" %>
 
 </head>
-
 <body>
  
   <%@ include file="../../include/navigator.jsp" %>
@@ -31,9 +30,10 @@
   <header class="py-5 bg-image-full" 
   style="background-image : 
   url('https://images.unsplash.com/photo-1517495306984-f84210f9daa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')";>
+   	<a href="ReviewList">
    <img class="img-fluid d-block  mx-auto" alt="" 
    width = "900" height="400" src="resources/startbootstrap/img/papap.png"/>
-  
+  </a>
   </header>
 
 
@@ -50,7 +50,7 @@
 
 
   <!-- Image Section -->
-  <<section class="py-5 bg-image-full" >
+  <section class="py-5 bg-image-full" >
   <a href="ReviewList">
  <img class="img-fluid d-block  mx-auto" alt="" 
    width = "700" height = "500"
@@ -125,12 +125,15 @@
         <div class="media-container-row">
             <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
                 <ul>
-                   <a href="list">  <li><strong>후기게시판 </strong></a></li>
+                   <a href="list">  
+                   <li><strong>후기게시판 </strong></a></li>
                     <li><strong>삼척에서</strong> 삼척에서의 하룻밤 <a href="list">전체보기</a></li>
                     <li><strong>강릉에서</strong> 강릉에서의 하룻밤 <a href="list">전체보기</a></li>
                 </ul>
             </div>
         </div>
+    </div>
+    </div>
     </div>
     </section>
      <br><br><br><br><br>
@@ -146,6 +149,5 @@
   </footer>
   
 </body>
-
 </html>
 

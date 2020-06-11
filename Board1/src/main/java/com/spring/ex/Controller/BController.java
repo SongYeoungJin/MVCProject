@@ -106,7 +106,7 @@ public class BController {
 
 	@RequestMapping("reply")
 	public String reply(HttpServletRequest request, Model model) {
-		System.out.println("====reply ÆäÀÌÁö======");
+		System.out.println("====reply ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½======");
 		System.out.println("reply()");
 		model.addAttribute("request", request);
 
@@ -173,6 +173,7 @@ public class BController {
 		return "account/myAccountCancel";
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@RequestMapping("Review")
 	public String Review() {
 		return "Review/Review";
@@ -203,6 +204,9 @@ public class BController {
 	 * 
 	 * =======
 	 */
+=======
+	
+>>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
 	@RequestMapping("test")
 	public String test() {
 		return "main/test";
@@ -257,7 +261,10 @@ public class BController {
 	public String productList3() {
 		return "Product/productList3";
 	}
-	
+	@RequestMapping("admin_member_detail")
+	public String admin_member_detail() {
+		return "admin/admin_member_detail";
+	}
 	@RequestMapping("adminMain")
 	public String adminMain() {
 		return "admin/adminMain";
@@ -287,26 +294,14 @@ public class BController {
 	public String admin_order_chk() {
 		return "admin/admin_order_chk";
 	}
-	
-	
-	/*
-	 * <<<<<<< HEAD
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * =======
-	 * 
-	 * @RequestMapping("myPage") public String myPage() { return "MyPage/myPage"; }
-	 * >>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
-	 * 
-	 */
+	@RequestMapping("admin_product")
+	public String admin_product() {
+		return "admin/admin_product";
+	}
+	@RequestMapping("admin_board")
+	public String admin_board() {
+		return "admin/admin_board";
+	}
 
 >>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
 }
-/*
- * >>>>>>>branch'master'
- * 
- * of https:// github.com/SongYeoungJin/MVCProject.git }
- */

@@ -8,7 +8,7 @@
 </head>
 <body>
 
-
+<!-- 이 페이지 replyView페이지랑 연결된거라서 삭제 ㄴㄴ ㄴ -->
 <style>
 
 body {

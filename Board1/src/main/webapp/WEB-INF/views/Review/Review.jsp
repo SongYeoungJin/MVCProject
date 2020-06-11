@@ -87,14 +87,9 @@
       <td width="1">&nbsp;</td>
       <td colspan="2" width="399">
     <input type=button value="글쓰기"  OnClick="window.location='ReviewWrite'">
-
-	<input type=button value="답글">
-
 	<input type=button value="목록" OnClick="window.location='ReviewList'">
 
-	<input type=button value="수정">
-
-	<input type=button value="삭제">
+	
       <td width="0">&nbsp;</td>
      </tr>
     </table>

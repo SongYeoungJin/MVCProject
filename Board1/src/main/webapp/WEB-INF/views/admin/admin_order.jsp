@@ -90,20 +90,26 @@
 			
                     
                 
-                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                    
-                            <li><i class="ti-shopping-cart"></i><a href="admin_member_list">회원조회</a></li>
-                          
+                
+  					<li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">회원관리</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_member_list">회원조회</a></li>
+                        </ul>
+                    </li>
+					  <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_sales">매출현황</a></li>
                         </ul>
                     </li>
 
+             
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
-                              <li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
+                              <li><i class="ti-face-smile"></i><a href="admin_registerPlace">장소등록</a></li>
                           
                         </ul>
                     </li>
@@ -111,9 +117,10 @@
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
+                            <li><i class="ti-image"></i> <a href="admin_board"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
+                
 
 
 				</ul>
@@ -123,7 +130,17 @@
 	</aside>
 	<!-- /#left-panel -->
 	
+	<!-- 차박 로고 -->
+			<div class="top-left">
 	
+				<a class="navbar-brand" href="adminMain">
+				<img class="img-fluid d-block  mx-auto" alt="" 
+                 style="width: 80px; height: 50px";
+                 src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
+		
+				<!-- <img src="startbootstrap/img/aa.png" alt="Logo"
+					style="width: 80px; height: 50px;"> --></a>
+			</div>
 		 
 		  <!-- Right Panel -->
 
@@ -206,7 +223,10 @@
                                                 <span class="badge badge-complete">Complete</span>
                                             </td>
                                             <td>
-                                             <button type="button" class="btn btn-secondary">정보</button>
+                                            <button onclick="window.open('admin_order_chk','주문확인','width=400px,height=600px,location=no,status=no,scrollbars=no');"
+                                             type="button" class="btn btn-secondary">정보  </button>
+
+                                             <!-- <button onclick="location.href='admin_order_chk'", width=400, height=400, type="button" class="btn btn-secondary">정보</button> -->
                                             </td>
                                         </tr>
                                         
@@ -225,7 +245,8 @@
                                                 <span class="badge badge-complete">Complete</span>
                                             </td>
                                              <td>
-                                             <button type="button" class="btn btn-secondary">정보</button>
+                                            <button onclick="window.open('admin_order_chk','주문확인','width=400px,height=600px,location=no,status=no,scrollbars=no');"
+                                             type="button" class="btn btn-secondary">정보</button>
                                             </td>
                                         </tr>
                                         
@@ -244,13 +265,16 @@
                                                 <span class="badge badge-pending">Waiting</span>
                                             </td>
                                              <td>
-                                             <button type="button" class="btn btn-secondary">정보</button>
+                                            <button onclick="window.open('admin_order_chk','주문확인','width=400px,height=600px,location=no,status=no,scrollbars=no');"
+                                             type="button" class="btn btn-secondary">정보</button>
                                             </td>
                                         </tr>                                     
                                     </tbody>
                                 </table>
                             </div> <!-- /.table-stats -->
                         </div>
+                    </div>
+                    </div>
                     </div>
 
 
@@ -277,7 +301,7 @@
 				<div class="row">
 					<div class="col-sm-6">Copyright &copy;Design by</div>
 					<div class="col-sm-6 text-right">
-						차박</a>
+						차박
 					</div>
 				</div>
 			</div>

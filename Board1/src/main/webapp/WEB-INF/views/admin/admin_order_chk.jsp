@@ -78,31 +78,27 @@
 </head>
 
 <body>
-	<!-- Left Panel -->
-	<aside id="left-panel" class="left-panel">
-		<nav class="navbar navbar-expand-sm navbar-default">
-			<div id="main-menu" class="main-menu collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<a herf="#">
-					<li class="menu-title">Admin</li></a>
-					<!-- /.menu-title -->
-					
-			
-                
-                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                    
-                            <li><i class="ti-shopping-cart"></i><a href="admin_member_list">회원조회</a></li>
-                          
+
+
+  					<li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">회원관리</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_member_list">회원조회</a></li>
+                        </ul>
+                    </li>
+					  <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_sales">매출현황</a></li>
                         </ul>
                     </li>
 
+             
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
-                              <li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
+                              <li><i class="ti-face-smile"></i><a href="admin_registerPlace">장소등록</a></li>
                           
                         </ul>
                     </li>
@@ -110,19 +106,26 @@
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
+                            <li><i class="ti-image"></i> <a href="admin_board"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
 
-
-				</ul>
-			</div>
 			<!-- /.navbar-collapse -->
-		</nav>
-	</aside>
+
+
 	<!-- /#left-panel -->
 	
+	<!-- 차박 로고 -->
+			<div class="top-left">
 	
+				<a class="navbar-brand" href="adminMain">
+				<img class="img-fluid d-block  mx-auto" alt="" 
+                 style="width: 80px; height: 50px";
+                 src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
+		
+				<!-- <img src="startbootstrap/img/aa.png" alt="Logo"
+					style="width: 80px; height: 50px;"> --></a>
+			</div>
 		 
 		  <!-- Right Panel -->
 
@@ -148,12 +151,14 @@
 				</div>
 			</div>
         </header><!-- /header -->
+        </div>
    <!------------------------------- Header-------------------------------------------->
         
        
        
        
        
+
        
            <div class="col-lg-6">
                         <div class="card">
@@ -233,30 +238,7 @@
        
        
        
-       
-       
-<!-- ---------------------------------Footer---------------------------- -->
-				
-		<div class="clearfix"></div>
-		<!-- Footer -->
-		<footer class="site-footer">
-			<div class="footer-inner bg-white">
-				<div class="row">
-					<div class="col-sm-6">Copyright &copy;Design by</div>
-					<div class="col-sm-6 text-right">
-						차박</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- /.site-footer -->
-	</div>
-	<!-- /#right-panel -->
 
-
-
-
-	<!-- Scripts -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
 	<script

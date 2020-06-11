@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+==<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -10,6 +10,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="ChaBak">차박의묘미</a>
+            
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ReviewList">차박커뮤니티</a>

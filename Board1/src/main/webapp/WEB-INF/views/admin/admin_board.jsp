@@ -29,7 +29,8 @@
 <link rel="stylesheet" href="./resources/assets/css/cs-skin-elastic.css">
 <link rel="stylesheet" href="./resources/assets/css/style.css">
 
-
+<!-- 추가 -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
 
 <style>
@@ -86,55 +87,38 @@
 					<li class="menu-title">Admin</li></a>
 					<!-- /.menu-title -->
 					
+			
+                
+  					<li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">회원관리</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_member_list">회원조회</a></li>
+                        </ul>
+                    </li>
 					  <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
                         <ul class="sub-menu children dropdown-menu">                            
-                            <li><i class="ti-bar-chart"></i><a href="#">매출현황</a></li>
+                            <li><i class="ti-bar-chart"></i><a href="admin_sales">매출현황</a></li>
                         </ul>
                     </li>
-                    
-                    
-                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>상품관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-shopping-cart"></i><a href="tables-basic.html">재고관리</a></li>
-                            <li><i class="ti-shopping-cart"></i><a href="market_list.jsp">상품조회</a></li>
-                        </ul>
-                    </li>
-                    
-                    
+
+             
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>주문관리</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-check"></i><a href="tables-basic.html">배송조회</a></li>
+                            <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
+                              <li><i class="ti-face-smile"></i><a href="admin_registerPlace">장소등록</a></li>
+                          
                         </ul>
                     </li>
-                    
-                    
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="admin_member_list.jsp">회원조회</a></li>
-                            <li><i class="ti-face-sad"></i><a href="tables-data.html">회원삭제</a></li>
-                        </ul>
-                    </li>
-                    
-                    
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>장소관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-check"></i><a href="tables-basic.html">장소예약</a></li>
-                        </ul>
-                    </li>
-                    
-                      
                     
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href='../list.jsp'> 커뮤니티 조회</a></li>
+                            <li><i class="ti-image"></i> <a href="admin_board"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
+                
 
 
 				</ul>
@@ -144,7 +128,17 @@
 	</aside>
 	<!-- /#left-panel -->
 	
+	<!-- 차박 로고 -->
+			<div class="top-left">
 	
+				<a class="navbar-brand" href="adminMain">
+				<img class="img-fluid d-block  mx-auto" alt="" 
+                 style="width: 80px; height: 50px";
+                 src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
+		
+				<!-- <img src="startbootstrap/img/aa.png" alt="Logo"
+					style="width: 80px; height: 50px;"> --></a>
+			</div>
 		 
 		  <!-- Right Panel -->
 
@@ -171,45 +165,87 @@
 			</div>
         </header><!-- /header -->
    <!------------------------------- Header-------------------------------------------->
-        
-       
+   
+   
+   
+   
+  
+		<!-- Page Content -->
+  <div class="container">
+  <!-- 
+  <div class="py-5 bg-image" style='background-color:#0000ff'>
+  -->
+    <div class="row">
+      <div class="col-lg-3">
+
+        <h2 class="my-5"></h2>
+        <div class="list-group">
+          <a class="list-group-item" href="ReviewList.do">커뮤니티 관리</a>
+        </div>
+	  </div>
+    </div>
+    
+<table class="table table-striped table-bordered table-hover">
+	<tr>
+		<td>
+     		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="table">     
+   		
+     			<td width="73">선택</td>
+   				<td width="80">번호</td>
+   				<td width="340">제목</td>
+   				<td width="73">작성자</td>
+   				<td width="45">작성일</td>
+   				<td width="70">조회수</td>
+   				<td width="40">글보기</td>
+   				<td width="40">글삭제</td>
+
+
+  			<tr height="1" colspan="8">
+  				<td >
+  				<input type='checkbox' name='check' value='check'/>
+  				</td>
+  				<td>4321</td>
+  				<td>알전구샀어요</td>
+  				<td>차박구</td>
+  				<td>20.06.11</td>
+  				<td>118</td>
+  				<td><input type="button" class="btn btn-secondary" value="글보기"></td>
+  				<td><input type="button" class="btn btn-secondary" value="글삭제"></td>
+  				
+  			</tr>
+  			
+  			
+ 			<tr height="1">
+ 				<td colspan="8" width="752">			
+ 				</td>
+ 			</tr>	
+  		</table>
+  		
+  		
+  	</tr>
+<!-- 	<tr>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="table">
+  			<tr><td colspan="4" height="5"></td>
+  			</tr> -->
+  			
+  			
+  			
+  			<tr align="center">
+   				<td>
+   				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   					<input type=button class="btn btn-secondary" value="글쓰기" onClick="location.href='writeView'">
+   					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   					<input type="button" class="btn btn-secondary" value="이 전" onClick="history.go(-1)">
+   				</td>
+  			</tr>
+		</table>
 
 
 
 
 
 
-
-
-	
-	
-	
-	
-<!-- <body>
-<h3>차박용품</h3>
-<button>등록</button>
-<button>수정</button>
-<button>삭제</button>
-<hr>
-<table border="1">
-<tr><td><input type="checkbox"></td><td><img src="상품사진.jpg">상품사진</td><td>상품내역</td><td>가격<br>별점<br>리뷰후기N개</td>
-</table>
-
- -->
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-
+  
 <!-- ---------------------------------Footer---------------------------- -->
 				
 		<div class="clearfix"></div>
@@ -241,11 +277,6 @@
 	<script
 		src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
 	<script src="./resources/assets/js/main.js"></script>
-
-
-
-
-
 
 
 

@@ -91,30 +91,7 @@
 					
 					
                   
-                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                    
-                            <li><i class="ti-shopping-cart"></i><a href="admin_member_list">회원조회</a></li>
-                          
-                        </ul>
-                    </li>
-
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
-                              <li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
-                          
-                        </ul>
-                    </li>
-                    
-                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
-                        </ul>
-                    </li>
+                 
 
 				</ul>
 			</div>
@@ -123,7 +100,17 @@
 	</aside>
 	<!-- /#left-panel -->
 	
+	<!-- 차박 로고 -->
+			<div class="top-left">
 	
+				<a class="navbar-brand" href="adminMain">
+				<img class="img-fluid d-block  mx-auto" alt="" 
+                 style="width: 80px; height: 50px";
+                 src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
+		
+				<!-- <img src="startbootstrap/img/aa.png" alt="Logo"
+					style="width: 80px; height: 50px;"> --></a>
+			</div>
 
 		
 		 
@@ -155,6 +142,64 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+               <!-- Content -->
+        <div class="content">
+            <div class="animated fadeIn">
+
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="mb-3">상품별 매출</h4>
+        
+           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['매출', '지난달', '이번달'],
+          ['캠핑', 0.5, 0.5],
+          ['조명', 0.7, 0.3],
+          ['기타', 0.4, 0.8],
+          
+        ]);
+
+        var options = {
+          chart: {
+            title: '상품별 매출',
+            subtitle: '',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+
+    <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+      </div>
+                        </div>
+                    </div><!-- /# column -->
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
         
         
             <!-- Content -->

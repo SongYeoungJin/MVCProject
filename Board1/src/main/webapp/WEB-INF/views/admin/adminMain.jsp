@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -85,6 +84,8 @@
 #cellPaiChart {
 	height: 160px;
 }
+
+
 </style>
 </head>
 
@@ -98,23 +99,25 @@
 					<li class="menu-title">Admin</li></a>
 					<!-- /.menu-title -->
 					
-		
-                    
-                 
-                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                    
-                            <li><i class="ti-shopping-cart"></i><a href="admin_member_list">회원조회</a></li>
-                          
+  					<li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">회원관리</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_member_list">회원조회</a></li>
+                        </ul>
+                    </li>
+					  <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_sales">매출현황</a></li>
                         </ul>
                     </li>
 
+             
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
-                              <li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
+                              <li><i class="ti-face-smile"></i><a href="admin_registerPlace">장소등록</a></li>
                           
                         </ul>
                     </li>
@@ -122,7 +125,7 @@
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
+                            <li><i class="ti-image"></i> <a href="admin_board"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
 
@@ -269,19 +272,82 @@
 		
 		
 		   <!--  Traffic  -->
+		   <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="box-title">매출현황 </h4>
                             </div>
-                            <div class="row">
+
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="card-body">
+										<script type="text/javascript"
+											src="https://www.google.com/jsapi"></script>
+										<script type="text/javascript">
+											google.load("visualization", "1", {
+												packages : [ "corechart" ]
+											});
+											google.setOnLoadCallback(drawChart);
+											function drawChart() {
+												var data = google.visualization
+														.arrayToDataTable([
+																[
+																		'Year',
+																		'Sales',
+																		'Expenses' ],
+																[ '19.06',
+																		1000,
+																		400 ],
+																[ '19.12',
+																		1170,
+																		460 ],
+																[ '20.03', 660,
+																		1120 ],
+																[ '20.06',
+																		1030,
+																		540 ] ]);
+
+												var options = {
+													title : '매출현황'
+												};
+
+												var chart = new google.visualization.LineChart(
+														document
+																.getElementById('chart_div'));
+												chart.draw(data, options);
+											}
+										</script>
+										<div id="chart_div" style="width: 700px; height: 500px;"></div>
+
+									</div>
+								</div>
+							</div>
+</div>
+
+
+							<!--  <div class="row">
                                 <div class="col-lg-8">
                                     <div class="card-body">
-                                        <!-- <canvas id="TrafficChart"></canvas>   -->
+                                        <canvas id="TrafficChart"></canvas>  
                                         <div id="traffic-chart" class="traffic-chart"></div>
                                     </div>
-                                </div>
+                                </div> -->
+                                
+                                
+                                
+                                
+                                
+                                
+                         <div style="float:left;
+                         position:absolute;
+                         left:740px;
+                         top:150px;
+                         width: 950px;
+                         height: 800px;
+                         ">
+
                                 <div class="col-lg-4">
                                     <div class="card-body">
                                         <div class="progress-box progress-1">
@@ -320,12 +386,13 @@
                     </div><!-- /# column -->
                 </div>
                 <!--  /Traffic -->
-		
-		
+		</div>
+	
+</div>
 	
 		
-		
-		
+
+	
 		
 
 		
@@ -337,7 +404,7 @@
 				<div class="row">
 					<div class="col-sm-6">Copyright &copy;Design by</div>
 					<div class="col-sm-6 text-right">
-						차박</a>
+						차박
 					</div>
 				</div>
 			</div>
@@ -390,4 +457,5 @@
 	
 </body>
 </html>
+
 

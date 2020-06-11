@@ -108,22 +108,26 @@
 					<li class="menu-title">Admin</li></a>
 					<!-- /.menu-title -->
 			
-                     <li class="menu-item-has-children dropdown">
-                 
-                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
-                        <ul class="sub-menu children dropdown-menu">
                     
-                            <li><i class="ti-shopping-cart"></i><a href="admin_member_list">회원조회</a></li>
-                          
+  					<li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">회원관리</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_member_list">회원조회</a></li>
+                        </ul>
+                    </li>
+					  <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_sales">매출현황</a></li>
                         </ul>
                     </li>
 
+             
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
-                              <li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
+                              <li><i class="ti-face-smile"></i><a href="admin_registerPlace">장소등록</a></li>
                           
                         </ul>
                     </li>
@@ -131,7 +135,7 @@
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
+                            <li><i class="ti-image"></i> <a href="admin_board"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
                     
@@ -151,41 +155,47 @@
 		
 		
 		
-		
-		 
-		  <!-- Right Panel -->
+	
+		<!-- Right Panel -->
+	<div id="right-panel" class="right-panel">
+		<!-- Header-->
+		<header id="header" class="header">
 
-    <div id="right-panel" class="right-panel">
 
-        <!-- Header-->
-        <header id="header" class="header">
-        <a href="adminMain">
-            <div class="top-left">
-            
-                <div class="navbar-header">
-                <img class="img-fluid d-block  mx-auto" alt="" 
+
+
+<!--   width = "700" height = "500" -->
+
+   
+			<!-- 차박 로고 -->
+			<div class="top-left">
+	
+				<a class="navbar-brand" href="adminMain">
+				<img class="img-fluid d-block  mx-auto" alt="" 
                  style="width: 80px; height: 50px";
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
-                </div>
-            </div>
+		
+				<!-- <img src="startbootstrap/img/aa.png" alt="Logo"
+					style="width: 80px; height: 50px;"> --></a>
+			</div>
 
-      	<div class="header-menu">
+
+
+			<!-- login 버튼 -->
+			<div class="header-menu">
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
 						<button type="button" class="btn btn-secondary"
-							onclick="location.href='login'">Logout</button>
+							onclick="location.href='login'">login</button>
 					</c:if>
 				</div>
 			</div>
-
-      </a>
-
-        </header><!-- /header -->
-        <!-- Header-->
-        
-        
-     
+		</header>
 		<!-- /#header -->
+		
+			
+	
+
 
       
 
@@ -212,7 +222,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>정다윤</td>
+                                            <td onClick = " location.href='admin_member_detail'">정다윤</td>
                                             <td>서울시 행복구 행복동</td>
                                             <td>JeongDaYoon</td>
                                             <td>10</td>
@@ -224,7 +234,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>구나현</td>
+                                            <td onClick = " location.href='admin_member_detail'">구나현</td>
                                             <td>서울시 행복구 행복동</td>
                                             <td>Nahyun123</td>
                                             <td>7</td>
@@ -236,7 +246,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>송영진</td>
+                                            <td onClick = " location.href='admin_member_detail'">송영진</td>
                                             <td>서울시 행복구 행복동</td>
                                             <td>Song</td>
                                             <td>3</td>
@@ -248,7 +258,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>김영우</td>
+                                        <td onClick = " location.href='admin_member_detail'">김영우</td>
                                             <td>서울시 행복구 행복동</td>
                                             <td>Kim123</td>
                                             <td>39</td>
@@ -288,6 +298,8 @@
 		
 		
 				
+
+		
 		<div class="clearfix"></div>
 		<!-- Footer -->
 		<footer class="site-footer">
@@ -295,7 +307,7 @@
 				<div class="row">
 					<div class="col-sm-6">Copyright &copy;Design by</div>
 					<div class="col-sm-6 text-right">
-						차박</a>
+						차박
 					</div>
 				</div>
 			</div>
@@ -303,6 +315,7 @@
 		<!-- /.site-footer -->
 	</div>
 	<!-- /#right-panel -->
+
 
 
 	<!-- Scripts -->

@@ -210,10 +210,7 @@ public class BController {
 	public String myReview() {
 		return "placeReview/myReview";
 	}
-	@RequestMapping("ReviewWrite")
-	public String ReviewWrite() {
-		return "Review/ReviewWrite";
-	}
+
 	
 	@RequestMapping("productList")
 	public String productList() {

@@ -8,7 +8,7 @@
 </head>
 <body>
 
-
+<!-- 이 페이지 replyView페이지랑 연결된거라서 삭제 ㄴㄴ ㄴ -->
 <style>
 
 body {
@@ -97,7 +97,6 @@ body {
 				<button type="button" class="btn btn-sm btn-secondary" id="btnDelete">삭제</button>
 
 				<button type="button" class="btn btn-sm btn-secondary" id="btnList">목록</button>
-
 			</div>
 
 		</div>

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"> 
 <div id="map" style=" position: absolute;
   top: 28%;
   left: 30%;
@@ -99,8 +99,8 @@
 			];
 
 		// 마커 이미지의 이미지 주소입니다
-		var imageSrc = "startbootstrap/img/aa.png";
-		
+		var imageSrc = "resources/startbootstrap/img/aa.png"
+	
 		    
 		for (var i = 0; i < positions.length; i ++) {
 		    

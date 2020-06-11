@@ -29,20 +29,8 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
 <link rel="stylesheet" href="./resources/assets/css/cs-skin-elastic.css">
 <link rel="stylesheet" href="./resources/assets/css/style.css">
-<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
-<link
-	href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css"
-	rel="stylesheet">
-<link
-	href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css"
-	rel="stylesheet">
 
-<link
-	href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css"
-	rel="stylesheet" />
-<link
-	href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css"
-	rel="stylesheet" />
+
 
 <style>
 #weatherWidget .currentDesc {
@@ -85,8 +73,12 @@
 #cellPaiChart {
 	height: 160px;
 }
+
+
+
 </style>
-  <meta charset="UTF-8">
+
+
   <div id="map" style=" position: absolute;
   top: 28%;
   left: 30%;
@@ -107,56 +99,31 @@
 					<li class="menu-title">Admin</li></a>
 					<!-- /.menu-title -->
 					
-					  <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
-                        <ul class="sub-menu children dropdown-menu">                            
-                            <li><i class="ti-bar-chart"></i><a href="ui-badges.html">매출현황</a></li>
-                        </ul>
-                    </li>
-                    
-                    
+				
                      <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>상품관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-shopping-cart"></i><a href="tables-basic.html">재고관리</a></li>
-                            <li><i class="ti-shopping-cart"></i><a href="tables-data.html">상품조회</a></li>
-                        </ul>
-                    </li>
-                    
-                    
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>주문관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-check"></i><a href="tables-basic.html">배송조회</a></li>
-                        </ul>
-                    </li>
-                    
-                    
-                    <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="tables-basic.html">회원조회</a></li>
-                            <li><i class="ti-face-sad"></i><a href="tables-data.html">회원삭제</a></li>
+                    
+                            <li><i class="ti-shopping-cart"></i><a href="admin_member_list">회원조회</a></li>
+                          
                         </ul>
                     </li>
-                    
-                    
+
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>장소관리</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-check"></i><a href="tables-basic.html">장소예약</a></li>
+                            <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
+                              <li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
+                          
                         </ul>
                     </li>
-                    
-                      
                     
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href='../list.jsp'> 커뮤니티 조회</a></li>
+                            <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
-
 
 				</ul>
 			</div>
@@ -171,34 +138,42 @@
 	
 	
 	<!-- Right Panel -->
-	<div id="right-panel" class="right-panel">
-		<!-- Header-->
-		<header id="header" class="header">
+	
+    <div id="right-panel" class="right-panel">
 
-
-   
-			<!-- 차박 로고 -->
-			<div class="top-left">
-				<a class="navbar-brand" href="./"><img
-					src="startbootstrap/img/logo.png" alt="Logo"
-					style="width: 80px; height: 50px;"></a>
-			</div>
-
-			<!-- login 버튼 -->
-			<div class="header-menu">
+        <!-- Header-->
+        <header id="header" class="header">
+        <a href="adminMain">
+            <div class="top-left">
+            
+                <div class="navbar-header">
+                <img class="img-fluid d-block  mx-auto" alt="" 
+                 style="width: 80px; height: 50px";
+                 src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
+                </div>
+            </div>
+                  <div class="header-menu">
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
 						<button type="button" class="btn btn-secondary"
-							onclick="location.href='${pageContext.request.contextPath}/login.jsp'">login</button>
+							onclick="location.href='login'">Logout</button>
 					</c:if>
 				</div>
 			</div>
-		</header>
-		<!-- /#header -->
-		
-		
+            
+      </a>
+        </header><!-- /header -->
+        <!-- Header-->
+
+	
+	
+	
+	
+	
+	<!-- ----------content------------ -->
+
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=01f7615ee8d025a981b28bb6241ff9f0"></script>
-<div id="clickLatlng"></div>
+<div id="clickLatlng">
 <form action="test.jsp" method="post">
 
 <label>이름 :</label>
@@ -214,7 +189,7 @@
 <script>
 var container = document.getElementById('map');
 var options = {
-		center: new kakao.maps.LatLng(36.333276, 127.402208),
+		center: new kakao.maps.LatLng(36.333276, 127.402207),
 	level: 13
 };
 var map = new kakao.maps.Map(container, options);
@@ -244,23 +219,45 @@ kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
  resultDiv.innerHTML = message;
 });
 
-</script>
 
-<!--  <div class="clearfix"></div>
+</script>
+</div>
+
+
+
+	<!-- ----------/content------------ -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------------------------------Footer---------------------------- -->
+	<!-- 			
+		<div class="clearfix"></div>
 		Footer
 		<footer class="site-footer">
 			<div class="footer-inner bg-white">
 				<div class="row">
 					<div class="col-sm-6">Copyright &copy;Design by</div>
 					<div class="col-sm-6 text-right">
-						차박</a>
+						차박
 					</div>
 				</div>
 			</div>
 		</footer>
-		/.site-footer -->
+	/.site-footer
 	</div>
-	<!-- /#right-panel -->
+	/#right-panel
+	
+	 -->
+	
+	
 
 
 	<!-- Scripts -->
@@ -274,33 +271,6 @@ kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
 		src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
 	<script src="./resources/assets/js/main.js"></script>
 
-	<!--  Chart js -->
-	<script
-		src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.bundle.min.js"></script>
 
-	<!--Chartist Chart-->
-	<script
-		src="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/chartist-plugin-legend@0.6.2/chartist-plugin-legend.min.js"></script>
-
-	<script
-		src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.min.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/flot-pie@1.0.0/src/jquery.flot.pie.min.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/flot-spline@0.0.1/js/jquery.flot.spline.min.js"></script>
-
-	<script
-		src="https://cdn.jsdelivr.net/npm/simpleweather@3.1.0/jquery.simpleWeather.min.js"></script>
-	<script src="./resources/assets/js/init/weather-init.js"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
-	<script src="./resources/assets/js/init/fullcalendar-init.js"></script>
-	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-
- 
 </body>
 </html>

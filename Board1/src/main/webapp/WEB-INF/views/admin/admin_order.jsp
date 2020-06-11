@@ -30,29 +30,8 @@
 <link rel="stylesheet" href="./resources/assets/css/style.css">
 
 <!-- 추가 -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
-	   <link rel="stylesheet" href="./resources/assets/css/lib/datatable/dataTables.bootstrap.min.css">
-	      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-	   
-
-
-<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
-<link
-	href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css"
-	rel="stylesheet">
-<link
-	href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css"
-	rel="stylesheet">
-
-<link
-	href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css"
-	rel="stylesheet" />
-<link
-	href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css"
-	rel="stylesheet" />
-	 -->
-	
-	
 
 <style>
 #weatherWidget .currentDesc {
@@ -64,7 +43,7 @@
 }
 
 #flotPie1 {
-	height: 151px;
+	height: 150px;
 }
 
 #flotPie1 td {
@@ -107,9 +86,10 @@
 					<a herf="#">
 					<li class="menu-title">Admin</li></a>
 					<!-- /.menu-title -->
+					
 			
-                     <li class="menu-item-has-children dropdown">
-                 
+                    
+                
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
                         <ul class="sub-menu children dropdown-menu">
@@ -134,8 +114,7 @@
                             <li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
-                    
-  
+
 
 				</ul>
 			</div>
@@ -145,157 +124,159 @@
 	<!-- /#left-panel -->
 	
 	
-	
+		 
+		  <!-- Right Panel -->
 
-	
-		
-		
-		
-	
-		<!-- Right Panel -->
-	<div id="right-panel" class="right-panel">
-		<!-- Header-->
-		<header id="header" class="header">
+    <div id="right-panel" class="right-panel">
 
-
-
-
-<!--   width = "700" height = "500" -->
-
-   
-			<!-- 차박 로고 -->
-			<div class="top-left">
-	
-				<a class="navbar-brand" href="adminMain">
-				<img class="img-fluid d-block  mx-auto" alt="" 
+        <!-- Header-->
+        <header id="header" class="header">
+        
+            <div class="top-left">
+            
+                <div class="navbar-header">
+                <img class="img-fluid d-block  mx-auto" alt="" 
                  style="width: 80px; height: 50px";
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
-		
-				<!-- <img src="startbootstrap/img/aa.png" alt="Logo"
-					style="width: 80px; height: 50px;"> --></a>
-			</div>
-
-
-
-			<!-- login 버튼 -->
-			<div class="header-menu">
+                </div>
+            </div>
+      	<div class="header-menu">
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
 						<button type="button" class="btn btn-secondary"
-							onclick="location.href='login'">login</button>
+							onclick="location.href='${pageContext.request.contextPath}/login.jsp'">Logout</button>
 					</c:if>
 				</div>
 			</div>
-		</header>
-		<!-- /#header -->
-		
-			
-	
+        </header><!-- /header -->
+   <!------------------------------- Header-------------------------------------------->
+        
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
 
-
-      
-
-        <div class="content">
+<!-- -----------content ------------------ -->
+  <div class="content">
             <div class="animated fadeIn">
                 <div class="row">
-
-                    <div class="col-md-12">
+                    <div class="col-lg-12">
                         <div class="card">
                             <div class="card-header">
-                                <strong class="card-title">회원조회</strong>
+                                <strong class="card-title">주문현황</strong>
                             </div>
-                            <div class="card-body">
-                                <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                            <div class="table-stats order-table ov-h">
+                                <table class="table ">
                                     <thead>
                                         <tr>
+                                            <th class="avatar">상품</th>
+                                            <th class="serial">주문번호</th>
                                             <th>이름</th>
-                                            <th>주소</th>
-                                            <th>아이디</th>
-                                            <th>주문 횟수</th>
-                                            <th>수정</th>
-                                             <th>삭제</th>
+                                            <th>상품이름</th>
+                                            <th>수량</th>
+                                            <th>결제금액</th>
+                                            <th>주문상태</th>
+                                            <th>정보확인</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    
                                         <tr>
-                                            <td onClick = " location.href='admin_member_detail'">정다윤</td>
-                                            <td>서울시 행복구 행복동</td>
-                                            <td>JeongDaYoon</td>
-                                            <td>10</td>
+                                           <!--  <td class="serial">1.</td> -->
+                                            <td class="avatar">
+                                                <div class="round-img">
+                                                    <a href="#"><img class="rounded-circle" src="https://dnvefa72aowie.cloudfront.net/origin/article/202005/C87CA9676DE7A3F83BC7D96E39718C964FD75660332735786AD962C195425568.jpg?q=82&s=300x300&t=crop" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td class="serial"> 20200608 </td>
+                                            <td>  <span class="name">정다윤</span> </td>
+                                            <td> <span class="product">알전구</span> </td>
+                                            <td><span class="count">1</span></td>
+                                            <td><span class="price">17,000</span></td>
                                             <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
+                                                <span class="badge badge-complete">Complete</span>
                                             </td>
                                             <td>
-                                            <button type="button" class="btn btn-secondary">삭제</button>
+                                            <button onclick="window.open('admin_order_chk','주문확인','width=400px,height=600px,location=no,status=no,scrollbars=no');"
+                                             type="button" class="btn btn-secondary">정보  </button>
+
+                                             <!-- <button onclick="location.href='admin_order_chk'", width=400, height=400, type="button" class="btn btn-secondary">정보</button> -->
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td onClick = " location.href='admin_member_detail'">구나현</td>
-                                            <td>서울시 행복구 행복동</td>
-                                            <td>Nahyun123</td>
-                                            <td>7</td>
+                                        
+                                        <tr>          
+                                         <td class="avatar">
+                                                <div class="round-img">
+                                                    <a href="#"><img class="rounded-circle" src="https://dnvefa72aowie.cloudfront.net/origin/article/202005/C87CA9676DE7A3F83BC7D96E39718C964FD75660332735786AD962C195425568.jpg?q=82&s=300x300&t=crop" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td class="serial"> 20200608 </td>
+                                            <td>  <span class="name">정다윤</span> </td>
+                                            <td> <span class="product">알전구</span> </td>
+                                            <td><span class="count">1</span></td>
+                                            <td><span class="price">17,000</span></td>
+                                            <td>
+                                                <span class="badge badge-complete">Complete</span>
+                                            </td>
                                              <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
-                                            </td>
-                                            <td>
-                                            <button type="button" class="btn btn-secondary">삭제</button>
+                                            <button onclick="window.open('admin_order_chk','주문확인','width=400px,height=600px,location=no,status=no,scrollbars=no');"
+                                             type="button" class="btn btn-secondary">정보</button>
                                             </td>
                                         </tr>
+                                        
                                         <tr>
-                                            <td onClick = " location.href='admin_member_detail'">송영진</td>
-                                            <td>서울시 행복구 행복동</td>
-                                            <td>Song</td>
-                                            <td>3</td>
-                                             <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
+                                         <td class="avatar">
+                                                <div class="round-img">
+                                                    <a href="#"><img class="rounded-circle" src="https://dnvefa72aowie.cloudfront.net/origin/article/202005/C87CA9676DE7A3F83BC7D96E39718C964FD75660332735786AD962C195425568.jpg?q=82&s=300x300&t=crop" alt=""></a>
+                                                </div>
                                             </td>
+                                            <td class="serial"> 20200608 </td>
+                                            <td>  <span class="name">정다윤</span> </td>
+                                            <td> <span class="product">알전구</span> </td>
+                                            <td><span class="count">3</span></td>
+                                            <td><span class="price">17,000</span></td>
                                             <td>
-                                            <button type="button" class="btn btn-secondary">삭제</button>
+                                                <span class="badge badge-pending">Waiting</span>
                                             </td>
-                                        </tr>
-                                        <tr>
-                                        <td onClick = " location.href='admin_member_detail'">김영우</td>
-                                            <td>서울시 행복구 행복동</td>
-                                            <td>Kim123</td>
-                                            <td>39</td>
                                              <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
+                                            <button onclick="window.open('admin_order_chk','주문확인','width=400px,height=600px,location=no,status=no,scrollbars=no');"
+                                             type="button" class="btn btn-secondary">정보</button>
                                             </td>
-                                            <td>
-                                            <button type="button" class="btn btn-secondary">삭제</button>
-                                            </td>
-                                        </tr>
-                                   </tbody>
+                                        </tr>                                     
+                                    </tbody>
                                 </table>
-                            </div>
+                            </div> <!-- /.table-stats -->
                         </div>
+                    </div>
+                    </div>
                     </div>
 
 
-                </div>
-            </div><!-- .animated -->
-        </div><!-- .content -->
+<!-- -----------------/content-------------------- -->
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------------------------------Footer---------------------------- -->
 				
-
-		
 		<div class="clearfix"></div>
 		<!-- Footer -->
 		<footer class="site-footer">
@@ -314,6 +295,7 @@
 
 
 
+
 	<!-- Scripts -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
@@ -326,28 +308,6 @@
 	<script src="./resources/assets/js/main.js"></script>
 
 
-	
-	
-	
-	   <script src="./resources/assets/js/lib/data-table/datatables.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/dataTables.buttons.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.bootstrap.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/jszip.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/vfs_fonts.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.html5.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.print.min.js"></script>
-    <script src="./resources/assets/js/lib/data-table/buttons.colVis.min.js"></script>
-    <script src="./resources/assets/js/init/datatables-init.js"></script>
-	
 
-
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-          $('#bootstrap-data-table-export').DataTable();
-      } );
-  </script>
-	
 </body>
 </html>

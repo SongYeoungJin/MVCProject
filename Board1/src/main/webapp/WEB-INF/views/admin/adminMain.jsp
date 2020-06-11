@@ -97,53 +97,28 @@
 					<li class="menu-title">Admin</li></a>
 					<!-- /.menu-title -->
 					
+
 					  <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
                         <ul class="sub-menu children dropdown-menu">                            
-                            <li><i class="ti-bar-chart"></i><a href="#">매출현황</a></li>
+                            <li><i class="ti-bar-chart"></i><a href="admin_sales">매출현황</a></li>
                         </ul>
                     </li>
-                    
-                    
-                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>상품관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-shopping-cart"></i><a href="tables-basic.html">재고관리</a></li>
-                            <li><i class="ti-shopping-cart"></i><a href="market_list.jsp">상품조회</a></li>
-                        </ul>
-                    </li>
-                    
-                    
+
+             
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>주문관리</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-check"></i><a href="tables-basic.html">배송조회</a></li>
+                            <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
+                              <li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
+                          
                         </ul>
                     </li>
-                    
-                    
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="admin_member_list.jsp">회원조회</a></li>
-                            <li><i class="ti-face-sad"></i><a href="tables-data.html">회원삭제</a></li>
-                        </ul>
-                    </li>
-                    
-                    
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>장소관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-check"></i><a href="tables-basic.html">장소예약</a></li>
-                        </ul>
-                    </li>
-                    
-                      
                     
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-image"></i> <a href='../list.jsp'> 커뮤니티 조회</a></li>
+                            <li><i class="ti-image"></i> <a href="admin_board"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
 
@@ -174,7 +149,7 @@
 			<!-- 차박 로고 -->
 			<div class="top-left">
 	
-				<a class="navbar-brand" href="adminMain.jsp">
+				<a class="navbar-brand" href="adminMain">
 				<img class="img-fluid d-block  mx-auto" alt="" 
                  style="width: 80px; height: 50px";
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
@@ -190,7 +165,7 @@
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
 						<button type="button" class="btn btn-secondary"
-							onclick="location.href='${pageContext.request.contextPath}/login.jsp'">login</button>
+							onclick="location.href='login'">login</button>
 					</c:if>
 				</div>
 			</div>
@@ -254,7 +229,7 @@
                                     <div class="stat-content">
                                         <div class="text-left dib">
                                             <div class="stat-text"><span class="count">349</span></div>
-                                            <div class="stat-heading">.</div>
+                                            <div class="stat-heading">총 게시글 수</div>
                                         </div>
                                     </div>
                                 </div>
@@ -289,7 +264,6 @@
 		
 		
 		
-		
 		   <!--  Traffic  -->
                 <div class="row">
                     <div class="col-lg-12">
@@ -297,41 +271,97 @@
                             <div class="card-body">
                                 <h4 class="box-title">매출현황 </h4>
                             </div>
-                            <div class="row">
+
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="card-body">
+										<script type="text/javascript"
+											src="https://www.google.com/jsapi"></script>
+										<script type="text/javascript">
+											google.load("visualization", "1", {
+												packages : [ "corechart" ]
+											});
+											google.setOnLoadCallback(drawChart);
+											function drawChart() {
+												var data = google.visualization
+														.arrayToDataTable([
+																[
+																		'Year',
+																		'Sales',
+																		'Expenses' ],
+																[ '19.06',
+																		1000,
+																		400 ],
+																[ '19.12',
+																		1170,
+																		460 ],
+																[ '20.03', 660,
+																		1120 ],
+																[ '20.06',
+																		1030,
+																		540 ] ]);
+
+												var options = {
+													title : '매출현황'
+												};
+
+												var chart = new google.visualization.LineChart(
+														document
+																.getElementById('chart_div'));
+												chart.draw(data, options);
+											}
+										</script>
+										<div id="chart_div" style="width: 700px; height: 500px;"></div>
+
+									</div>
+								</div>
+							</div>
+
+
+
+							<!--  <div class="row">
                                 <div class="col-lg-8">
                                     <div class="card-body">
-                                        <!-- <canvas id="TrafficChart"></canvas>   -->
+                                        <canvas id="TrafficChart"></canvas>  
                                         <div id="traffic-chart" class="traffic-chart"></div>
                                     </div>
-                                </div>
+                                </div> -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                                 <div class="col-lg-4">
                                     <div class="card-body">
                                         <div class="progress-box progress-1">
-                                            <h4 class="por-title">방문자</h4>
-                                            <div class="por-txt">96,930 Users (40%)</div>
+                                            <h4 class="por-title">커플 에어매트</h4>
+                                            <div class="por-txt">10건(50%)</div>
                                             <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-1" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-flat-color-1" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                         <div class="progress-box progress-2">
-                                            <h4 class="por-title">Bounce Rate</h4>
-                                            <div class="por-txt">3,220 Users (24%)</div>
+                                            <h4 class="por-title">반짝반짝 알전구</h4>
+                                            <div class="por-txt">5건(25%)</div>
                                             <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-2" role="progressbar" style="width: 24%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-flat-color-2" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                         <div class="progress-box progress-2">
-                                            <h4 class="por-title">Unique Visitors</h4>
-                                            <div class="por-txt">29,658 Users (60%)</div>
+                                            <h4 class="por-title">떨어져도 몰라요 해먹</h4>
+                                            <div class="por-txt">3건(13%)</div>
                                             <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-3" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-flat-color-3" role="progressbar" style="width: 13%;" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                         <div class="progress-box progress-2">
-                                            <h4 class="por-title">Targeted  Visitors</h4>
-                                            <div class="por-txt">99,658 Users (90%)</div>
+                                            <h4 class="por-title">아기자기 캠핑 간이의자</h4>
+                                            <div class="por-txt">2건(12%)</div>
                                             <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-4" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-flat-color-4" role="progressbar" style="width: 12%;" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                     </div> <!-- /.card-body -->
@@ -344,12 +374,10 @@
                 <!--  /Traffic -->
 		
 		
-		
-		
 	
 		
-		
-		
+
+	
 		
 
 		
@@ -361,7 +389,7 @@
 				<div class="row">
 					<div class="col-sm-6">Copyright &copy;Design by</div>
 					<div class="col-sm-6 text-right">
-						차박</a>
+						차박
 					</div>
 				</div>
 			</div>
@@ -414,3 +442,5 @@
 	
 </body>
 </html>
+
+

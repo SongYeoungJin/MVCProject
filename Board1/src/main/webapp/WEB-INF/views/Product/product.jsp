@@ -41,8 +41,8 @@
             <p class="card-text">이 조명 없이는 차박캠핑을 성공적으로 했다고 하기 아쉽습니다!
             					 좋은날, 좋은분위기로 대화를 이끌어가세요.</p>
             <span class="text-warning">★ ★ ★ ★ ★ </span> 5.0 
-            &nbsp;&nbsp;&nbsp;<a class="btn btn-success" href="account.jsp">구매확정</a>
-            				  <a class="btn btn-success" href="myCart.jsp">장바구니</a>
+            &nbsp;&nbsp;&nbsp;<a class="btn btn-success" href="account">구매확정</a>
+            				  <a class="btn btn-success" href="myCart">장바구니</a>
           </div>
         </div>
         <!-- /.card -->
@@ -59,9 +59,9 @@
             <small class="text-muted">2020/05/29</small>
             <hr>
             <p>yeah!!!!!!!!!!!!!!!!</p>
-            <small class="text-muted">2020/05/29</small>
+            <small class="text-muted">2020/05/30</small>
             <hr>
-            <a class="btn btn-secondary" href="reviewWrite.jsp">리뷰남기기</a>
+            <a class="btn btn-secondary" href="writeView">리뷰남기기</a>
           </div>
         </div>
         <!-- /.card -->

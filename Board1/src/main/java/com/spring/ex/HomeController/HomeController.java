@@ -62,7 +62,7 @@ public class HomeController {
    }
 
 	
-	  @RequestMapping(value = "/LoginForm.do", method = RequestMethod.GET) public
+	  @RequestMapping(value = "/login.do", method = RequestMethod.GET) public
 	  String loginForm(HttpServletRequest request, HttpServletResponse response,
 	  Model model) throws Exception {
 	  
@@ -70,7 +70,7 @@ public class HomeController {
 	  request.setCharacterEncoding("UTF-8");
 	  response.setCharacterEncoding("UTF-8");
 	  
-	  return "LoginForm"; }
+	  return "Login/login"; }
 	 
    @RequestMapping(value = "/main.do", method = RequestMethod.GET)
    public String main(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {

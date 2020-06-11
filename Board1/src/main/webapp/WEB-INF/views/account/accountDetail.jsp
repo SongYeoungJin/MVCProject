@@ -15,7 +15,7 @@
 <div class="container">
 	<table align="center" border='0' class="table table-striped table-bordered table-hover">
 		<tr>
-			<td align="center" colspan="2">포인트 결제 창</td>
+			<td align="center" colspan="3">포인트 결제 창</td>
 		</tr>
 		<tr>
 			<td>현재 POINT</td>
@@ -31,11 +31,17 @@
 		</tr>
 	</table>
 </div>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<input type="submit" value="결제" class="btn btn-secondary">&nbsp;
-	<input type="submit" value="취소" class="btn btn-secondary">
 
+	
 </form>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="submit" value="결제"  onclick="payment()" class="btn btn-secondary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="submit" value="취소" onClick="history.go(-1)" class="btn btn-secondary">
+	<script>
+function payment() {
+	alert("결제완료!");
+}
+</script>
 </body>
 </html>

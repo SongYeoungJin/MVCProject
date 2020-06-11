@@ -116,18 +116,21 @@ public class BController {
 		return "redirect:list";
 	}
 
-	/*
-	 * @RequestMapping("LoginForm") public String login() { return
-	 * "login/LoginForm"; }
-	 */
+	
+
+
 	@RequestMapping("findIdForm")
 	public String findId() {
-		return "login/findIdForm";
+		return "Login/findIdForm";
+	}
+	@RequestMapping("login")
+	public String login() {
+		return "Login/login";
 	}
 
 	@RequestMapping("Join")
 	public String Join() {
-		return "Join";
+		return "Login/Join";
 	}
 
 	@RequestMapping("myInfo")
@@ -169,35 +172,7 @@ public class BController {
 	public String myAccountCancel() {
 		return "account/myAccountCancel";
 	}
-
-	@RequestMapping("Review")
-	public String review() {
-		return "Review/Review";
-	}
-
-	/*
-	 * <<<<<<< HEAD =======
-	 * 
-	 * 
-	 * >>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
-	 * 
-	 * <<<<<<< HEAD
-	 * 
-	 * <<<<<<< HEAD
-	 * 
-	 * 
-	 * @RequestMapping("test") public String test() { return "main/test"; }
-	 * 
-	 * =======
-	 * 
-	 * @RequestMapping("buypoint") public String buypoint() { return
-	 * "Point/buypoint"; }
-	 * 
-	 * @RequestMapping("mycart") public String mycart() { return "cart/mycart"; }
-	 * >>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
-	 * 
-	 * =======
-	 */
+	
 	@RequestMapping("test")
 	public String test() {
 		return "main/test";
@@ -210,6 +185,10 @@ public class BController {
 	public String place() {
 		return "chabakplace/place";
 	}
+	@RequestMapping("ChaBak") 
+	public String ChaBak() {
+		return "chabakplace/ChaBak";
+	}
 	@RequestMapping("buypoint")
 	public String buypoint() {
 		return "Point/buypoint";
@@ -218,6 +197,10 @@ public class BController {
 	@RequestMapping("myCart")
 	public String myCart() {
 		return "cart/myCart";
+	}
+	@RequestMapping("myPage")
+	public String myPage() {
+		return "MyPage/myPage";
 	}
 	
 	@RequestMapping("myReview")
@@ -244,7 +227,10 @@ public class BController {
 	public String productList3() {
 		return "Product/productList3";
 	}
-	
+	@RequestMapping("admin_member_detail")
+	public String admin_member_detail() {
+		return "admin/admin_member_detail";
+	}
 	@RequestMapping("adminMain")
 	public String adminMain() {
 		return "admin/adminMain";
@@ -255,23 +241,32 @@ public class BController {
 		return "admin/admin_member_list";
 	}
 	
-	/*
-	 * <<<<<<< HEAD
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * =======
-	 * 
-	 * @RequestMapping("myPage") public String myPage() { return "MyPage/myPage"; }
-	 * >>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
-	 * 
-	 */
+	@RequestMapping("admin_sales")
+	public String admin_sales() {
+		return "admin/admin_sales";
+	}
+	
+	@RequestMapping("admin_merch_control")
+	public String admin_merch_control() {
+		return "admin/admin_merch_control";
+	}
+	
+	@RequestMapping("admin_order")
+	public String admin_order() {
+		return "admin/admin_order";
+	}
+	
+	@RequestMapping("admin_order_chk")
+	public String admin_order_chk() {
+		return "admin/admin_order_chk";
+	}
+	@RequestMapping("admin_product")
+	public String admin_product() {
+		return "admin/admin_product";
+	}
+	@RequestMapping("admin_board")
+	public String admin_board() {
+		return "admin/admin_board";
+	}
 
 }
-/*
- * >>>>>>>branch'master'
- * 
- * of https:// github.com/SongYeoungJin/MVCProject.git }
- */

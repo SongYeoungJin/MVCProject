@@ -40,7 +40,7 @@
     	</td>
     </tr>
     <tr>
-    	<table width="50%" cellpadding="0" cellspacing="0" border="0" class="table">
+    	<table width="51%" cellpadding="0" cellspacing="0" border="0" class="table">
   			<tr height="5"><td width="5"></td></tr>
    				<td width="73">번호</td>
    				<td width="379">제목</td>
@@ -69,8 +69,9 @@
   			</tr>
   			<tr align="center">
    				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   					<input type=button value="글쓰기">&nbsp;
-   					<input type=button value="이 전">
+   					<input type=button value="글쓰기" onClick="location.href='writeView'">
+   					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   					<input type=button value="이 전" onClick="history.go(-1)">
    				</td>
   			</tr>
 		</table>

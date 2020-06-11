@@ -96,37 +96,37 @@
 					<!-- /.menu-title -->
 
 
-					<li class="menu-item-has-children dropdown"><a href="#"
-						class="dropdown-toggle" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"> <i
-							class="ui-cards.html"></i>회원관리
-					</a>
-						<ul class="sub-menu children dropdown-menu">
+						<li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">회원관리</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_member_list">회원조회</a></li>
+                        </ul>
+                    </li>
+					  <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_sales">매출현황</a></li>
+                        </ul>
+                    </li>
 
-							<li><i class="ti-shopping-cart"></i><a
-								href="admin_member_list">회원조회</a></li>
-
-						</ul></li>
-
-					<li class="menu-item-has-children dropdown"><a href="#"
-						class="dropdown-toggle" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"> <i
-							class="ui-cards.html"></i>기타관리
-					</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="ti-face-smile"></i><a href="admin_product">상품관리</a></li>
-							<li><i class="ti-face-smile"></i><a href="registerPlace">장소등록</a></li>
-
-						</ul></li>
-
-					<li class="menu-item-has-children dropdown"><a href="#"
-						class="dropdown-toggle" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"> <i
-							class="ui-cards.html"></i>커뮤니티관리
-					</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="ti-image"></i> <a href="list"> 커뮤니티 조회</a></li>
-						</ul></li>
+             
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
+                              <li><i class="ti-face-smile"></i><a href="admin_registerPlace">장소등록</a></li>
+                          
+                        </ul>
+                    </li>
+                    
+                   <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="ti-image"></i> <a href="admin_board"> 커뮤니티 조회</a></li>
+                        </ul>
+                    </li>
+                    
+  
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -135,47 +135,32 @@
 	<!-- /#left-panel -->
 
 
-	<!-- 차박 로고 -->
-			<div class="top-left">
-	
-				<a class="navbar-brand" href="adminMain">
-				<img class="img-fluid d-block  mx-auto" alt="" 
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+        <a href="adminMain">
+            <div class="top-left">
+            
+                <div class="navbar-header">
+                <img class="img-fluid d-block  mx-auto" alt="" 
                  style="width: 80px; height: 50px";
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
-		
-				<!-- <img src="startbootstrap/img/aa.png" alt="Logo"
-					style="width: 80px; height: 50px;"> --></a>
-			</div>
-
-
-
-
-	<!-- Right Panel -->
-
-	<div id="right-panel" class="right-panel">
-
-		<!-- Header-->
-		<header id="header" class="header">
-
-			<div class="top-left">
-
-				<div class="navbar-header">
-					<img class="img-fluid d-block  mx-auto" alt=""
-						style="width: 80px; height: 50px"
-                 src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
-				</div>
-			</div>
-			<div class="header-menu">
+                </div>
+            </div>
+                  <div class="header-menu">
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
 						<button type="button" class="btn btn-secondary"
-							onclick="location.href='${pageContext.request.contextPath}/login.jsp'">Logout</button>
+							onclick="location.href='login'">Logout</button>
 					</c:if>
 				</div>
 			</div>
-
+            
+      </a>
         </header><!-- /header -->
         <!-- Header-->
+
         
         
         

@@ -52,7 +52,7 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="accountList.do">
+          <a class="portfolio-item" href="myAccount">
             <span class="caption">
               <span class="caption-content">
                 <h2>Order</h2>

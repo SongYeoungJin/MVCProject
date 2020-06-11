@@ -185,7 +185,10 @@
     
 		
 		
-        
+		<!-- -------------content----------------- -->
+		 
+		  
+            <!-- --------tab---------- -->
         <ul class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link active" data-toggle="tab" href="#one">상품관리</a>
@@ -197,7 +200,17 @@
 </ul>
 
 <div class="tab-content">
+         <!-- ---------------/tab------------- -->
 
+
+
+
+  
+  
+  
+  
+  <!-- ------------첫번째 탭부분 --------------- -->
+  
   
   <div class="tab-pane fade show active" id="one">
     			<div class="card">
@@ -257,6 +270,16 @@
  	
   </div>
   
+     <!-- ------------/첫번째 탭부분 --------------- -->
+  
+  
+  
+  
+  
+  
+  
+  
+   <!-- ----------------두번째 탭부분------------------- -->
   <div class="tab-pane fade" id="three">
    
  						<div class="card">
@@ -288,6 +311,14 @@
 
 </div>
 </div>
+  <!-- ----------------/두번째 탭부분------------------- -->
+
+
+
+
+
+
+
 		<!-- Footer -->
 		<footer class="site-footer">
 			<div class="footer-inner bg-white">

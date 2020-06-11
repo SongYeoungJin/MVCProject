@@ -172,45 +172,8 @@ public class BController {
 	public String myAccountCancel() {
 		return "account/myAccountCancel";
 	}
-<<<<<<< HEAD
-<<<<<<< HEAD
-	@RequestMapping("Review")
-	public String Review() {
-		return "Review/Review";
-	}
-=======
 
 
-	/*
-	 * <<<<<<< HEAD =======
-	 * 
-	 * 
-	 * >>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
-	 * 
-	 * <<<<<<< HEAD
-	 * 
-	 * <<<<<<< HEAD
-	 * 
-	 * 
-	 * @RequestMapping("test") public String test() { return "main/test"; }
-	 * 
-	 * =======
-	 * 
-	 * @RequestMapping("buypoint") public String buypoint() { return
-	 * "Point/buypoint"; }
-	 * 
-	 * @RequestMapping("mycart") public String mycart() { return "cart/mycart"; }
-	 * >>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
-	 * 
-	 * =======
-	 */
-=======
-	
->>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
-	@RequestMapping("test")
-	public String test() {
-		return "main/test";
-	}
 	@RequestMapping("registerPlace")
 	public String registerPlace() {
 		return "chabakplace/registerPlace";
@@ -302,6 +265,14 @@ public class BController {
 	public String admin_board() {
 		return "admin/admin_board";
 	}
+	
+	@RequestMapping("find_ID")
+	public String find_ID() {
+		return "Login/find_ID";
+	}
+	@RequestMapping("find_PW")
+	public String find_PW() {
+		return "Login/find_PW";
+	}
 
->>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
 }

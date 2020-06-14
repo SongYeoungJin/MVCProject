@@ -169,6 +169,7 @@
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
                 </div>
             </div>
+              </a>
                   <div class="header-menu">
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
@@ -178,7 +179,7 @@
 				</div>
 			</div>
             
-      </a>
+    
         </header><!-- /header -->
         <!-- Header-->
 
@@ -205,7 +206,7 @@
                                             <th>주소</th>
                                             <th>아이디</th>
                                             <th>주문 횟수</th>
-                                            <th>수정</th>
+                                           
                                              <th>삭제</th>
                                         </tr>
                                     </thead>
@@ -215,9 +216,7 @@
                                             <td>서울시 행복구 행복동</td>
                                             <td>JeongDaYoon</td>
                                             <td>10</td>
-                                            <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
-                                            </td>
+                                         
                                             <td>
                                             <button type="button" class="btn btn-secondary">삭제</button>
                                             </td>
@@ -227,9 +226,7 @@
                                             <td>서울시 행복구 행복동</td>
                                             <td>Nahyun123</td>
                                             <td>7</td>
-                                             <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
-                                            </td>
+                                         
                                             <td>
                                             <button type="button" class="btn btn-secondary">삭제</button>
                                             </td>
@@ -239,9 +236,7 @@
                                             <td>서울시 행복구 행복동</td>
                                             <td>Song</td>
                                             <td>3</td>
-                                             <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
-                                            </td>
+                                         
                                             <td>
                                             <button type="button" class="btn btn-secondary">삭제</button>
                                             </td>
@@ -251,9 +246,7 @@
                                             <td>서울시 행복구 행복동</td>
                                             <td>Kim123</td>
                                             <td>39</td>
-                                             <td>
-                                            <button type="button" class="btn btn-secondary">수정</button>
-                                            </td>
+                                          
                                             <td>
                                             <button type="button" class="btn btn-secondary">삭제</button>
                                             </td>

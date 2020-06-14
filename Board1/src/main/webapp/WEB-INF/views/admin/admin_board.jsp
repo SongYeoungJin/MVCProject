@@ -143,6 +143,7 @@
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
                 </div>
             </div>
+               </a>
                   <div class="header-menu">
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
@@ -152,7 +153,7 @@
 				</div>
 			</div>
             
-      </a>
+   
         </header><!-- /header -->
         <!-- Header-->
 		
@@ -223,7 +224,7 @@
   			<tr align="center">
    				<td>
    				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   					<input type=button class="btn btn-secondary" value="글쓰기" onClick="location.href='writeView'">
+   					<input type=button class="btn btn-secondary" value="글쓰기" onClick="location.href='boardWrite'">
    					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
    					<input type="button" class="btn btn-secondary" value="이 전" onClick="history.go(-1)">
    				</td>

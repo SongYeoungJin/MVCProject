@@ -135,6 +135,37 @@
 	<!-- /#left-panel -->
 
 
+	<!-- 차박 로고 -->
+	<div class="top-left">
+
+		<a class="navbar-brand" href="adminMain"> <img
+			class="img-fluid d-block  mx-auto" alt=""
+			style="width: 80px; height: 50px";
+			src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
+
+		</a>
+	</div>
+
+
+
+
+	<!-- Right Panel -->
+
+	<div id="right-panel" class="right-panel">
+
+		<!-- Header-->
+		<header id="header" class="header">
+
+			<div class="top-left">
+
+				<div class="navbar-header">
+					<img class="img-fluid d-block  mx-auto" alt=""
+						style="width: 80px; height: 50px"
+                 src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
+				</div>
+			</div>
+			<div class="header-menu">
+
     <div id="right-panel" class="right-panel">
 
         <!-- Header-->
@@ -160,9 +191,7 @@
             
     
         </header><!-- /header -->
-        <!-- Header-->
 
-        
         
         
         
@@ -177,46 +206,124 @@
             <div class="animated fadeIn">
 
 
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="mb-3">상품별 매출</h4>
-        
-           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['매출', '지난달', '이번달'],
-          ['캠핑', 0.5, 0.5],
-          ['조명', 0.7, 0.3],
-          ['기타', 0.4, 0.8],
-          
-        ]);
 
-        var options = {
-          chart: {
-            title: '상품별 매출',
-            subtitle: '',
-          }
-        };
 
-        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+          <!-- --------tab---------- -->
+        <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#one">총매출</a>
+  </li>
 
-        chart.draw(data, google.charts.Bar.convertOptions(options));
-      }
-    </script>
+   <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#three">상품별매출</a>
+  </li>
+</ul>
 
-    <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
-      </div>
-                        </div>
-                    </div><!-- /# column -->
-</div>
-</div>
-</div>
+<div class="tab-content">
+         <!-- ---------------/tab------------- -->
+
+
+
+
+
+
+
+<!-- ------------------------------------content------------------------------------------ -->
+
+			<div class="tab-pane fade show active" id="one">
+				<div class="content">
+					<div class="animated fadeIn">
+
+
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="card">
+								 <div class="card-header">
+                                <strong class="card-title">상품별 매출</strong>
+									<div class="card-body">
+
+
+										<script type="text/javascript"
+											src="https://www.gstatic.com/charts/loader.js"></script>
+										<script type="text/javascript">
+											// Load Charts and the corechart and barchart packages.
+											google.charts.load('current', {
+												'packages' : [ 'corechart' ]
+											});
+
+											// Draw the pie chart and bar chart when Charts is loaded.
+											google.charts
+													.setOnLoadCallback(drawChart);
+
+											function drawChart() {
+
+												var data = new google.visualization.DataTable();
+												data.addColumn('string',
+														'Topping');
+												data.addColumn('number',
+														'Slices');
+												data.addRows([ [ '캠핑', 60 ],
+														[ '조명', 20 ],
+														[ '기타', 20 ], ]);
+
+												var piechart_options = {
+													title : '상품별 매출(1)',
+													width : 500,
+													height : 500
+												};
+												var piechart = new google.visualization.PieChart(
+														document
+																.getElementById('piechart_div'));
+												piechart.draw(data,
+														piechart_options);
+
+												var barchart_options = {
+													title : '상품별 매출(2)',
+													width : 600,
+													height : 500,
+													legend : 'none'
+												};
+												var barchart = new google.visualization.BarChart(
+														document
+																.getElementById('barchart_div'));
+												barchart.draw(data,
+														barchart_options);
+											}
+										</script>
+										<!--Table and divs that hold the pie charts-->
+										<table class="columns">
+											<tr>
+												<td><div id="piechart_div"
+														style="border: 1px solid #ccc"></div></td>
+												<td><div id="barchart_div"
+														style="border: 1px solid #ccc"></div></td>
+											</tr>
+										</table>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+				<!-- ------------------------------------content2------------------------------------------ -->
+  <div class="tab-pane fade" id="two">
+  
+
+			<%-- 	<%@include file="admin_sales2.jsp" %>
+			</div> --%>
 </div>
 
 
@@ -226,7 +333,67 @@
 
 
 		<!-- Content -->
-		<div class="content">
+<!-- 		<div class="content">
+			<div class="animated fadeIn">
+
+
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="mb-3">상품별 매출</h4>
+
+								<script type="text/javascript"
+									src="https://www.gstatic.com/charts/loader.js"></script>
+								<script type="text/javascript">
+									google.charts.load('current', {
+										'packages' : [ 'bar' ]
+									});
+									google.charts.setOnLoadCallback(drawChart);
+
+									function drawChart() {
+										var data = google.visualization
+												.arrayToDataTable([
+														[ '매출', '지난달', '이번달' ],
+														[ '캠핑', 0.5, 0.5 ],
+														[ '조명', 0.7, 0.3 ],
+														[ '기타', 0.4, 0.8 ],
+
+												]);
+
+										var options = {
+											chart : {
+												title : '상품별 매출',
+												subtitle : '',
+											}
+										};
+
+										var chart = new google.charts.Bar(
+												document
+														.getElementById('columnchart_material'));
+
+										chart.draw(data, google.charts.Bar
+												.convertOptions(options));
+									}
+								</script>
+
+								<div id="columnchart_material"
+									style="width: 100%; height: 275px;"></div>
+							</div>
+						</div>
+					</div>
+					/# column
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+		<!-- Content -->
+		<!-- <div class="content">
 			<div class="animated fadeIn">
 
 
@@ -259,7 +426,7 @@
 
 										var options = {
 											chart : {
-												title : 'Analysis of Dialogue System',
+												title : '매출',
 												subtitle : '',
 											}
 										};
@@ -274,55 +441,18 @@
 								</script>
 
 								<div id="columnchart_material"
-									style="width: 800px; height: 500px;"></div>
+									style="width: 100%; height: 275px;"></div>
 							</div>
 						</div>
 					</div>
-					<!-- /# column -->
+					/# column
 				</div>
 			</div>
 		</div>
 
 
+ -->
 
-
-
-
-	<!-- Content -->
-	<div class="content">
-		<div class="animated fadeIn">
-
-
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="card">
-						<div class="card-body">
-							<h4 class="mb-3">Real Chart</h4>
-							<div class="flot-container">
-								<div id="cpu-load" class="cpu-load"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /# column -->
-
-
-
-				<div class="col-lg-6">
-					<div class="card">
-						<div class="card-body">
-							<h4 class="mb-3">Bar Chart</h4>
-							<div class="flot-container">
-								<div id="flotCurve" style="width: 100%; height: 275px;"></div>
-							</div>
-						</div>
-					</div>
-					<!-- /# card -->
-				</div>
-				<!-- /# column -->
-			</div>
-			<!-- /# row -->
-</div>
 
 
 

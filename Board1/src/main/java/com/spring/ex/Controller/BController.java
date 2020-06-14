@@ -205,6 +205,10 @@ public class BController {
 	public String myPage() {
 		return "MyPage/myPage";
 	}
+	@RequestMapping("myReviewModify")
+	public String myReviewModify() {
+		return "MyPage/myReviewModify";
+	}
 	
 	@RequestMapping("myReview")
 	public String myReview() {
@@ -296,6 +300,12 @@ public class BController {
 	public String ReviewWrite() {
 		return "Review/ReviewWrite";
 	}
+	
+	@RequestMapping("admin_sales2")
+	public String admin_sales2() {
+		return "admin/admin_sales2";
+	}
+	
 	
 	
 }

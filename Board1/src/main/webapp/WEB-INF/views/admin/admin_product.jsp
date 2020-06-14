@@ -266,8 +266,7 @@
                         
                         
                         
-                        
-      <!-- ------------두번째 탭부분 --------------- -->
+<!-- ------------------------------------------------- -->
     	    <div class="card">
                             <div class="card-header">
                                 <strong class="card-title">상품등록</strong>
@@ -310,7 +309,7 @@
   
   
   
-   <!-- ----------------세번째 탭부분------------------- -->
+   <!-- ----------------두번째 탭부분------------------- -->
   <div class="tab-pane fade" id="three">
    
  						<div class="card">
@@ -320,7 +319,7 @@
                             <div class="card-body">
                             <form method="get" action="/save.php"><br />
 <input type="text" name="keyword" />
-​​​​​​​ <button type="submit">SEARCH</button>
+​​​​​​​ <input type="button" value="검색"/>
 
                                 <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                     <thead>

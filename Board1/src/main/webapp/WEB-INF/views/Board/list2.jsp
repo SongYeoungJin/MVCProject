@@ -83,7 +83,7 @@
   			</tr>
   			<tr align="center">
    				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   					<input type=button class="btn btn-secondary" value="글쓰기" onClick="location.href='writeView'">
+   					<input type=button class="btn btn-secondary" value="글쓰기" onClick="location.href='boardWrite'">
    					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
    					<input type=button class="btn btn-secondary" value="이 전" onClick="history.go(-1)">
    					

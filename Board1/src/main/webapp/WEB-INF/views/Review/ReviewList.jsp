@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,6 +10,7 @@
   <meta name="author" content="">
 
 <%@ include file="../../include/header.jsp" %>
+  
   <!-- Custom styles for this template -->
   <link rel="stylesheet"
   href="<c:url value='resources/startbootstrap/css/full-width-pics.css'/>">
@@ -20,10 +20,6 @@
 
 
 
-<body>
- <%@ include file="../../include/navigator.jsp" %>
- 
-    
     <title>목록</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -88,6 +84,8 @@ stylize any heading tags withing white-panel below
     </script>
 </head>
 
+<body>
+ <%@ include file="../../include/navigator.jsp" %>
 
     <div class="container">
   <div class="row">
@@ -108,7 +106,9 @@ stylize any heading tags withing white-panel below
       </article>
     </section>
 
-
+<input type=button class="btn btn-secondary" value="글쓰기" onClick="location.href='ReviewWrite'">
+   					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   					<input type=button class="btn btn-secondary" value="이 전" onClick="history.go(-1)">
     <hr>
 
 

@@ -40,7 +40,7 @@
 		<td><a href="Review"><img src="ChaBakPlace1.jpg" alt=""/></a></td>
 		<td><input type="textarea" name="내가 올린리뷰"></td>
 		<td><img src="Star1.jpg" alt=""/></td>
-		<td><button class="btn btn-secondary" name="modifyReview"  onClick="location.href='ReviewWrite'">수정</button></td>
+		<td><button class="btn btn-secondary" name="modifyReview"  onClick="location.href='myReviewModify'">수정</button></td>
 		<td><button class="btn btn-secondary" name="deleteReview">삭제</button></td>
 	</tr>
 </table>

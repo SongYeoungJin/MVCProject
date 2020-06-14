@@ -119,16 +119,14 @@
                     <h2 class="mbr-title pt-2 mbr-fonts-style display-2">
                      
                     </h2>
-                     <a href="https://mobirise.com/">전체보기</a>
+                     <a href="list2">통합자유게시판</a>
                     
                     <div class="mbr-section-text">
         <div class="media-container-row">
             <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
                 <ul>
-                   <a href="list">  
-                   <li><strong>후기게시판 </strong></a></li>
-                    <li><strong>삼척에서</strong> 삼척에서의 하룻밤 <a href="list">전체보기</a></li>
-                    <li><strong>강릉에서</strong> 강릉에서의 하룻밤 <a href="list">전체보기</a></li>
+                    <li><strong>정말</strong> <a href="list2"> 전체보기</a></li>
+                    <li><strong>좋아요</strong> ♥ <a href="list2">전체보기</a></li>
                 </ul>
             </div>
         </div>

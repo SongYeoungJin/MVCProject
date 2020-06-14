@@ -11,7 +11,7 @@
 </head>
 <body>
 
-
+<%@ include file="../../include/navigator.jsp" %>
 <style>
 
 .box{
@@ -21,7 +21,6 @@
 }
 </style>
 
-<%@ include file="../../include/navigator.jsp" %>
   
 		<!-- Page Content -->
   <div class="container">

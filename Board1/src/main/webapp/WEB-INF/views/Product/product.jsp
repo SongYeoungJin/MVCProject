@@ -61,8 +61,12 @@
             <p>yeah!!!!!!!!!!!!!!!!</p>
             <small class="text-muted">2020/05/30</small>
             <hr>
-            <a class="btn btn-secondary" href="writeView">리뷰남기기</a>
+            <textarea name="ab" id="cd" style="width:100%;text-align:center;disabled" ></textarea>
+             <input type="submit" id="add" value="리뷰등록" onclick="add()"/>
+         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+             <input type="submit" value="이전페이지" onClick="history.go(-1)">
           </div>
+
         </div>
         <!-- /.card -->
       </div>
@@ -71,6 +75,11 @@
     </div>
 
   </div>
+    	<script>
+function add() {
+	alert("등록완료!");
+}
+</script>
   <!-- /.container -->
 
   <!-- Footer -->
@@ -83,4 +92,6 @@
 
   
 
-</body></html>
+</body>
+
+</html>

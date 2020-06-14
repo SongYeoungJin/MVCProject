@@ -297,5 +297,11 @@ public class BController {
 		return "Review/ReviewWrite";
 	}
 	
+	@RequestMapping("admin_sales2")
+	public String admin_sales2() {
+		return "admin/admin_sales2";
+	}
+	
+	
 	
 }

@@ -175,7 +175,14 @@
 	  </div>
     </div>
     
-<table class="table table-striped table-bordered table-hover">
+    <div class="tab-pane fade show active" id="one">
+    			<div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">상품조회</strong>
+                            </div>
+                            <div class="card-body">
+                                <table id="bootstrap-data-table" class="table table-striped table-bordered">
+<!-- <table class="table table-striped table-bordered table-hover"> -->
 	<tr>
 		<td>
      		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="table">     
@@ -231,6 +238,10 @@
 		</table>
 
 
+</div>
+</div>
+</div>
+</div>
 
 
   

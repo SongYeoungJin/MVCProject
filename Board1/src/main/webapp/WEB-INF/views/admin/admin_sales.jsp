@@ -135,7 +135,7 @@
 	<!-- /#left-panel -->
 
 
-<<<<<<< HEAD
+
 	<!-- 차박 로고 -->
 	<div class="top-left">
 
@@ -166,52 +166,27 @@
 				</div>
 			</div>
 			<div class="header-menu">
-=======
-    <div id="right-panel" class="right-panel">
 
-        <!-- Header-->
-        <header id="header" class="header">
-        <a href="adminMain">
-            <div class="top-left">
-            
-                <div class="navbar-header">
-                <img class="img-fluid d-block  mx-auto" alt="" 
-                 style="width: 80px; height: 50px";
-                 src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
-                </div>
-            </div>
-                  <div class="header-menu">
->>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
 				<div class="user-area dropdown float-right">
-					<c:if test="${sessionScope.login_result == null}">
+
 						<button type="button" class="btn btn-secondary"
 							onclick="location.href='login'">Logout</button>
-					</c:if>
+
 				</div>
 			</div>
-            
-      </a>
         </header><!-- /header -->
-<<<<<<< HEAD
-=======
-        <!-- Header-->
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-               <!-- Content -->
-        <div class="content">
-            <div class="animated fadeIn">
->>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
+        </div>
 
 
+       
+        
+        
+        
+        
+        
+        
+        
+        
 
 
 
@@ -355,7 +330,7 @@
 					</div>
 				</div>
 
-
+</div>
 
 
 
@@ -366,8 +341,8 @@
   <div class="tab-pane fade" id="two">
   
 
-			<%-- 	<%@include file="admin_sales2.jsp" %>
-			</div> --%>
+				<%@include file="admin_sales2.jsp" %>
+			</div>
 </div>
 
 

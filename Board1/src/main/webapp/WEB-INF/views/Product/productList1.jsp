@@ -43,13 +43,13 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item">
-              <img class="d-block img-fluid" alt="First slide" src="C:\ProjectPicture\ChaBakPlace1.jpg">
+              <img class="d-block img-fluid" alt="First slide" src="resources/Picture/ChaBakPlace1.jpg">
             </div>
             <div class="carousel-item active">
-              <img class="d-block img-fluid" alt="Second slide" src="C:\ProjectPicture\ChaBakPlace2.jpg">
+              <img class="d-block img-fluid" alt="Second slide" src="resources/Picture/ChaBakPlace2.jpg">
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" alt="Third slide" src="C:\ProjectPicture\ChaBakPlace3.jpg">
+              <img class="d-block img-fluid" alt="Third slide" src="resources/Picture/ChaBakPlace3.JPG">
             </div>
           </div>
           <a class="carousel-control-prev" role="button" href="#carouselExampleIndicators" data-slide="prev">
@@ -67,7 +67,7 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <a href="product.do">
-              	<img class="card-img-top" alt="" src="C:\ProjectPicture\Else1.jpg" /></a>
+              	<img class="card-img-top" alt="" src="resources/Picture/Else1.JPG" /></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="product.do">A1 매트리스</a>
@@ -84,7 +84,7 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Else2.jpg" ></a>
+              <a href="product.do"><img class="card-img-top" alt="" src="resources/Picture/Else2.JPG" ></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="product.do">B1 매트리스</a>
@@ -101,7 +101,7 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Else3.jpg"></a>
+              <a href="product.do"><img class="card-img-top" alt="" src="resources/Picture/Else3.JPG"></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="product.do">버그크리너</a>
@@ -117,7 +117,7 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Light3.jpg" /></a>
+              <a href="product.do"><img class="card-img-top" alt="" src="resources/Picture/Light1.JPG" /></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="product.do">G1 조명</a>
@@ -132,7 +132,7 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Light4.jpg" /></a>
+              <a href="product.do"><img class="card-img-top" alt="" src="resources/Picture/Light4.JPG" /></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="product.do">G2 조명</a>
@@ -147,7 +147,7 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="product.do"><img class="card-img-top" alt="" src="C:\ProjectPicture\Light5.jpg" /></a>
+              <a href="product.do"><img class="card-img-top" alt="" src="resources/Picture/Light5.JPG" /></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="product.do">R3 조명</a>

@@ -36,11 +36,11 @@
 		<td>삭제</td>
 	</tr>
 	<tr>
-		<td><a href="ChaBakPlace.jsp" name="place1">안양호수공원</a>
-		<td><a href="ChaBakPlace.jsp"><img src="ChaBakPlace1.jpg" alt=""/></a></td>
+		<td><a href="Review" name="place1">안양호수공원</a>
+		<td><a href="Review"><img src="ChaBakPlace1.jpg" alt=""/></a></td>
 		<td><input type="textarea" name="내가 올린리뷰"></td>
 		<td><img src="Star1.jpg" alt=""/></td>
-		<td><button class="btn btn-secondary" name="modifyReview">수정</button></td>
+		<td><button class="btn btn-secondary" name="modifyReview"  onClick="location.href='myReviewModify'">수정</button></td>
 		<td><button class="btn btn-secondary" name="deleteReview">삭제</button></td>
 	</tr>
 </table>

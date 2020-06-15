@@ -95,7 +95,7 @@ body {
 	<article>
 		<div class="container" role="main">
 			<h2>게시판 글쓰기</h2>
-			<form name="form" id="form" role="form" method="post" action="contentView">
+			<form name="form" id="form" role="form" method="post" action="list2">
 				<div class="mb-3">
 					<label for="title">제목</label>
 					<input type="text" class="form-control" name="title" id="title" placeholder="제목을 입력해 주세요">
@@ -134,7 +134,7 @@ body {
 
 			<div >
 				<button type="button" class="btn btn-secondary" id="btnSave"  onclick="save1()">저장</button>
-				<button type="button" class="btn btn-secondary" id="btnList"  onClick="location.href='ReviewList'">목록</button>
+				<button type="button" class="btn btn-secondary" id="btnList"  onClick="location.href='list2'">목록</button>
 				<button type="button" class="btn btn-secondary" id="btnPrev" onClick="history.go(-1)">이전</button>
 			</div>
 	<script>

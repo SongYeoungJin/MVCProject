@@ -29,10 +29,13 @@
 <link rel="stylesheet" href="./resources/assets/css/cs-skin-elastic.css">
 <link rel="stylesheet" href="./resources/assets/css/style.css">
 
+
 <!-- 추가 -->
 
 	   <link rel="stylesheet" href="./resources/assets/css/lib/datatable/dataTables.bootstrap.min.css">
 	      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	   
+	   
 	   
 
 
@@ -94,6 +97,15 @@
 
 #cellPaiChart {
 	height: 160px;
+}
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 </style>
 </head>
@@ -181,7 +193,7 @@
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
                 </div>
             </div>
-
+    </a>
       	<div class="header-menu">
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
@@ -191,7 +203,7 @@
 				</div>
 			</div>
 
-      </a>
+  
 
         </header><!-- /header -->
         <!-- Header-->
@@ -254,13 +266,13 @@
                         
                         
                         
-                        
-      <!-- ------------두번째 탭부분 --------------- -->
+<!-- ------------------------------------------------- -->
     	    <div class="card">
                             <div class="card-header">
                                 <strong class="card-title">상품등록</strong>
                             </div>
                             <div class="card-body">
+                            
                                 <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                     <thead>
                                    	<tr align="center">
@@ -297,7 +309,7 @@
   
   
   
-   <!-- ----------------세번째 탭부분------------------- -->
+   <!-- ----------------두번째 탭부분------------------- -->
   <div class="tab-pane fade" id="three">
    
  						<div class="card">
@@ -305,6 +317,10 @@
                                 <strong class="card-title">상품수정/삭제</strong>
                             </div>
                             <div class="card-body">
+                            <form method="get" action="/save.php"><br />
+<input type="text" name="keyword" />
+​​​​​​​ <input type="button" value="검색"/>
+
                                 <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                     <thead>
                            <tr align="center">
@@ -324,6 +340,7 @@
                                
                                    </tbody>
                                 </table>
+                                </form>
                             </div>
                         </div>
 

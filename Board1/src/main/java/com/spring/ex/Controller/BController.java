@@ -168,9 +168,9 @@ public class BController {
 		return "account/myAccount";
 	}
 
-	@RequestMapping("myAccountCancel")
-	public String myAccountCancel() {
-		return "account/myAccountCancel";
+	@RequestMapping("account_adress")
+	public String account_adress() {
+		return "account/account_adress";
 	}
 
 	
@@ -178,7 +178,6 @@ public class BController {
 	public String test() {
 		return "main/test";
 	}
-
 
 
 	@RequestMapping("admin_registerPlace")
@@ -206,11 +205,16 @@ public class BController {
 	public String myPage() {
 		return "MyPage/myPage";
 	}
+	@RequestMapping("myReviewModify")
+	public String myReviewModify() {
+		return "MyPage/myReviewModify";
+	}
 	
 	@RequestMapping("myReview")
 	public String myReview() {
 		return "placeReview/myReview";
 	}
+
 	
 	@RequestMapping("productList")
 	public String productList() {
@@ -281,5 +285,27 @@ public class BController {
 	public String find_PW() {
 		return "Login/find_PW";
 	}
-
+	
+	@RequestMapping("list2")
+	public String list2() {
+		return "Board/list2";
+	}
+	
+	@RequestMapping("boardWrite")
+	public String boardWrite() {
+		return "Board/boardWrite";
+	}
+	
+	@RequestMapping("ReviewWrite")
+	public String ReviewWrite() {
+		return "Review/ReviewWrite";
+	}
+	
+	@RequestMapping("admin_sales2")
+	public String admin_sales2() {
+		return "admin/admin_sales2";
+	}
+	
+	
+	
 }

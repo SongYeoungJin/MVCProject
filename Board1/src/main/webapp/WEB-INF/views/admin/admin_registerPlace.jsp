@@ -100,15 +100,20 @@
 					<!-- /.menu-title -->
 					
 				
-                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>회원관리</a>
-                        <ul class="sub-menu children dropdown-menu">
-                    
-                            <li><i class="ti-shopping-cart"></i><a href="admin_member_list">회원조회</a></li>
-                          
+                     	<li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">회원관리</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_member_list">회원조회</a></li>
+                        </ul>
+                    </li>
+					  <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="ti-bar-chart"></i><a href="admin_sales">매출현황</a></li>
                         </ul>
                     </li>
 
+             
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
@@ -118,13 +123,14 @@
                         </ul>
                     </li>
                     
-                     <li class="menu-item-has-children dropdown">
+                   <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-image"></i> <a href="admin_board"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
-
+                    
+  
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -152,6 +158,7 @@
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
                 </div>
             </div>
+               </a>
                   <div class="header-menu">
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
@@ -161,7 +168,7 @@
 				</div>
 			</div>
             
-      </a>
+   
         </header><!-- /header -->
         <!-- Header-->
 
@@ -172,9 +179,8 @@
 	
 	<!-- ----------content------------ -->
 
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=01f7615ee8d025a981b28bb6241ff9f0"></script>
-<div id="clickLatlng">
-<form action="test.jsp" method="post">
+<div id="clickLatlng"></div>
+<form action="place" method="post">
 
 <label>이름 :</label>
 <input type = "text" name = name /><br>
@@ -187,6 +193,7 @@
 </form>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=01f7615ee8d025a981b28bb6241ff9f0"></script>
 <script>
+
 var container = document.getElementById('map');
 var options = {
 		center: new kakao.maps.LatLng(36.333276, 127.402207),
@@ -221,7 +228,7 @@ kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
 
 
 </script>
-</div>
+
 
 
 

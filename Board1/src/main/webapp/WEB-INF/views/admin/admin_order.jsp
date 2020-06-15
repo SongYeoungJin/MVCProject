@@ -130,25 +130,12 @@
 	</aside>
 	<!-- /#left-panel -->
 	
-	<!-- 차박 로고 -->
-			<div class="top-left">
-	
-				<a class="navbar-brand" href="adminMain">
-				<img class="img-fluid d-block  mx-auto" alt="" 
-                 style="width: 80px; height: 50px";
-                 src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
-		
-				<!-- <img src="startbootstrap/img/aa.png" alt="Logo"
-					style="width: 80px; height: 50px;"> --></a>
-			</div>
-		 
-		  <!-- Right Panel -->
 
     <div id="right-panel" class="right-panel">
 
         <!-- Header-->
         <header id="header" class="header">
-        
+        <a href="adminMain">
             <div class="top-left">
             
                 <div class="navbar-header">
@@ -157,18 +144,20 @@
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
                 </div>
             </div>
-      	<div class="header-menu">
+             </a>
+                  <div class="header-menu">
 				<div class="user-area dropdown float-right">
 					<c:if test="${sessionScope.login_result == null}">
 						<button type="button" class="btn btn-secondary"
-							onclick="location.href='${pageContext.request.contextPath}/login.jsp'">Logout</button>
+							onclick="location.href='login'">Logout</button>
 					</c:if>
 				</div>
 			</div>
+            
+     
         </header><!-- /header -->
-   <!------------------------------- Header-------------------------------------------->
-        
-       
+        <!-- Header-->
+
        
        
        

@@ -42,6 +42,9 @@
 <link
 	href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css"
 	rel="stylesheet" />
+	
+	
+	
 
 <style>
 #weatherWidget .currentDesc {
@@ -86,6 +89,7 @@
 }
 
 
+
 </style>
 </head>
 
@@ -99,36 +103,45 @@
 					<li class="menu-title">Admin</li></a>
 					<!-- /.menu-title -->
 					
-  					<li class="menu-item-has-children dropdown">
+  						<li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">회원관리</a>
                         <ul class="sub-menu children dropdown-menu">                            
                             <li><i class="ti-bar-chart"></i><a href="admin_member_list">회원조회</a></li>
                         </ul>
                     </li>
-					  <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
+                    	  <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출관리</a>
                         <ul class="sub-menu children dropdown-menu">                            
                             <li><i class="ti-bar-chart"></i><a href="admin_sales">매출현황</a></li>
                         </ul>
                     </li>
-
-             
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
+                     <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>상품관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
-                              <li><i class="ti-face-smile"></i><a href="admin_registerPlace">장소등록</a></li>
-                          
+                            <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>  
+                        </ul>
+                    </li>
+                        <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>주문관리</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="ti-image"></i> <a href="admin_order"> 주문 조회</a></li>
+                        </ul>
+                    </li>
+                 
+               <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>장소관리</a>
+                        <ul class="sub-menu children dropdown-menu">
+                               <li><i class="ti-face-smile"></i><a href="admin_registerPlace">장소등록</a></li>
                         </ul>
                     </li>
                     
                      <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-image"></i> <a href="admin_board"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
-
+  				
 
 				</ul>
 			</div>
@@ -177,8 +190,20 @@
     
         </header><!-- /header -->
         <!-- Header-->
-
-		
+        
+		<!-- 검책창 -->
+	
+		    <div class="input-group">
+		    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                   <select name="job"style="width:80px;height:33px;">
+    				<option value="" style="width:80px;height:33px;">선택</option>
+    				<option value="상품" style="width:80px;height:33px;">회원</option>
+    				<option value="상품" style="width:80px;height:33px;">상품</option>
+    				<option value="주문" style="width:80px;height:33px;">주문</option>
+    				<option value="장소" style="width:80px;height:33px;">장소</option>
+					</select>
+          <input type="text" style="width:500px; height:33px;" /> <input type="button" value="검색">
+    </div>
 		
 		
 		 <!-- 위에 매출,재고 등등 보는 칸4개  -->
@@ -452,7 +477,6 @@
 
 
 
-	
 </body>
 </html>
 

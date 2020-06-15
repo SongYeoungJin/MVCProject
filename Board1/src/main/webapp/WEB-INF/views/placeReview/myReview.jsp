@@ -41,10 +41,22 @@
 		<td><input type="textarea" name="내가 올린리뷰"></td>
 		<td><img src="Star1.jpg" alt=""/></td>
 		<td><button class="btn btn-secondary" name="modifyReview"  onClick="location.href='myReviewModify'">수정</button></td>
-		<td><button class="btn btn-secondary" name="deleteReview">삭제</button></td>
+		<td><button class="btn btn-secondary" name="deleteReview" onclick="deleteCheck">삭제</button></td>
 	</tr>
 </table>
 
-  
+  	<script language="JavaScript">
+
+function deleteCheck(){ 
+	if (confirm("삭제 하시겠습니까?")){ 
+		if(true) {
+			alert("삭제 되었습니다."); 
+		}
+	}else{ 
+	alert("삭제 취소 되었습니다."); 
+	return; 
+	} 
+	}
+</script>
 </body>
 </html>

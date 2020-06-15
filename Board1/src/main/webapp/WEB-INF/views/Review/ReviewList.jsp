@@ -91,17 +91,17 @@ stylize any heading tags withing white-panel below
   <div class="row">
     <h2>목록</h2>
 
-    <p>인기순 <a href="http://bootsnipp.com/iframe/Zkk0O" target="_blank">전체보기</a>
+    <p>인기순 <a href="#" target="_blank">전체보기</a>
     </p>
     <hr>
     <section id="pinBoot">
 
       <article class="white-panel"><img src="https://post-phinf.pstatic.net/MjAxODAzMDJfODgg/MDAxNTE5OTQyMzk4Mjc1.U-8Xk_l-FoYpT7I_F1AX4fSzKrGN4sLILFiAuD9S4t8g.PdA8Tj-e5_YXv2mhtUf8WxX7gbr6_l_lyyrtSsXW_UEg.JPEG/01-22%ED%95%98%EC%A1%B0%EB%8C%80%EC%A0%84%EB%A7%9D%EB%8C%80%28%EC%97%BD%EC%84%9C%29.jpg?type=w1200" alt="">
-        <h4><a href="#">강원도 양양</a></h4>
+        <h4><a href="place">강원도 양양</a></h4>
         <p> 강원도 양양에 차박하러 갔다왔어요 ~!~!~!~!~!   </article>
 
       <article class="white-panel"> <img src="http://i.imgur.com/8lhFhc1.gif" alt="">
-        <h4><a href="#">가족들이랑</a></h4>
+        <h4><a href="place">가족들이랑</a></h4>
         <p>간만에 배꼽 빠지는줄알았어여 하하하하ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</p>
       </article>
     </section>

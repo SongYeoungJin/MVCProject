@@ -20,13 +20,20 @@
 		<td><input type="checkbox" name="1" value="1"></td><td>2020-06-01</td><td>쿠션</td><td>1</td><td>100원</td><td>입금전</td><td>-</td>
 	</tr>
 </table>
-	<input type="button" id="cansle" value="주문최소"onclick="change()"/>&nbsp;
+	<input type="button" id="cansle" value="주문최소"onclick="deleteCheck()"/>&nbsp;
 	<input type="submit" value="이전페이지" onClick="history.go(-1)">
+	<script language="JavaScript">
 
- 	<script>
-function change() {
-	alert("취소완료!");
-}
+function deleteCheck(){ 
+	if (confirm("주문을 취소 하시겠습니까?")){ 
+		if(true) {
+			alert("주문 완료 되었습니다."); 
+		}
+	}else{ 
+	alert("주문 취소 되었습니다."); 
+	return; 
+	} 
+	}
 </script>
 </body>
 </html>

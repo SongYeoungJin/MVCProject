@@ -36,10 +36,24 @@
 </form>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 	<input type="submit" value="결제"  onclick="payment()" class="btn btn-secondary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<input type="button" value="취소"  onClick="location.href='product.do'" class="btn btn-secondary">
-	<script>
+
+	<input type="button" value="취소"  onClick="deleteCheck()" class="btn btn-secondary">
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	<button class="btn btn-secondary" onClick="location.href='buypoint'">포인트 충전</button>
+	<script language="JavaScript">
 function payment() {
 	alert("결제완료!");
+}
+
+function deleteCheck(){ 
+if (confirm("결제를 취소 하시겠습니까?")){ 
+	if(true) {
+		alert("결제 완료 되었습니다."); 
+	}
+}else{ 
+alert("결제 취소 되었습니다."); 
+return; 
+} 
 }
 </script>
 </body>

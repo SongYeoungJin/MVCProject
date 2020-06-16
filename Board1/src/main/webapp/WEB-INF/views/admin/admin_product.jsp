@@ -121,34 +121,45 @@
 					<!-- /.menu-title -->
 			
                     
-  					<li class="menu-item-has-children dropdown">
+  							<li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">회원관리</a>
                         <ul class="sub-menu children dropdown-menu">                            
                             <li><i class="ti-bar-chart"></i><a href="admin_member_list">회원조회</a></li>
                         </ul>
                     </li>
-					  <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
+                    	  <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출관리</a>
                         <ul class="sub-menu children dropdown-menu">                            
                             <li><i class="ti-bar-chart"></i><a href="admin_sales">매출현황</a></li>
                         </ul>
                     </li>
-
-             
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
+                     <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>상품관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
-                              <li><i class="ti-face-smile"></i><a href="admin_registerPlace">장소등록</a></li>
-                          
+                            <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>  
                         </ul>
                     </li>
-                   <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
+                        <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>주문관리</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="ti-image"></i> <a href="admin_order"> 주문 조회</a></li>
+                        </ul>
+                    </li>
+                 
+               <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>장소관리</a>
+                        <ul class="sub-menu children dropdown-menu">
+                               <li><i class="ti-face-smile"></i><a href="admin_registerPlace">장소등록</a></li>
+                        </ul>
+                    </li>
+                    
+                     <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-image"></i> <a href="admin_board"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
+  				
                     
   
 
@@ -251,10 +262,10 @@
                                     </thead>
                                     <tbody>
                                       <tr align="center">
-										<td>1111111</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td>상품명</td><td>10,000P</td><td>90</td>
+										<td  onClick = " location.href='product.do'">1111111</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td>상품명</td><td>10,000P</td><td>90</td>
 									</tr>
                                        <tr align="center">
-										<td>1111110</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td>상품명</td><td>10,000P</td><td>9</td>
+										<td  onClick = " location.href='product.do'">1111110</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td>상품명</td><td>10,000P</td><td>9</td>
 										</tr>
                                
                                    </tbody>
@@ -289,7 +300,7 @@
 											</select>
 										</td>
 			<td><input type="text" name="pro_code"/></td><td>이미지</td><td><input type="text"  name="pro_name"/></td><td><input type="text"  name="pro_price"/></td><td><input type="text"  name="pro_count"/>
-					</td><td><input type="button"  value="추가" onclick="add()" /></td>
+					</td><td><input type="button"  value="추가" onclick="add()"  onClick = " location.href='productList'" /></td>
 									</tr>
                                    
                              

@@ -88,37 +88,46 @@
 					<!-- /.menu-title -->
 					
 			
-                
-  					<li class="menu-item-has-children dropdown">
+                		<li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">회원관리</a>
                         <ul class="sub-menu children dropdown-menu">                            
                             <li><i class="ti-bar-chart"></i><a href="admin_member_list">회원조회</a></li>
                         </ul>
                     </li>
-					  <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출</a>
+                    	  <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매출관리</a>
                         <ul class="sub-menu children dropdown-menu">                            
                             <li><i class="ti-bar-chart"></i><a href="admin_sales">매출현황</a></li>
                         </ul>
                     </li>
-
-             
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
+                     <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>상품관리</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>
-                              <li><i class="ti-face-smile"></i><a href="admin_registerPlace">장소등록</a></li>
-                          
+                            <li><i class="ti-face-smile"></i><a href="admin_product">상품조회</a></li>  
+                        </ul>
+                    </li>
+                        <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>주문관리</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="ti-image"></i> <a href="admin_order"> 주문 조회</a></li>
+                        </ul>
+                    </li>
+                 
+               <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>장소관리</a>
+                        <ul class="sub-menu children dropdown-menu">
+                               <li><i class="ti-face-smile"></i><a href="admin_registerPlace">장소등록</a></li>
                         </ul>
                     </li>
                     
                      <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>커뮤니티관리</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ui-cards.html"></i>기타관리</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-image"></i> <a href="admin_board"> 커뮤니티 조회</a></li>
                         </ul>
                     </li>
-                
+  				
+  					
 
 
 				</ul>
@@ -188,15 +197,15 @@
                                 <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                     <thead>
                                   	<tr align="center">
-										<td>상품코드</td><td></td><td>상품명</td><td>판매가</td><td>수량</td>
+										<td >상품코드</td><td></td><td>상품명</td><td>판매가</td><td>수량</td>
 									</tr>
                                     </thead>
                                     <tbody>
                                       <tr align="center">
-										<td>1111111</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td>상품명</td><td>10,000P</td><td>90</td>
+										<td  onClick = " location.href='product.do'">1111111</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td>상품명</td><td>10,000P</td><td>90</td>
 									</tr>
                                        <tr align="center">
-										<td>1111110</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td>상품명</td><td>10,000P</td><td>9</td>
+										<td  onClick = " location.href='product.do'">1111110</td><td><img src="resources/startbootstrap/img/aa.png" width=50 height=50></td><td>상품명</td><td>10,000P</td><td>9</td>
 										</tr>
                                
                                    </tbody>
@@ -221,7 +230,7 @@
                                     </thead>
                                     <tbody>
                                       <tr align="center">
-										<td>2019-12-12</td><td>푹신푹신한 담요</td><td>123</td><td>4.6</td>
+										<td  onClick = " location.href='myReview'">2019-12-12</td><td>푹신푹신한 담요</td><td>123</td><td>4.6</td>
 									</tr>
                                      
                                
@@ -246,7 +255,7 @@
                                     </thead>
                                     <tbody>
                                       <tr align="center">
-										<td>2020-1-12</td><td>삼척에서..</td><td>강원도 삼척</td><td>5.0</td>
+										<td  onClick = " location.href='place'">2020-1-12</td><td>삼척에서..</td><td>강원도 삼척</td><td>5.0</td>
 									</tr>
                                      
                                
@@ -283,9 +292,12 @@
   </div>
     <div class="tab-pane fade" id="five">
    
-    <p>우리 사이트를 자주 사용하고 주로 기타용품을 많이 구매한다.</p>
- 
-  </div>
+     <textarea name="ab" id="cd" style="width:100%;text-align:center;disabled" >
+     	우리 사이트를 자주 사용하고 주로 기타용품을 많이 구매한다.
+     </textarea>
+  <input type="submit" id="add" value="등록" />
+  </div>    
+            
 </div>
 
         

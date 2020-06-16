@@ -135,10 +135,8 @@
 	<!-- /#left-panel -->
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
+
 	<!-- 차박 로고 -->
 	<div class="top-left">
 
@@ -153,27 +151,7 @@
 
 
 
-	<!-- Right Panel -->
-
-	<div id="right-panel" class="right-panel">
-
-		<!-- Header-->
-		<header id="header" class="header">
-
-			<div class="top-left">
-
-				<div class="navbar-header">
-					<img class="img-fluid d-block  mx-auto" alt=""
-						style="width: 80px; height: 50px"
-                 src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
-				</div>
-			</div>
-			<div class="header-menu">
-<<<<<<< HEAD
-
-=======
-
-    <div id="right-panel" class="right-panel">
+ <div id="right-panel" class="right-panel">
 
         <!-- Header-->
         <header id="header" class="header">
@@ -186,25 +164,19 @@
                  src="https://cdn.crowdpic.net/list-thumb/thumb_l_C08489CD452A6BA0B8131D1BE3B8CC7E.jpg">
                 </div>
             </div>
-              </a>
+             </a>
                   <div class="header-menu">
->>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
 				<div class="user-area dropdown float-right">
-
+					<c:if test="${sessionScope.login_result == null}">
 						<button type="button" class="btn btn-secondary"
 							onclick="location.href='login'">Logout</button>
-
+					</c:if>
 				</div>
 			</div>
-<<<<<<< HEAD
-=======
             
-    
->>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
+     
         </header><!-- /header -->
-<<<<<<< HEAD
-        </div>
-=======
+        <!-- Header-->
 
         
         
@@ -212,22 +184,7 @@
         
         
         
-        
-        
-        
-               <!-- Content -->
-        <div class="content">
-            <div class="animated fadeIn">
->>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
-
-
-       
-        
-        
-        
-        
-        
-        
+               
         
         
 
@@ -243,8 +200,8 @@
     <a class="nav-link" data-toggle="tab" href="#three">상품별매출</a>
   </li>
 </ul>
-
-<div class="tab-content">
+<!-- 
+<div class="tab-content"> -->
          <!-- ---------------/tab------------- -->
 
 
@@ -255,22 +212,22 @@
 
 <!-- ------------------------------------content------------------------------------------ -->
 
-			<div class="tab-pane fade show active" id="one">
-				<div class="content">
-					<div class="animated fadeIn">
+				<div class="tab-pane fade show active" id="one">
+					<div class="content">
+						<div class="animated fadeIn">
 
 
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="card">
-								 <div class="card-header">
-                                <strong class="card-title">상품별 매출</strong>
-									<div class="card-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="card">
+										<div class="card-header">
+											<strong class="card-title">상품별 매출</strong>
+											<div class="card-body">
 
 
-										<script type="text/javascript"
-											src="https://www.gstatic.com/charts/loader.js"></script>
-										<script type="text/javascript">
+												<script type="text/javascript"
+													src="https://www.gstatic.com/charts/loader.js"></script>
+												<script type="text/javascript">
 											// Load Charts and the corechart and barchart packages.
 											google.charts.load('current', {
 												'packages' : [ 'corechart' ]
@@ -315,89 +272,83 @@
 														barchart_options);
 											}
 										</script>
-										<!--Table and divs that hold the pie charts-->
-										<table class="columns">
-											<tr>
-												<td><div id="piechart_div"
-														style="border: 1px solid #ccc"></div></td>
-												<td><div id="barchart_div"
-														style="border: 1px solid #ccc"></div></td>
-											</tr>
-										</table>
+												<!--Table and divs that hold the pie charts-->
+												<table class="columns">
+													<tr>
+														<td><div id="piechart_div"
+																style="border: 1px solid #ccc"></div></td>
+														<td><div id="barchart_div"
+																style="border: 1px solid #ccc"></div></td>
+													</tr>
+												</table>
 
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
 
 
 
 
 
-<<<<<<< HEAD
-				<div class="card">
-					<div class="card-header">
-						<strong class="card-title">매출현황</strong>
+					<div class="card">
+						<div class="card-header">
+							<strong class="card-title">매출현황</strong>
+						</div>
+						<div class="card-body">
+							<table id="bootstrap-data-table"
+								class="table table-striped table-bordered">
+								<thead>
+									<tr align="center">
+										<td>종류</td>
+										<td>상품코드</td>
+										<td>판매가</td>
+										<td>수량</td>
+										<td></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr align="center">
+										<td><select name="Big">
+												<option value="">종류</option>
+												<option value="캠핑">캠핑</option>
+												<option value="조명">조명</option>
+												<option value="기타">기타</option>
+										</select></td>
+										<td><input type="text" name="pro_code" /></td>
+										<td><input type="text" name="pro_price" /></td>
+										<td><input type="text" name="pro_count" /></td>
+										<td><input type="button" value="추가" onclick="add()" /></td>
+									</tr>
+
+
+								</tbody>
+							</table>
+						</div>
 					</div>
-					<div class="card-body">
-						<table id="bootstrap-data-table"
-							class="table table-striped table-bordered">
-							<thead>
-								<tr align="center">
-									<td>종류</td>
-									<td>상품코드</td>
-									<td>판매가</td>
-									<td>수량</td>
-									<td></td>
-								</tr>
-							</thead>
-							<tbody>
-								<tr align="center">
-									<td><select name="Big">
-											<option value="">종류</option>
-											<option value="캠핑">캠핑</option>
-											<option value="조명">조명</option>
-											<option value="기타">기타</option>
-									</select></td>
-									<td><input type="text" name="pro_code" /></td>
-									<td><input type="text" name="pro_price" /></td>
-									<td><input type="text" name="pro_count" /></td>
-									<td><input type="button" value="추가" onclick="add()" /></td>
-								</tr>
 
 
-							</tbody>
-						</table>
+
+
+
+					<!-- ------------------------------------content2------------------------------------------ -->
+				<%-- 	<div class="tab-pane fade" id="two">
+
+
+						<%@include file="admin_sales2.jsp"%>
 					</div>
 				</div>
 
-</div>
 
-=======
->>>>>>> branch 'master' of https://github.com/SongYeoungJin/MVCProject.git
+ --%>
 
 
 
 
-
-				<!-- ------------------------------------content2------------------------------------------ -->
-  <div class="tab-pane fade" id="two">
-  
-
-				<%@include file="admin_sales2.jsp" %>
-			</div>
-</div>
-
-
-
-
-
-
-
-		<!-- Content -->
+				<!-- Content -->
 <!-- 		<div class="content">
 			<div class="animated fadeIn">
 
@@ -558,15 +509,8 @@
 		<script
 			src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
 		<script src="./resources/assets/js/main.js"></script>
-		<!-- 	
 	
-	  Chart js
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.bundle.min.js"></script>
-    <script src="./resources/assets/js/init/chartjs-init.js"></script>
-    Flot Chart
-    <script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flot-spline@0.0.1/js/jquery.flot.spline.min.js"></script>
-     -->
+	<!--  추가    -->
 
 		<script src="assets/js/main.js"></script>
 		<script
